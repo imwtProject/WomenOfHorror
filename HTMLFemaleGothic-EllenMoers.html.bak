@@ -3,7 +3,7 @@
 <p class="byline">By <span class="person" about="Ellen Moers">Ellen Moers</span></p>
 
 
-<blockquote>
+<blockquote class="refOther">
 
 A baby at birth is usually disappointing-looking to a parent who
 hasn't seen one before. His skin is coated with wax, which, if
@@ -44,20 +44,20 @@ fear.</p>
 <p>Certainly the earliest tributes to the power of <span class="concept" about="gothic">Gothic</span> writers
 tended to emphasize the physiological. <span class="person" about="Jane Austen">Jane Austen</span> has <span class="character" about="Henry Tilney">Henry Tilney</span>,
 in <span class="literaryWork" about="Northanger Abbey"><i>Northanger Abbey</i></span>, say that he could not put down <span class="person" about="Ann Radcliffe">Mrs. Radcliffe</span>'s <span class="literaryWork" about="Mysteries of Udolpho"><i>Mysteries
-of Udolpho</i></span>: "I remember finishing it in two days -- my hair
-standing on end the whole time." According to <span class="person" about="William Hazlitt">Hazlitt</span>, <span class="person" about="Ann Radcliffe">Ann
-Radcliffe</span> had mastered "the art of freezing the blood":
+of Udolpho</i></span>:<q class="refOther"> I remember finishing it in two days -- my hair
+standing on end the whole time.</q> According to <span class="person" about="William Hazlitt">Hazlitt</span>, <span class="person" about="Ann Radcliffe">Ann
+Radcliffe</span> had mastered <q class="refOther">the art of freezing the blood":
 "harrowing up the soul with imaginary horrors, and making the
-flesh creep and the nerves thrill." And <span class="person" about="Mary Shelley">Mary Shelley</span> said she
+flesh creep and the nerves thrill.</q> And <span class="person" about="Mary Shelley">Mary Shelley</span> said she
 intended <span class="literaryWork" about="Frankenstein"><i>Frankenstein</i></span> to be the kind of ghost story that
-would "curdle the blood, and quicken the beatings of the heart."
+would <q class="refOther">curdle the blood, and quicken the beatings of the heart.</q>
 Why such claims? Presumably because readers enjoyed these
 sensations. For example, in a work the Shelleys knew well, <span class="person" about="Joanna Baillie">Joanna Baillie</span>'s verse play on
 the theme of addiction to artificial fear, the heroine prevails
 upon a handmaiden, against the best advice, to tell a horror
 story:</p>
 
-<blockquote>
+<blockquote class="refOther">
 
 ... Tell it, I
 pray thee.<br>
@@ -86,14 +86,14 @@ on the wane, giving way to that vague paranoia of the modern
 spirit for which <span class="concept" about="gothic">Gothic</span> mechanisms seem to have provided welcome
 therapy. <span class="person" about="Walter Scott">Walter Scott</span>
 compared reading <span class="person" about="Ann Radcliffe">Mrs.
-Radcliffe</span> to taking drugs, dangerous when habitual "but of
+Radcliffe</span> to taking drugs, dangerous when habitual <q class="refOther">but of
 most blessed power in those moments of pain and of languor, when
 the whole head is sore, and the whole heart sick. If those who
 rail indiscriminately at this species of composition, were to
 consider the quantity of actual pleasure which it produces, and
 the much greater proportion of real sorrow and distress which it
 alleviates, their philanthropy ought to moderate their critical
-pride, or religious intolerance." A grateful public rewarded
+pride, or religious intolerance.</q> A grateful public rewarded
 <span class="person" about="Ann Radcliffe">Mrs. Radcliffe</span> by making her the most popular and best paid
 English novelist of the eighteenth century. Her preeminence
 among the "Terrorists", as they were called, was hardly
@@ -162,7 +162,7 @@ genuine originality: the mad scientist who locks himself in his
 laboratory and secretly, guiltily works at creating human life,
 only to find that he has made a monster.
 
-<blockquote>
+<blockquote class="refFrankenstein">
 It was on a dreary night of
 November, that I beheld the accomplishment of my toils. With
 an anxiety that almost amounted to agony, I collected the
@@ -184,7 +184,7 @@ straight black lips.
 That is very good <span class="concept" about="horror">horror</span>, but what follows is more horrid
 still: <span class="character" about="Victor Frankenstein">Frankenstein</span>, the scientist, runs away and abandons the
 newborn <span class="character" about="the creature">monster</span>, who is and remains nameless. Here, I think, is
-where Mary Shelley's book is most interesting, most powerful,
+where <span class="person" about="Mary Shelley">Mary Shelley</span>'s book is most interesting, most powerful,
 and most feminine: in the motif of revulsion against newborn
 life, and the drama of guilt, dread, and flight surrounding
 birth and its consequences. Most of the novel, roughly two of
@@ -206,11 +206,11 @@ first holds her baby in her arms. <span class="person" about="William Thackeray"
 birth of a baby in <span class="literaryWork" about="Vanity Fair"><i>Vanity Fair</i></span> is the classic of this
 genre: gentle <span class="character" about="Amelia Sedley">Amelia</span> is <span class="concept" about="motherhood">pregnant</span> when her adored young husband
 dies on the field of <span class="place" about="Waterloo">Waterloo</span>, a tragedy which drives the young
-woman into a state of comatose grief until the blessed moment when her baby is born. "Heaven had sent her consolation,"
-writes <span class="person" about="William Thackeray">Thackeray</span>. "A day came -- of almost terrified delight and
+woman into a state of comatose grief until the blessed moment when her baby is born. <q class="refOther">Heaven had sent her consolation,</q>
+writes <span class="person" about="William Thackeray">Thackeray</span>. <q class="refOther">A day came -- of almost terrified delight and
 wonder -- when the poor widowed girl <span class="concept" about="motherhood">pressed a child upon her
 breast</span>... a little boy, as beautiful as a cherub... Love, and hope, and prayer woke again in her
-bosom... She was safe."</p>
+bosom... She was safe.</q></p>
 
 
 <p><span class="person" about="William Thackeray">Thackeray</span> was here recording a reality, as well as expressing a
@@ -284,19 +284,19 @@ myth should have been the work of a young woman who was also a
 <span class="concept" about="motherhood">young mother</span> seems to me, after all, not a very surprising
 answer to the question that,
 according to <span class="person" about="Mary Shelley">Mary Shelley</span> herself, was asked from the start:
-"How I, then a young girl, came to think of, and to dilate upon,
-so very hideous an idea?"</p>
+<q class="refOther">How I, then a young girl, came to think of, and to dilate upon,
+so very hideous an idea</q>?</p>
 
 
 <p>Birth is a hideous thing in <span class="literaryWork" about="Frankenstein"><i>Frankenstein</i></span>, even before
 there is a monster. For <span class="character" about="Victor Frankenstein">Frankenstein</span>'s procedure, once he has
 determined to create new life, is to frequent the vaults and
 charnel houses and study the human corpse in all its loathsome
-stages of decay and decomposition. "To examine the causes of life,"
-he says, "we must first have recourse to death." His purpose is
-to "bestow animation upon lifeless matter," so that he might "in the process of time
+stages of decay and decomposition. <q class="refFrankenstein">To examine the causes of life,"
+he says, "we must first have recourse to death.</q> His purpose is
+to <q class="refFrankenstein">bestow animation upon lifeless matter," so that he might "in the process of time
 renew life where death had apparently devoted the body to
-corruption." <span class="character" about="Victor Frankenstein">Frankenstein</span> collects bones and other human parts
+corruption.</q> <span class="character" about="Victor Frankenstein">Frankenstein</span> collects bones and other human parts
 from the slaughterhouse and the dissecting room, and through
 long months of feverish and guilty activity sticks them together
 in a frame of gigantic size in what he calls "my workshop of
@@ -344,7 +344,7 @@ and sinister course: in October <span class="person" about="Frances Imlay">Fanny
 committed suicide after discovering that she was not <span class="person" about="William Godwin">Godwin</span>'s
 daughter but <span class="person" about="Mary Wollstonecraft">Mary Wollstonecraft</span>'s daughter by her American
 lover. (The suicide was not only a tragedy but an embarrassment
-to all. Godwin refused even to claim Fanny's body, which was
+to all. <span class="person" about="William Godwin">Godwin</span> refused even to claim Fanny's body, which was
 thrown nameless into a pauper's grave.) In early December <span class="person" about="Mary Shelley">Mary</span>
 was pregnant again, as she seems to have sensed almost the day
 it happened. (See her letter to <span class="person" about="Percy Shelley">Shelley</span> of December 5, in which
@@ -362,14 +362,14 @@ Who can read without shuddering, and without remembering her
 myth of the birth of a nameless monster, <span class="person" about="Mary Shelley">Mary</span>'s journal entry of
 March 19, 1815, which records the trauma of her loss, when she
 was seventeen, of <span class="concept" about="motherhood">her first baby</span>, the little girl who did not
-live long enough to be given a name. "Dream that my little baby
+live long enough to be given a name.  <q class="refOther">Dream that my little baby
 came to life again," <span class="person" about="Mary Shelley">Mary</span> wrote; "that it had only been cold,
 and that we rubbed it before the fire, and it lived. Awake and
 find no baby. I think about the little thing all day. Not in
-good spirits." ("<i>I thought,
+good spirits. </q> (<q class="refOther"><i>I thought,
 that if I could bestow animation upon lifeless matter, I might
 in process of time renew life where death had apparently devoted
-the body to corruption</i>.")</p>
+the body to corruption</i>.</q>)</p>
 
 
 <p>So little use has been made of this material by writers about
@@ -387,7 +387,7 @@ predecessors, if the revival of <span class="literaryWork" about="The Yellow Wal
 <span class="person" about="Charlotte Perkins Gilman">Charlotte Perkins Gilman</span>'s macabre post-partum fantasy -- is any
 indication. The newborn returns again to literature as monster.
 
-<blockquote>
+<blockquote class="refOther">
 At six months he grew big as six years<br>
 
 ... One day he swallowed<br>
@@ -412,13 +412,13 @@ to <span class="person" about="Mary Shelley">Mary</span> herself.</p>
 
 
 <p>Surely no outside influence need be sought to explain <span class="person" about="Mary Shelley">Mary Shelley</span>'s fantasy of the newborn as at once monstrous agent of
-destruction and piteous victim of <span class="concept" about="motherhood">parental abandonment</span>. "I, the miserable and the
-abandoned," cries <span class="character" about="the creature">the monster</span> at the end of
-<span class="literaryWork" about="Frankenstein"><i>Frankenstein</i></span>, "I am an abortion to be spurned at, and
+destruction and piteous victim of <span class="concept" about="motherhood">parental abandonment</span>. <q class="refFrankenstein">I, the miserable and the
+abandoned</q>, cries <span class="character" about="the creature">the monster</span> at the end of
+<span class="literaryWork" about="Frankenstein"><i>Frankenstein</i></span>, <q class="refFrankenstein">I am an abortion to be spurned at, and
 kicked, and trampled on. ... I have murdered the
 lovely and the helpless. ... I have devoted my
 creator to misery; I have pursued him even to that irremediable
-ruin."</p>
+ruin.</q></p>
 
 <p>In the century and a half since its publication, <span class="literaryWork" about="Frankenstein"><i>Frankenstein</i></span> has spawned innumerable interpretations
 among the critics, and among the novelists, playwrights, and filmmakers who have felt its influence. The idea, though not the
@@ -447,7 +447,7 @@ than interpret; he also responds, as one must in reading
 fantastic tale".
 
 
-<blockquote>
+<blockquote class="refFrankenstein">
 In making her hero the creator of a monster, she does not
 necessarily mock idealistic ambition, but in making that monster
 a poor grotesque patchwork, a physical mess of seams and
@@ -477,9 +477,9 @@ because they are both orphans. There is <span class="character" about="Victor Fr
 love for an abandoned, orphan girl brought up as his sister.
 There is the first of the monster's murder victims, Frankenstein's infant brother (precisely drawn, even to his name, after <span class="person" about="Mary Shelley">Mary Shelley</span>'s baby); and the innocent young girl wrongly executed for the infant's murder, who is also a victim
 of what <span class="person" about="Mary Shelley">Mary Shelley</span> calls that "strange perversity," a mother's
-hatred. (<span class="character" about="Justine">Justine</span> accepts guilt with docility: "'I almost began
+hatred. (<span class="character" about="Justine">Justine</span> accepts guilt with docility: <q class="refFrankenstein">'I almost began
 to think that I was the monster that my confessor said I was.
-...'" [1.7.7]) The material in <span class="literaryWork" about="Frankenstein"><i>Frankenstein</i></span> about the abnormal, or
+...'</q> [1.7.7]) The material in <span class="literaryWork" about="Frankenstein"><i>Frankenstein</i></span> about the abnormal, or
 monstrous, manifestations of the child-parent tie justifies, as much as does its famous monster, <span class="person" about="Mary Shelley">Mary Shelley</span>'s reference to the novel as "my hideous progeny."</p>
 
 
