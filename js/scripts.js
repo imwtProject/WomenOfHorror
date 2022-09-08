@@ -11,11 +11,11 @@
 		"url": "FemaleGothic.html"
 	},
 	{
-		"label": "Apollonius Rhodius",
+		"label": "My Monster My Self",
 		"url": "MyMonsterMySelf.html"
 	},
 	{
-		"label": "Ovid",
+		"label": "Parent-Child Tensions in Frankenstein",
 		"url": "Parent-ChildTensionsinFrankenstein.html"
 	}
 ]
