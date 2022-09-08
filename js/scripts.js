@@ -3,5 +3,21 @@
 * Copyright 2013-2021 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-bare/blob/master/LICENSE)
 */
+
+
+[
+	{
+		"label": "Female Gothic",
+		"url": "FemaleGothic.html"
+	},
+	{
+		"label": "Apollonius Rhodius",
+		"url": "MyMonsterMySelf.html"
+	},
+	{
+		"label": "Ovid",
+		"url": "Parent-ChildTensionsinFrankenstein.html"
+	}
+]
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
