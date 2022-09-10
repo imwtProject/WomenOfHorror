@@ -1,0 +1,120 @@
+<style>
+		 body {
+			padding-top: 70px;
+		}
+
+		.myborder {
+			border: solid rgb(220,220,220) 1px;
+			padding: 10px;
+			margin-bottom: 15px; 
+		}
+		.myborder-notop {
+			border-top: none;
+		}
+		
+		.breath {
+			margin-top: 15px;
+		}
+		
+		.tab-pane {
+			min-height: 150px;
+		}
+		
+		.person:before {
+			content: "  ";
+			background-color: #ffffff !important;
+		}
+		.person:after {
+			content: "  ";
+			background-color: #ffffff !important;
+		}
+
+		.literaryWork:before {
+			content: "";
+			background-color: #ffffff !important;
+		}
+		.literaryWork:after {
+			content: "";
+			background-color: #ffffff !important;
+		}
+		.character:before {
+			content: "";
+			background-color: #ffffff !important;
+		}
+		.character:after {
+			content: "";
+			background-color: #ffffff !important;
+		}
+		
+		.concept:before {
+			content: "";
+			background-color: #ffffff !important;
+		}
+		.concept:after {
+			content: "";
+			background-color: #ffffff !important;
+		}
+		
+		q.refOther:before {
+			content: """;
+			background-color: #ffffff !important;
+		}
+		q.refOther:after {
+			content: """;
+			background-color: #ffffff !important;
+		}
+		
+		q.refFrankenstein:before {
+			content: """;
+			background-color: #ffffff !important;
+		}
+		q.refFrankenstein:after {
+			content: """;
+			background-color: #ffffff !important;
+		}
+		
+		
+		.text-person {
+			background-color: #ffddff;
+		}
+		
+		.text-character {
+			background-color: #ddffdd;
+		}
+		.text-literaryWork {
+			background-color: #ffffdd;
+		}	
+         
+		.text-concept {
+			background-color: #ffddff;
+		}
+		
+		.text-refOther {
+			background-color: #ffffdd;
+		}	
+
+        .text-refFrankenstein {
+			background-color: #ffffdd;
+		}		
+		
+		
+		
+		
+				
+	</style>
+	
+							<form role="form">
+							<div class="checkbox"><label>
+								<input type="checkbox" id="showperson" class="show">Show person</label></div>
+							<div class="checkbox"><label>
+								<input type="checkbox" id="showcharacter" class="show">Show character</label></div>
+							<div class="checkbox"><label>
+								<input type="checkbox" id="showliteraryWork" class="show">Show literary work</label></div>
+							<div class="checkbox"><label>
+								<input type="checkbox" id="showconcept" class="show">Show concept</label></div>
+							<div class="checkbox"><label>
+								<input type="checkbox" id="showrefOther" class="show">Show external references</label></div>
+							<div class="checkbox"><label>
+								<input type="checkbox" id="showrefFrankenstein" class="show">Show Frankenstein references</label></div>
+							
+						</form>
