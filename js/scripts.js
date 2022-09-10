@@ -8,7 +8,15 @@
 [
 	{
 		"label": "Female Gothic",
-		"url": "FemaleGothic.html"
+		"url": "articles/FemaleGothic.html"
+	},
+	{
+		"label": "My Monster, My Self",
+		"url": "articles/MyMonsterMySelf.html"
+	},
+	{
+		"label": "Parent-Child Tensions in Frankenstein",
+		"url": "articles/Parent-ChildTensionsinFrankenstein.html"
 	}
 ]
 // This file is intentionally blank
