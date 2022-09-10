@@ -198,7 +198,7 @@
                     <i class="fa fa-github" id="whitecat"></i>
                 </a><br>
             </div>
-            <p class="text-center">&copy; 2022 Dead Lovers Society</p>
+            <p class="text-center">&copy; 2022 Frank magazine</p>
     </footer>
     <!--  Logo animation  -->
     <script>
@@ -232,26 +232,24 @@
             return r
         }
 
-        var listItemTpl = `<li><a href='#articles' onclick='load("$url")'>$label</a></li>`
+        
 
         $(document).ready(main);
 
         function main() {
-            $.ajax({
-                method: 'GET',
-                url: 'https://imwtproject.github.io/howdowecallitmagazine/frank.json',
-                success: function (d) {
-                    for (var i = 0; i < d.length; i++) {
-                        $('#list').append(listItemTpl.tpl({
-                            url: d[i].url,
-                            label: d[i].label
-                        }))
-                    }
-                },
-                error: function () {
-                    alert('No document to show')
-                }
-            });
+			$.ajax({
+				method: 'GET',
+				url: 'https://imwtproject.github.io/howdowecallitmagazine/frank.json',
+				success: function(d) {
+					for (var i=0; i<d.length; i++) {
+						var li = `<li><a href='#' onclick='load("`+d[i].url+`")'>`+d[i].label+`</a></li>`
+						$('#list').append(li)
+					}	
+				},
+				error: function() {
+					alert('No document to show')
+				}
+			});
 
 
             $('#showperson').click(function() {
@@ -299,20 +297,19 @@
 		}
 
         function load(file) {
-            $.ajax({
-                method: 'GET',
-                url: file,
-                success: function (d) {
-                    $('#file').html(d)
-                    $('.show').prop("checked", false)
-                    addIds()
-                    filltabs()
-                },
-                error: function () {
-                    alert('Could not load file ' + file)
-                }
-            });
-        }
+			$.ajax({
+				method: 'GET',
+				url: file,
+				success: function(d) {
+					$('#file').html(d)
+					$('#title').html($('#file h1'))
+					$('.show').prop("checked", false)
+				},
+				error: function() {
+					alert('Could not load file '+file)
+				}
+			});
+		}		
 
         function addIds() {
             addId('.charmortal', 'charmortal')
