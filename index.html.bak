@@ -210,13 +210,13 @@
 					<div class="col-md-12">
 						<ul class="nav nav-tabs" id="sentenceTab" role="tablist">
 						  <li class="nav-item">
-							<a class="nav-link active" id="asides-tab" data-toggle="tab" href="#asides" role="tab" aria-controls="view" aria-selected="true">Asides</a>
+							<a class="nav-link active" id="person-tab" data-toggle="tab" href="#person" role="tab" aria-controls="view" aria-selected="true">Person</a>
 						  </li>
 						  <li class="nav-item">
-							<a class="nav-link" id="speeches-tab" data-toggle="tab" href="#speeches" role="tab" aria-controls="home" aria-selected="false">Speeches</a>
+							<a class="nav-link" id="character-tab" data-toggle="tab" href="#character" role="tab" aria-controls="home" aria-selected="false">Character</a>
 						  </li>
 						  <li class="nav-item">
-							<a class="nav-link" id="quotes-tab" data-toggle="tab" href="#quotes" role="tab" aria-controls="home" aria-selected="false">Quotes</a>
+							<a class="nav-link" id="literaryWork-tab" data-toggle="tab" href="#literaryWork" role="tab" aria-controls="home" aria-selected="false">Literary Work</a>
 						  </li>
 						</ul>
 
@@ -236,7 +236,7 @@
 				</div>
 			</div>		
 			<div class="col-md-9">
-				<div class="jumbotron" id="title"><h1>Sentences</h1> </div>
+				<div class="jumbotron" id="title"><h1>Texts</h1> </div>
 				<div id="file"></div>
 			</div>
 		</div>	
