@@ -115,7 +115,41 @@
 
         .text-refFrankenstein {
 			background-color: #ffffdd;
-		}		
+		}	
+        
+		ul {
+			padding-inline-start: 0.5em; 
+		}
+		.list {
+			font-size: 80%;
+			line-height: 1.2; 
+			margin: 0; 
+			white-space: nowrap; 
+			overflow-x: hidden;
+			list-style-position:inside;  
+		}
+		.list a {
+			color: black;
+			margin: 0; 
+		}
+		.list-person:before {
+			content: "«";
+		}
+		.list-person:after {
+			content: "»";
+		}
+		.list-character:before {
+			content: "“";
+		}
+		.list-character:after {
+			content: "”";
+		}
+		.list-literaryWork:before {
+			content: "«";
+		}
+		.list-literaryWork:after {
+			content: "»";
+		}
 		
 		
 		
@@ -143,19 +177,19 @@
 	
 	
     <div class="container-fluid">
-        <article>
-            <div class="container" id="articles">
-                <div class="row">
-                    <div class="col-5 col-sm-4">
-                        <div class="metadata text-right">
-                            <h5>Select the suca:</h5>
-                            <ul id="list" style="list-style: none;">
-                            </ul>
-                            </p>
-                            <div class="row clearfix">
-                                <h5>Select the suca:</h5>
-                                <p><b>Highlight in the text:</b></p>
-                                <div class="col-md-3">
+
+		<!-- Main component for a primary marketing message or call to action -->
+		<div class="row clearfix">
+			<div class="col-md-3">
+				<div class="row clearfix border p-2">
+					<div class="col-md-12">
+						<h3>Documents</h3>
+						<ul id="list">
+						</ul>
+					</div>
+				</div>
+				<div class="row clearfix mt-4">
+					<div class="col-md-12">
                                     <form role="form">
 							           <div class="checkbox"><label>
 								        <input type="checkbox" id="showperson" class="show">Show person</label></div>
@@ -169,21 +203,45 @@
 								         <input type="checkbox" id="showrefOther" class="show">Show external references</label></div>
 							            <div class="checkbox"><label>
 								         <input type="checkbox" id="showrefFrankenstein" class="show">Show Frankenstein references</label></div>
-							
-						            </form>
-                                </div>
-                            </div>
-                         </div>
-                         <div class="col-md-9">
-				              <div class="jumbotron" id="title"><h1>Sentences</h1> </div>
-				               <div id="file"></div>
-			              </div>
-		            </div>
-        				
-	               </div>
-             </div>
-         </article>				 
-    </div>	<!-- /container -->
+                                     </form>
+					 </div>
+				</div>
+			<div class="row clearfix mt-4">
+					<div class="col-md-12">
+						<ul class="nav nav-tabs" id="sentenceTab" role="tablist">
+						  <li class="nav-item">
+							<a class="nav-link active" id="asides-tab" data-toggle="tab" href="#asides" role="tab" aria-controls="view" aria-selected="true">Asides</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" id="speeches-tab" data-toggle="tab" href="#speeches" role="tab" aria-controls="home" aria-selected="false">Speeches</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" id="quotes-tab" data-toggle="tab" href="#quotes" role="tab" aria-controls="home" aria-selected="false">Quotes</a>
+						  </li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content" id="sentenceContent">
+							<div class="tab-pane active myBorder myBorder-notop" id="asides" role="tabpanel" aria-labelledby="asides-tab">
+								<ul></ul>
+							</div>
+							<div class="tab-pane myBorder myBorder-notop" id="speeches" role="tabpanel" aria-labelledby="speeches-tab">
+								<ul></ul>
+							</div>
+							<div class="tab-pane myBorder myBorder-notop" id="quotes" role="tabpanel" aria-labelledby="quotes-tab">
+								<ul></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+			<div class="col-md-9">
+				<div class="jumbotron" id="title"><h1>Sentences</h1> </div>
+				<div id="file"></div>
+			</div>
+		</div>	
+	</div> <!-- /container -->
+
 
 
     <!-- Footer -->
