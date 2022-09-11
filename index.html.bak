@@ -152,7 +152,7 @@
                             <ul id="list" style="list-style: none;">
                             </ul>
                             </p>
-                            <div class="row mt-4">
+                            <div class="row clearfix">
                                 <h5>Select the suca:</h5>
                                 <p><b>Highlight in the text:</b></p>
                                 <div class="col-md-3">
