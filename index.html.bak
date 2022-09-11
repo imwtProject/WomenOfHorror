@@ -155,35 +155,36 @@
                             <div class="row mt-4">
                                 <h5>Select the suca:</h5>
                                 <p><b>Highlight in the text:</b></p>
-                                <div class="col-md-12">
+                                <div class="col-md-3">
                                     <form role="form">
-							<div class="checkbox"><label>
-								<input type="checkbox" id="showperson" class="show">Show person</label></div>
-							<div class="checkbox"><label>
-								<input type="checkbox" id="showcharacter" class="show">Show character</label></div>
-							<div class="checkbox"><label>
-								<input type="checkbox" id="showliteraryWork" class="show">Show literary work</label></div>
-							<div class="checkbox"><label>
-								<input type="checkbox" id="showconcept" class="show">Show concept</label></div>
-							<div class="checkbox"><label>
-								<input type="checkbox" id="showrefOther" class="show">Show external references</label></div>
-							<div class="checkbox"><label>
-								<input type="checkbox" id="showrefFrankenstein" class="show">Show Frankenstein references</label></div>
+							           <div class="checkbox"><label>
+								        <input type="checkbox" id="showperson" class="show">Show person</label></div>
+							           <div class="checkbox"><label>
+							        	<input type="checkbox" id="showcharacter" class="show">Show character</label></div>
+							           <div class="checkbox"><label>
+								       <input type="checkbox" id="showliteraryWork" class="show">Show literary work</label></div>
+							            <div class="checkbox"><label>
+								         <input type="checkbox" id="showconcept" class="show">Show concept</label></div>
+							           <div class="checkbox"><label>
+								         <input type="checkbox" id="showrefOther" class="show">Show external references</label></div>
+							            <div class="checkbox"><label>
+								         <input type="checkbox" id="showrefFrankenstein" class="show">Show Frankenstein references</label></div>
 							
-						</form>
+						            </form>
                                 </div>
                             </div>
-                           
-                    </div>
-                    <div class="col-md-9">
-                        <div id="file"></div>
-                        <!-- The content will be added here -->
-                    </div>
-                </div>
-            </div>
-        </article>
-    
-	</div>
+                         </div>
+                         <div class="col-md-9">
+				              <div class="jumbotron" id="title"><h1>Sentences</h1> </div>
+				               <div id="file"></div>
+			              </div>
+		            </div>
+        				
+	               </div>
+             </div>
+         </article>				 
+    </div>	<!-- /container -->
+
 
     <!-- Footer -->
     <footer class="py-3 my-4">
