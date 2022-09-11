@@ -201,13 +201,7 @@
             <p class="text-center">&copy; 2022 Frank magazine</p>
     </footer>
     <!--  Logo animation  -->
-    <script>
-        dead = document.getElementById("dead");
-        logo = document.getElementById("logo");
-        dls = document.getElementById("DLStitle");
-        dls.addEventListener("mouseover", startShaking);
-        dls.addEventListener("mouseout", abortShaking);
-    </script>
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -239,7 +233,7 @@
         function main() {
 			$.ajax({
 				method: 'GET',
-				url: 'https://imwtproject.github.io/howdowecallitmagazine/frank.json',
+				url: 'C:\Users\Eleonora\OneDrive\Documents\GitHub\howdowecallitmagazine\frank.json',
 				success: function(d) {
 					for (var i=0; i<d.length; i++) {
 						var li = `<li><a href='#' onclick='load("`+d[i].url+`")'>`+d[i].label+`</a></li>`
@@ -311,48 +305,7 @@
 			});
 		}		
 
-        function addIds() {
-            addId('.charmortal', 'charmortal')
-            addId('.charimmortal', 'charimmortal')
-            addId('.places', 'places')
-
-        }
-
-        function addId(what, prefix) {
-            var id = '0'
-            var elements = $(what);
-            for (var i = 0; i < elements.length; i++) {
-                elements[i].id = prefix + "-" + id++
-            }
-        }
-
-        function filltabs() {
-            filltab("#file .charmortal", "list-charmortal", "#charmortal")
-            filltab("#file .charimmortal", "list-charimmortal", "#charimmortal")
-            filltab("#file .places", "list-places", "#places")
-
-        }
-
-        function filltab(what, style, where) {
-            var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
-            var elements = $(what);
-            $(where + ' ul').empty();
-            for (var i = 0; i < elements.length; i++) {
-                $(where + ' ul').append(list.tpl({
-                    style: style,
-                    place: '#' + elements[i].id,
-                    content: elements[i].innerHTML
-                }))
-            }
-        }
-        function goto(id) {
-            var t = $(id)[0].offsetTop;
-            $('html').animate({ scrollTop: t }, 2000);
-            $(id).addClass('animate1');
-            setTimeout(function () {
-                $(id).removeClass('animate1');
-            }, 5000);
-        }
+     
 
 
     </script>
