@@ -175,7 +175,7 @@
                             </div>
                            
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-7 col-sm-8 mt-4">
                         <div id="file"></div>
                         <!-- The content will be added here -->
                     </div>
