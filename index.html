@@ -158,9 +158,8 @@
 		</div>
 	</nav>
 	
-  <div>
-   <article>
-    <div class="container-fluid" id ="articles">
+	
+    <div class="container-fluid">
 
 		<!-- Main component for a primary marketing message or call to action -->
 		<div class="row clearfix">
@@ -224,9 +223,7 @@
 				<div id="file"></div>
 			</div>
 		</div>	
-	</div> 
-	</article>
-	</div>!-- /container -->
+	</div> <!-- /container -->
 
 
 
@@ -263,7 +260,7 @@
         crossorigin="anonymous"></script>
     <!--  Texts upload  -->
     <script>
-       String.prototype.tpl = function(o) { 
+      String.prototype.tpl = function(o) { 
 			var r = this ; 
 			for (var i in o) { 
 				r = r.replace(new RegExp("\\$"+i, 'g'),o[i])  
@@ -271,7 +268,7 @@
 			return r 
 		}
 		
-		var listItemTpl = `<li><a href='#articles' onclick='load("$url")'>$label</a></li>``
+		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
 		
 		$(document).ready(main);
 
@@ -281,16 +278,14 @@
 				url: 'https://imwtproject.github.io/howdowecallitmagazine/frank.json',
 				success: function(d) {
 					for (var i=0; i<d.length; i++) {
-						$('#list').append(listItemTpl.tpl({
-                            url: d[i].url,
-                            label: d[i].label
-                        }))
+						$('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
 					}	
 				},
 				error: function() {
 					alert('No document to show')
 				}
 			});
+			
 
 
             $('#showperson').click(function() {
@@ -358,15 +353,14 @@
 			filltab("#file .literaryWork","list-literaryWork","#literaryWork")
 		}
 		
-		function filltab(what, style, where) {
-            var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
-            var elements = $(what);
-            $(where + ' ul').empty();
-            for (var i = 0; i < elements.length; i++) {
-                $(where + ' ul').append(list.tpl({
-                    style: style,
-                    place: '#' + elements[i].id,
-                    content: elements[i].innerHTML
+		function filltab(what,style,where) {
+			var list = `<li class="list $style">$content</li>`
+			var elements = $(what); 
+			$(where+' ul').empty(); 
+			for (var i=0; i<elements.length; i++) {
+				$(where+' ul').append(list.tpl({
+					style:style, 
+					content: elements[i].innerHTML
 				}) )
 			}
 		}
