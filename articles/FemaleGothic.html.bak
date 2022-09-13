@@ -1,14 +1,20 @@
 <!doctype html>
 <html>
 
-
+<head>
+	<title>Frankenstein Magazine</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="http://knarf.english.upenn.edu/Articles/moers.html">
+</head>
 
 <body>
 	<h3>Female Gothic</h3>
 	
 		
 	
-	
+	<div class="container mt-2">
+		<div class="row">
 			<blockquote>
 
 A baby at birth is usually disappointing-looking to a parent who
