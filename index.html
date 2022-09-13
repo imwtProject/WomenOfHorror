@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<!-- Custom styles for this template -->
 	<style>
-		 body {
+		body {
 			padding-top: 70px;
 		}
 
@@ -107,7 +107,7 @@
         .text-refFrankenstein {
 			background-color: #ffffdd;
 		}	
-        
+		
 		ul.minimal {
 			padding-inline-start: 0.5em; 
 		}
@@ -147,7 +147,6 @@
 			display: none; /* for Chrome, Safari, and Opera */	
 		}
 
-					
 	</style>
 	</head>
 
@@ -215,19 +214,18 @@
 						  </li>
 						</ul>
 
-
 						<!-- Tab panes -->
 						<div class="tab-content" id="sentenceContent">
-						    <div class="tab-pane active myBorder myBorder-notop" id="info" role="tabpanel" aria-labelledby="info-tab">
+							<div class="tab-pane active myBorder myBorder-notop" id="info" role="tabpanel" aria-labelledby="info-tab">
 							</div>
-							<div class="tab-pane active myBorder myBorder-notop" id="person" role="tabpanel" aria-labelledby="person-tab">
-								<ul></ul>
+							<div class="tab-pane myBorder myBorder-notop" id="person" role="tabpanel" aria-labelledby="person-tab">
+								<ul class="minimal"></ul>
 							</div>
 							<div class="tab-pane myBorder myBorder-notop" id="character" role="tabpanel" aria-labelledby="character-tab">
-								<ul></ul>
+								<ul class="minimal"></ul>
 							</div>
 							<div class="tab-pane myBorder myBorder-notop" id="literaryWork" role="tabpanel" aria-labelledby="literaryWork-tab">
-								<ul></ul>
+								<ul class="minimal"></ul>
 							</div>
 						</div>
 					</div>
@@ -295,7 +293,7 @@
 				}
 			});
 			
-			 $('#showperson').click(function() {
+			$('#showperson').click(function() {
 				if (this.checked) 
 					$('.person').addClass('text-person')
 				else
@@ -369,9 +367,8 @@
 				elements[i].id = prefix + "-" + id++
 			}
 		}
-		
 		function filltabs(){
-		    fillInfo("#file", "#info")
+			fillInfo("#file", "#info")
 			filltab("#file .person","list-person","#person")
 			filltab("#file .character","list-character","#character")
 			filltab("#file .literaryWork","list-literaryWork","#literaryWork")
@@ -381,21 +378,23 @@
 			var item = `
 				<p class="list title"><b>Title: </b> $title</p>
 				<p class="list author"><b>Author: </b> $author</p>
+				<p class="list author"><b>Headings: </b><ul>$headings</ul></p>
 				` ;
 			$(where).empty(); 
 
 			var title = $(from + ' h1')[0].innerText
 			var author = $(from + ' .byline')[0].innerText
-			
+			var headingList = $(from + ' h2')
+			var headings = ""
+			for (var i=0; i<headingList.length; i++) {
+				headings += "<li class='small'>"+headingList[i].innerHTML+"</li>"
+			}
 			$(where).append(item.tpl( {
 				author: author,
 				title: title,
-				
+				headings: headings
 			}))
 		}
-		
-		
-		
 		
 		function filltab(what,style,where) {
 			var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
@@ -409,7 +408,7 @@
 				}) )
 			}
 		}
-		
+
 		function goto(id) {
 			var t = $(id)[0].offsetTop;
 			$('body').animate({ scrollTop: t }, 200);

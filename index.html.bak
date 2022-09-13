@@ -345,7 +345,6 @@
 				url: file,
 				success: function(d) {
 					$('#file').html(d)
-					$('#title').html($('#file h1'))
 					$('.show').prop("checked", false)
 					addIds()
 					filltabs()
@@ -382,7 +381,6 @@
 			var item = `
 				<p class="list title"><b>Title: </b> $title</p>
 				<p class="list author"><b>Author: </b> $author</p>
-				
 				` ;
 			$(where).empty(); 
 
