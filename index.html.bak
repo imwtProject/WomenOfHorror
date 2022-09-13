@@ -134,17 +134,7 @@
 		}
 		
 		
-		.animate {
-			animation-name: bgcolor ;
-			animation-duration: 0.75s ; 
-			animation-iteration-count: 3;
-			animation-fill-mode: backwards;
-		}
-
-		@keyframes bgcolor {
-			from { background-color: #ffffff;  }
-			to { background-color: #cccc00; }
-		}
+		
 		
 		
 				
