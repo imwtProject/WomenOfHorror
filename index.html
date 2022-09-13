@@ -108,7 +108,7 @@
 			background-color: #ffffdd;
 		}	
         
-		ul {
+		ul.minimal {
 			padding-inline-start: 0.5em; 
 		}
 		.list {
@@ -136,6 +136,18 @@
 			from { background-color: #ffffff;  }
 			to { background-color: #cccc00; }
 		}
+		
+		
+		.small {
+			font-size: 80%;
+			line-height: 1.2; 
+			margin: 0; 
+		}
+
+		.list::-webkit-scrollbar {
+			display: none; /* for Chrome, Safari, and Opera */	
+		}
+
 					
 	</style>
 	</head>
@@ -191,6 +203,8 @@
 					<div class="col-md-12">
 						<ul class="nav nav-tabs" id="sentenceTab" role="tablist">
 						  <li class="nav-item">
+						    <a class="nav-link active" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="view" aria-selected="true">Info</a>
+						  </li>
 							<a class="nav-link active" id="person-tab" data-toggle="tab" href="#person" role="tab" aria-controls="view" aria-selected="true">Person</a>
 						  </li>
 						  <li class="nav-item">
@@ -203,6 +217,8 @@
 
 						<!-- Tab panes -->
 						<div class="tab-content" id="sentenceContent">
+						    <div class="tab-pane active myBorder myBorder-notop" id="info" role="tabpanel" aria-labelledby="info-tab">
+							</div>
 							<div class="tab-pane active myBorder myBorder-notop" id="person" role="tabpanel" aria-labelledby="person-tab">
 								<ul></ul>
 							</div>
@@ -332,6 +348,7 @@
 					$('.show').prop("checked", false)
 					addIds()
 					filltabs()
+					$('#title').html($('#file h1'))
 				},
 				error: function() {
 					alert('Could not load file '+file)
@@ -354,9 +371,33 @@
 		}
 		
 		function filltabs(){
+		    fillInfo("#file", "#info")
 			filltab("#file .person","list-person","#person")
 			filltab("#file .character","list-character","#character")
 			filltab("#file .literaryWork","list-literaryWork","#literaryWork")
+		}
+		
+		
+		function fillInfo(from, where) {
+			var item = `
+				<p class="list title"><b>Title: </b> $title</p>
+				<p class="list author"><b>Author: </b> $author</p>
+				<p class="list author"><b>Headings: </b><ul>$headings</ul></p>
+				` ;
+			$(where).empty(); 
+
+			var title = $(from + ' h1')[0].innerText
+			var author = $(from + ' .byline')[0].innerText
+			var headingList = $(from + ' h2')
+			var headings = ""
+			for (var i=0; i<headingList.length; i++) {
+				headings += "<li class='small'>"+headingList[i].innerHTML+"</li>"
+			}
+			$(where).append(item.tpl( {
+				author: author,
+				title: title,
+				headings: headings
+			}))
 		}
 		
 		function filltab(what,style,where) {
