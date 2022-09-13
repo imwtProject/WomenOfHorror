@@ -277,26 +277,25 @@
         crossorigin="anonymous"></script>
     <!--  Texts upload  -->
     <script>
-        String.prototype.tpl = function (o) {
-            var r = this;
-            for (var i in o) {
-                r = r.replace(new RegExp("\\$" + i, 'g'), o[i])
-            }
-            return r
-        }
+       String.prototype.tpl = function(o) { 
+			var r = this ; 
+			for (var i in o) { 
+				r = r.replace(new RegExp("\\$"+i, 'g'),o[i])  
+			} 
+			return r 
+		}
+		
+		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
+		
+		$(document).ready(main);
 
-        
-
-        $(document).ready(main);
-
-        function main() {
+		function main() {
 			$.ajax({
 				method: 'GET',
 				url: 'https://imwtproject.github.io/howdowecallitmagazine/frank.json',
 				success: function(d) {
 					for (var i=0; i<d.length; i++) {
-						var li = `<li><a href='#' onclick='load("`+d[i].url+`")'>`+d[i].label+`</a></li>`
-						$('#list').append(li)
+						$('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
 					}	
 				},
 				error: function() {
@@ -362,7 +361,25 @@
 					alert('Could not load file '+file)
 				}
 			});
-		}		
+		}
+        
+		function filltabs(){
+			filltab("#file .person","list-person","#person")
+			filltab("#file .character","list-character","#character")
+			filltab("#file .literaryWork","list-literaryWork","#literaryWork")
+		}
+		
+		function filltab(what,style,where) {
+			var list = `<li class="list $style">$content</li>`
+			var elements = $(what); 
+			$(where+' ul').empty(); 
+			for (var i=0; i<elements.length; i++) {
+				$(where+' ul').append(list.tpl({
+					style:style, 
+					content: elements[i].innerHTML
+				}) )
+			}
+		}
 
      
 
