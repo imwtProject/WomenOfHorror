@@ -378,18 +378,21 @@
 			var item = `
 				<p class="list title"><b>Title: </b> $title</p>
 				<p class="list author"><b>Author: </b> $author</p>
-				
+				<p class="list author"><b>Headings: </b><ul>$headings</ul></p>
 				` ;
 			$(where).empty(); 
 
 			var title = $(from + ' h1')[0].innerText
 			var author = $(from + ' .byline')[0].innerText
-			
+			var headingList = $(from + ' h2')
+			var headings = ""
+			for (var i=0; i<headingList.length; i++) {
+				headings += "<li class='small'>"+headingList[i].innerHTML+"</li>"
 			}
 			$(where).append(item.tpl( {
 				author: author,
 				title: title,
-				
+				headings: headings
 			}))
 		}
 		
