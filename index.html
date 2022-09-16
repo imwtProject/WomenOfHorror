@@ -378,14 +378,17 @@
 			var item = `
 				<p class="list title"><b>Title: </b> $title</p>
 				<p class="list author"><b>Author: </b> $author</p>
-				<p class="list author"><b>Published in: </b> $date</p>
+				<p class="list author"><b>Publishing date: </b> $date</p>
+				<p class="list author"><b>Issue: </b> $issue</p>
 				<p class="list author"><b>Headings: </b><ul>$headings</ul></p>
+				
 				` ;
 			$(where).empty(); 
 
 			var title = $(from + ' h1')[0].innerText
 			var author = $(from + ' .byline')[0].innerText
 		    var date = $(from + ' .dateline')[0].innerText
+			var issue = $(from + ' .issued')[0].innerText
 			var headingList = $(from + ' h2')
 			var headings = ""
 			for (var i=0; i<headingList.length; i++) {
@@ -395,6 +398,7 @@
 				author: author,
 				title: title,
 				date: date,
+				issue: issue,
 				headings: headings
 			}))
 		}
