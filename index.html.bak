@@ -384,7 +384,7 @@
 
 			var title = $(from + ' h1')[0].innerText
 			var author = $(from + ' .byline')[0].innerText
-			var date = $(from + ' .publishedin')
+			var date = $(from + ' .publishedin')[0].innerText
 			
 			}
 			$(where).append(item.tpl( {
