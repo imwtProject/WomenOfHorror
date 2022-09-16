@@ -378,21 +378,19 @@
 			var item = `
 				<p class="list title"><b>Title: </b> $title</p>
 				<p class="list author"><b>Author: </b> $author</p>
-				<p class="list author"><b>Headings: </b><ul>$headings</ul></p>
+				<p class="list author"><b>Published in: </b><ul>$date</ul></p>
 				` ;
 			$(where).empty(); 
 
 			var title = $(from + ' h1')[0].innerText
 			var author = $(from + ' .byline')[0].innerText
-			var headingList = $(from + ' h2')
-			var headings = ""
-			for (var i=0; i<headingList.length; i++) {
-				headings += "<li class='small'>"+headingList[i].innerHTML+"</li>"
+			var date = $(from + ' .publishedin')[0].innerText
+			
 			}
 			$(where).append(item.tpl( {
 				author: author,
 				title: title,
-				headings: headings
+				date: date
 			}))
 		}
 		
