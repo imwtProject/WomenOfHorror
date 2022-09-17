@@ -4,9 +4,9 @@
 <html>
 <body>
 <h1>Female Gothic</h1>
-<p class="byline"><i>by Ellen Moers</i></p>
-<p class="dateline">Published in: 1979</p>
-<p class="issued">issued in:<i>Literary Women: The Great Writers</i></p>
+<p class="byline"><i> Ellen Moers</i></p>
+<p class="dateline">1979</p>
+<p class="issued"><i>Literary Women: The Great Writers</i></p>
 
 	
 		
@@ -161,7 +161,8 @@ of deliveries to his professional credit, and thus well equipped
 to write the remarkable account of a birth that opens <span class="literaryWork" about="The White Mule"><i>The
 White Mule</i></span>. For knowledge of the sort that makes half a
 dozen pages of obstetrical detail, they had the advantage over
-woman writers until relatively recent times.<a href="#1"><sup><font size="-1">1</font></sup></a></p> <!-- <span data-toggle="modal" data-target="#note1" class="note">[1]</span> -->
+woman writers until relatively recent times.<span data-toggle="modal" data-target="#note1"
+ class="note">[1]</span><br><!-- <span data-toggle="modal" data-target="#note1" class="note">[1]</span> -->
 
 
 <p><span class="person" about="Mary Shelley">Mary Shelley</span> was a unique case, in literature as in life.
@@ -498,9 +499,20 @@ quite like it was done in English literature until that Victorian novel by a wom
 
 <hr>
 
-<h3>Notes</h3>
 
-<p><h2><a name="1">1.</a> Two very popular women novelists (and Nobel
+<!--NOTES-->
+<!--Modal, note 1-->
+
+
+<div class="modal fade" id="note1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Note [1]</h4>
+                    </div>
+                    <div class="modal-body">
+
+                      <p> Two very popular women novelists (and Nobel
 laureates), Pearl Buck and Sigrid Undset, were probably
 responsible for establishing pregnancy, labor, and breast
 feeding as themes belonging to twentieth-century women's
@@ -524,7 +536,14 @@ young girl, she first came upon a gruesome birth scene in Zola.
 has her mother comment. "... The proof that all
 women forget it is that it's never anybody but men -- and what
 business was it of his, that Zola? -- who make stories about
-it."<h2></p>
+it."</p>
+ </div>
+                    <div class="modal-footer">
+                        <p class="text-end text-secondary"><i>Click outside the modal to close the window.</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
