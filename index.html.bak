@@ -171,7 +171,7 @@
 							<a class="nav-link active" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="view" aria-selected="true">Info</a>
 						  </li>
 						  <li class="nav-item">
-							<a class="nav-link active" id="person-tab" data-toggle="tab" href="#person" role="tab" aria-controls="view" aria-selected="true">Person</a>
+							<a class="nav-link " id="person-tab" data-toggle="tab" href="#person" role="tab" aria-controls="view" aria-selected="true">Person</a>
 						  </li>
 						  <li class="nav-item">
 							<a class="nav-link" id="character-tab" data-toggle="tab" href="#character" role="tab" aria-controls="home" aria-selected="false">Character</a>
