@@ -1,9 +1,9 @@
 <html>
 <body>
 <h1>Parent-Child Tensions in Frankenstein: The Search for Communion</h1>
-<h5>by <p class="byline">Laura P. Claridge</p></h5>
-<p class="dateline">Published in: Spring 1985</p>
-<p class="issued">issued in:<i>Studies in the Novel</i></p>
+<p class="byline">Laura P. Claridge</p></h5>
+<p class="dateline">Spring 1985</p>
+<p class="issued"><i>Studies in the Novel</i></p>
 
 
 
@@ -31,7 +31,7 @@ beginning must be linked to something that went before.<br>
 in support of the point, one need only turn to <span class="person" about="George Levine">George Levine</span> and
 <span class="person" about="U. C. Knoepflmacher">U. C. Knoepflmacher</span>'s excellent collection of essays, <span class="literaryWork" about="The
 Endurance of Frankenstein"><i>The Endurance of Frankenstein</i></span>, to find the matter well
-documented.<a href="#1"><sup><font size="-1">1</font></sup></a>
+documented.<span data-toggle="modal" data-target="#note1" class="note">[1]</span>
 That an author's life becomes translated into her fiction is
 hardly news on any account. But what has somehow eluded proper
 treatment is the resultant real subject of this "monster tale":
@@ -66,9 +66,9 @@ preface, <q class="refOther">my chief concern has been to exhibit the amiablenes
 of domestic affection and the excellence of universal virtues</q>
 to be a cover-up; but in ascribing to <span class="person" about="Mary Shelley">Mary Shelley</span> a need to
 deny the ugliness of a nightmarish vision they have missed her
-real subterfuge.<a href="#2"><sup><font size="-1">2</font></sup></a> She will indeed concern herself
+real subterfuge.<span data-toggle="modal" data-target="#note2" class="note">[2]</span> She will indeed concern herself
 with <span class="concept" about="parenthood"><q>domestic affection</q></span> -- but more precisely, the lack of it,
-and how such a lack <i>undermines</i> <q>universal virtue.</q><a href="#3"><sup><font size="-1">3</font></sup></a> In <span class="person" about="Mary Shelley">Shelley</span>'s
+and how such a lack <i>undermines</i> <q>universal virtue.</q><span data-toggle="modal" data-target="#note3" class="note">[3]</span> In <span class="person" about="Mary Shelley">Shelley</span>'s
 attention to <span class="concept" about="parenthood">parent-child relationships</span>, she implies a
 far-ranging application to society at large if we fail at this
 most primal unit of communication, what hope is there for
@@ -86,10 +86,10 @@ suspension of critical acuity in our reading <span class="character" about="Vict
 a close study of the text undercuts severely his insistence upon
 the perfect home. Critics have generally fallen for his
 defenses: <span class="person" about="Kate Ellis">Kate Ellis</span> basically accepts his myth of the happy
-home;<a href="#4"><sup><font size="-1">4</font></sup></a> <span class="person" about="Susan Gubar">Gubar</span>
-and <span class="person" about="Sandra M. Gilbert">Gilbert</span> call his childhood, in Miltonic terms, Edenic.<a href="#5"><sup><font size="-1">5</font></sup></a> Only
+home<span data-toggle="modal" data-target="#note4" class="note">[4]</span> <span class="person" about="Susan Gubar">Gubar</span>
+and <span class="person" about="Sandra M. Gilbert">Gilbert</span> call his childhood, in Miltonic terms, Edenic.<span data-toggle="modal" data-target="#note5" class="note">[5]</span> Only
 <span class="person" about="Christopher Small">Christopher Small</span> suggests that in <span class="character" about="Victor Frankenstein">Victor</span>'s description there is
-a <q class="refOther">strained emphasis on felicity.</q><a href="#6"><sup><font size="-1">6</font></sup></a></p><p>
+a <q class="refOther">strained emphasis on felicity.</q><span data-toggle="modal" data-target="#note6" class="note">[6]</span></p><p>
 
 <a name="par8"><!-- 8 --></a>
 
@@ -97,7 +97,7 @@ That <span class="character" about="Victor Frankenstein">Victor</span> insists u
 worlds" is the psychological defense of an only child (as he was
 for a long time) who maintains a <span class="concept" about="parenthood">love/hate relationship with his
 parents</span> because he senses that they share an affection that in
-some way excludes him.<a href="#7"><sup><font size="-1">7</font></sup></a> <span class="character" about="Victor Frankenstein">Victor</span> is an object of their love,
+some way excludes him<span data-toggle="modal" data-target="#note7" class="note">[7]</span> <span class="character" about="Victor Frankenstein">Victor</span> is an object of their love,
 not a participant in it; he is <q class="refFrankenstein">their plaything and their idol</q>
 (p. 33). In his
 recollections of his parents' relationship recollections more
@@ -184,7 +184,7 @@ unwilling to fulfill their duties to society at large: just as
 the hunter, that mythical image of a strong and protective
 father, reacts incorrectly and injures his charge's rescuer, so
 even the priestly fathers respond insensitively to their
-children's needs.<a href="#8"><sup><font size="-1">8</font></sup></a> <span class="character" about="Justine Moritz">Justine</span>'s callous mother follows
+children's needs.<span data-toggle="modal" data-target="#note8" class="note">[8]</span> <span class="character" about="Justine Moritz">Justine</span>'s callous mother follows
 her confessor's advice in removing her daughter from the
 surrogate family where she is happy (p. 66); and when <span class="character" about="Justine Moritz">Justine</span> is
 accused of murdering <span class="character" about="William Frankenstein">William</span>, her priest helps condemn this
@@ -203,7 +203,7 @@ loses his own visionary powers.</p><p>
 If, as <span class="person" about="Ellen Moers">Ellen Moers</span> has suggested, <q class="refOther">most of the novel -- two of
 the three volumes, can be said to deal with the retribution
 visited upon the monster and creator for deficient infant
-care,</q><a href="#9"><sup><font size="-1">9</font></sup></a> it is
+care,</q><span data-toggle="modal" data-target="#note9" class="note">[9]</span> it is
 also true that <span class="concept" about="parenthood">inadequate parental guidance </span> in later years
 leaves its mark on <span class="character" about="Victor Frankenstein">Victor Frankenstein</span>. The young scientist is
 thirteen, on the threshold of adolescence, when the struggle to
@@ -218,7 +218,7 @@ house, just when they reached the age of promise</q> (p. 7). She revised the sec
 version of her novel to emphasize <span class="character" about="Victor Frankenstein">Victor</span>'s lack of important
 formative stage; the first version allows the elder share his
 son's interest in science, whereas in the second, <span class="character" about="Victor Frankenstein">Victor</span> is left
-on his own.<a href="#10"><sup><font size="-1">10</font></sup></a> In fact, when the exuberant youth
+on his own.<span data-toggle="modal" data-target="#note10" class="note">[10]</span> In fact, when the exuberant youth
 tries to discuss his reading with his father, <span class="character" about="Alphonse
 Frankenstein">Alphonse
 Frankenstein</span> carelessly glances at the title page and exclaims,
@@ -244,14 +244,14 @@ academic pursuit is a rebellion against the<span class="concept" about="parentho
 between father and son </span> : <q class="refFrankenstein">The center of evil is parental
 irresponsibility and selfishness, and the ideal  of goodness
 is the father's bond to his son and the reciprocal bond of son
-to father.</q><a href="#11"><sup><font size="-1">11</font></sup></a> Before there can be an interplay
+to father.</q><span data-toggle="modal" data-target="#note11" class="note">[11]</span> Before there can be an interplay
 of love between father and child, the father has to fulfill his
 duties, a contract <span class="person" about="Mary Shelley">Mary Shelley</span> well knew from her mother's
 writings. She also understood the pain of being rejected when
 her activities earned her father's disapproval, such as his
 refusal to see her after her marriage to Shelley or his callous
 warning not to grieve in excess for her dead child, lest she
-lose the love of those close to her.<a href="#12"><sup><font size="-1">12</font></sup></a></p><p>
+lose the love of those close to her.<span data-toggle="modal" data-target="#note12" class="note">[12]</span></p><p>
 
 <a name="par14"><!-- 14 --></a>
 
@@ -296,7 +296,7 @@ was sure to provoke the most horror and dread in other mortals.
 <span class="person" about="Harold Bloom">Harold Bloom</span> typifies those readers who gloss over
 <span class="character" about="Victor Frankenstein">Frankenstein</span>'s foreknowledge of his <span class="character" about="the creature">creature</span>'s ugliness, when he
 asserts: <q class="refOther">the hideousness of his creature was no part of Victor
-Frankenstein's intention&nbsp;.&nbsp;.&nbsp;.</q><a href="#13"><sup><font size="-1">13</font></sup></a> Instead, we
+Frankenstein's intention&nbsp;.&nbsp;.&nbsp;.</q><span data-toggle="modal" data-target="#note13" class="note">[13]</span> Instead, we
 must read <span class="character" about="Victor Frankenstein">Victor</span>'s shock at his child's ugliness as mere
 repression of the truth, as he unwittingly admits: <q class="refFrankenstein">I had gazed
 on him while unfinished; <i>he was ugly
@@ -311,7 +311,7 @@ in size, to no one. He acts out his anger at his family in an
 attempt to affirm his own selfhood. Just as he threw the door
 open to find <q>a spectre,</q> so he exorcises the wolf under his
 bed, the parent as evil predator, by <span class="concept" about="monstruosity">creating his own nightmare</span>
-come true.<a href="#14"><sup><font size="-1">14</font></sup></a>
+come true.<span data-toggle="modal" data-target="#note14" class="note">[14]</span>
 He recognizes from his progeny's first murderous act that the
 <span class="character" about="the creature">monster</span>'s destruc-  tion is his own: <q class="refFrankenstein">I was the true
 murderer</q> (p. 89). By the end of the novel he has acknowledged
@@ -350,9 +350,10 @@ for his chance to disobey: <q class="refFrankenstein">the favorite dream of my e
 was this voyage </q>(p. 16).
 <span class="character" about="Robert Walton">Walton</span>'s very uneasy relationship with his sister has been too
 often overlooked; his letters to her are usually thinly veiled
-threats to her power, attempts to assert his own autonomy.<a href="#15"><sup><font size="-1">15</font></sup></a>Indeed, this
+threats to her power, attempts to assert his own autonomy.<span data-toggle="modal" data-target="#note15" class="note">[15]</span>Indeed, this
 <q>voyage of discovery</q> is, for him, a fight, in the Ericksonian
-schema,<a href="#16"><sup><font size="-1">16</font></sup></a>
+schema,<span data-toggle="modal" data-target="#note16"
+                                class="note">[16]</span>
 between dependence and autonomy, an effort on his part to
 determine his relationship to the rest of society. If he, in the
 end, falls short of the godlike aspirations that, he emphasizes,
@@ -432,7 +433,7 @@ views his creation as an object of his pleasure, until the
 
 It is also worth noting here that<span class="person" about="Mary Shelley">Mary Shelley</span> began her writing
 with Chapter 4, wherein we see the father rejecting the
-monster's outstretched hand.<a href="#17"><sup><font size="-1">17</font></sup></a> The <span class="character" about="the creature">monster</span> labors under no
+monster's outstretched hand.<span data-toggle="modal" data-target="#note17" class="note">[17]</span> The <span class="character" about="the creature">monster</span> labors under no
 delusion that he is loved: <q class="refFrankenstein">You, my own creator, detest and
 spurn me&nbsp;.&nbsp;.&nbsp;.</q>(p. 99). In response to the
 <span class="character" about="the creature">monster</span>'s pain, his father notices that <q class="refFrankenstein">his countenance bespoke
@@ -442,7 +443,8 @@ too horrible for human eyes </q>(p.
 will do mine towards you&nbsp;.&nbsp;.&nbsp;. </q>(p. 99) resonates with the sound
 of <span class="person" about="Mary Wollstonecraft">Mary Wollstonecraft</span>'s parental advice:<q class="refOther"> A right always
 includes a duty, and I think it may likewise fairly be inferred
-that they forfeit the right who do not fulfill the duty.</q><a href="#18"><sup><font size="-1">18</font></sup></a> Since
+that they forfeit the right who do not fulfill the duty.</q><span data-toggle="modal" data-target="#note18"
+                                class="note">[18]</span> Since
 <span class="character" about="Victor Frankenstein"> Frankenstein</span> does not act out his proper role, his <span class="character" about="the creature">creature</span>
 condemns him as <q class="refFrankenstein"> the author at once of my existence and its
 unspeakable torments </q> (p.
@@ -490,7 +492,8 @@ prevent this from happening to him. Are there benevolent powers
 in addition to his parents? Are his parents benevolent powers?
 How should he form himself, and why? Is there hope for him
 though he may have done wrong? Why has all this happened to
-him?<a href="#19"><sup><font size="-1">19</font></sup></a>
+him?<span data-toggle="modal" data-target="#note19"
+                                class="note">[19]</span>
 
 </blockquote>
 
@@ -501,7 +504,7 @@ Psychiatrist <span class="person" about="Selma Fraiberg">Selma Fraiberg</span>, 
 writes that the unnurtured, unloved child grows into the
 aberrant adult -- the criminal who seeks to negate his
 overwhelming sense of nothingness by inflicting pain on others
--- a scream that <q class="refFrankenstein">I exist, I am.</q><a href="#20"><sup><font size="-1">20</font></sup></a> It is not, then, the <span class="character" about="the creature">monster</span>'s
+-- a scream that <q class="refFrankenstein">I exist, I am.</q><span data-toggle="modal" data-target="#note20" class="note">[20]</span> It is not, then, the <span class="character" about="the creature">monster</span>'s
 nature that makes him so vengeful, as his creator deludes
 himself into thinking, but rather his overwhelming sense of
 isolation and despair at lacking human connections that in fact
@@ -525,7 +528,7 @@ refuses the responsibility, and so, as <span class="person" about="U. C. Knoepfl
 observes in a different context, <q class="refOther">The monster becomes father to
 the man and relentlessly imposes on its creator the same
 conditions of dependence and insecurity that it was made to
-suffer.</q><a href="#21"><sup><font size="-1">21</font></sup></a><p>
+suffer.</q><span data-toggle="modal" data-target="#note21" class="note">[21]</span><p>
 
 <a name="par24"><!-- 24 --></a>
 
@@ -560,7 +563,8 @@ it together; instinctual passions are stronger than reasonable
 interests. Civilization has to use its utmost efforts in order
 to set limits to man's aggressive instincts and to hold the
 manifestations of them in check by psychical
-reaction-formations.<a href="#22"><sup><font size="-1">22</font></sup></a><br>
+reaction-formations.<span data-toggle="modal" data-target="#note22"
+                                class="note">[22]</span><br>
 
 
 <center><span class="person" about="Sigmund Freud">Sigmund Freud</span>, <span class="literaryWork" about="Civilization and Its
@@ -613,7 +617,8 @@ am alone. </q>All humankind has sinned against him (p. 221). In the tradition of
 those who, regardless of their sins, know passion and thus know
 life, the <span class="character" about="the creature">monster</span> will exult in self-destruction by fire.
 <span class="character" about="Victor Frankenstein">Frankenstein</span> instead will die passively, <q class="refFrankenstein">a fit end for a being
-who has never achieved a full sense of another's existence.</q><a href="#23"><sup><font size="-1">23</font></sup></a></p><p>
+who has never achieved a full sense of another's existence.</q><span data-toggle="modal" data-target="#note23"
+                                class="note">[23]</span></p><p>
 
 <a name="par28"><!-- 28 --></a>
 
@@ -671,7 +676,7 @@ goal of communion with others. He forswears his self-pity at
 having been a neglected child, a parentless boy, and takes on
 fully the role of parent himself -- to the <span class="character" about="the creature">monster</span> (he listens),
 and to his men (he turns back). As <span class="person" about="J. M. Hill">J. M. Hill</span> remarks:<q class="refOther"> He
-chooses human connections.</q><a href="#24"><sup><font size="-1">24</font></sup></a> In <span class="character" about="Robert Walton">Walton</span>, <span class="person" about="Mary Shelley">Mary Shelley</span> has
+chooses human connections.</q><span data-toggle="modal" data-target="#note24" class="note">[24]</span> In <span class="character" about="Robert Walton">Walton</span>, <span class="person" about="Mary Shelley">Mary Shelley</span> has
 suggested the possibility of a successful, if subdued, modern
 Prometheus, stripped, through the expiations of <span class="character" about="Victor Frankenstein">Frankenstein</span> and
 his <span class="character" about="the creature">monster</span>, of Satanic aspirations. It is, perhaps, a
