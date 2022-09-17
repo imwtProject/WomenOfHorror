@@ -63,8 +63,17 @@ body {
 		}
 		
 		.tab-pane {
-			min-height: 150px;
-		}
+    font-size: 1.15em;
+    min-height: 150px;
+    width: 100%;
+    display: flex;
+}
+
+.tab-pane ul {
+    margin-top: 1em;
+    list-style: none;
+    font-style: italic;
+}
 		
 		
 		.text-person {
@@ -94,9 +103,7 @@ body {
 		
 
 		
-		ul.minimal {
-			padding-inline-start: 0.5em; 
-		}
+		
 		.list {
 			font-size: 80%;
 			line-height: 1.2; 
@@ -119,9 +126,15 @@ body {
 		}
 
 		@keyframes bgcolor {
-			from { background-color: #ffffff;  }
-			to { background-color: #cccc00; }
-		}
+    from {
+        background-color: #ffffff;
+    }
+
+    to {
+        background-color: #cccc00;
+    }
+}
+
 		
 		.small {
 			font-size: 80%;
