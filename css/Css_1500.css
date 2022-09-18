@@ -34,6 +34,10 @@ a.navbar-brand {
     top: 0.2rem;
 }
 
+/* ===== colore navbar ===== */
+.bg-dark {
+    background-color: #CF6F4C!important;
+}
 
 
 body {
