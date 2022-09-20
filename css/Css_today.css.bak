@@ -19,7 +19,7 @@
 body {
     font-family: 'Merriweather', serif;
 }
-/* ===== colore testo ===== */
+
 a:any-link {
     text-decoration: none;
     color: purple;
@@ -35,39 +35,8 @@ a.navbar-brand {
 	color: #097969;
 }
 
-/* ===== colore navbar ===== */
 .bg-dark {
-    background-color: #343a40!important;
-}
-
-/* ===== dropdown ===== */
-.nav-link {
-    display: block;
-    padding: 0.5rem 1rem;
-}
-.dropdown-toggle {
-    white-space: nowrap;
-	color: #00763d;
-    text-decoration: none;
-    background-color: transparent;
-}
-a {
-  color: #00763d;
-  text-decoration: none;
-  background-color: transparent; // Remove the gray background on active links in IE 10.
-
-  @include hover() {
-    color: #00763d;
-    text-decoration: none;
-  }
-}
-
-a {
-  padding: 5px;
-  background: #343a40;
-}
-a:visited {
-  background: #343a40;
+    background-color: #CF6F4C!important;
 }
 
 
