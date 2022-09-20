@@ -14,7 +14,7 @@ $(document).ready(function () {
   var start_style = sessionStorage.getItem('href');
   // I check if the start_style has a certain value and I change the href accordingly 
   switch (start_style) {
-    case 'css/aldinecss.css':
+    case 'css/Css_1500.css':
       document.getElementById('currentlocalcss').setAttribute('href', 'css/Css_1500.css');
       break;
     
