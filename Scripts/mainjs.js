@@ -1,4 +1,4 @@
-// To change historical theme (click on the buttons of the second navbar -> change css)
+// To change historical theme 
 function swapTheme(csspath) {
   document.getElementById('currentlocalcss').setAttribute('href', csspath);
   // When changing the css (= the historical theme) I also set a key-value in sessionStorage
@@ -118,6 +118,12 @@ $(document).ready(function () {
 				error: function() {
 					alert('Could not load file '+file)
 				}
+				//prova
+				closeOccurrences();
+                if ($(window).width() < 768) {
+                 closeNav()
+                 }
+				 //fine prova
 			});
 		}
 		
@@ -192,3 +198,92 @@ $(document).ready(function () {
 			},5000);
 		}
 		
+
+
+//prova tendina metadati
+
+function openNav() { //Elisa
+    closeOccurrences();
+    $('.offcanvas').css('transform', 'translateX( 0 )');
+    }
+
+function closeNav() {
+    $('.offcanvas').css('transform', 'translateX( -320px )');
+
+}
+
+
+$(document).ready(expandCollapse); //Cristian
+$(document).ready(main);
+$(window).resize(expandCollapse);
+
+function closeOccurrences() { // Marco
+    document.getElementById('occurrences').style.display = 'none';
+}
+
+function fillIndex(input_obj, where) {
+    var listItem = `<li class="list $style"><a href="javascript:void(0)" onclick="fillOccurrenceTab('$what', 'occurrence', '#occurrences')">$content</a> ($num)</li>`;
+    var k = 0;
+    $(where).empty();
+    for (key in input_obj) {
+        if (input_obj.hasOwnProperty(key)) {
+            var elements = $(key);
+            var style = input_obj[key];
+            if ($(key).length) {
+                k++;
+                $(where).append('<h5>' + style[0].toUpperCase() + style.slice(1) + 's</h5><ul></ul>');
+                var namedict = {};
+                for (var i = 0; i < elements.length; i++) {
+                    var currName = elements[i].innerText;
+                    var className = currName.split(' ').join('-').replace(/[\.\'\"\!\?\*\d]/g, '');
+                    elements[i].classList.add(className);
+                    if (!(currName in namedict)) {
+                        namedict[currName] = 0;
+                    }
+
+                    namedict[currName]++;
+                }
+                var arrOfArrays = Object.entries(namedict).sort((a, b) => parseInt(b[1]) - parseInt(a[1]));
+                for (const [key, value] of arrOfArrays) {
+                    var className = key.split(' ').join('-').replace(/[\.\'\"\!\?\*\d]/g, '');
+                    $(where + " ul").last().append(listItem.tpl({
+                        content: String(key),
+                        num: String(value),
+                        what: '#file .' + className,
+                        style: style,
+                    }));
+                }
+            }
+        }
+    }
+    if (k == 0) {
+        $(where + '-tab').remove();
+        $(where).remove();
+    }
+}
+
+
+
+function fillOccurrenceTab(what, style, where) {
+    var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`;
+    $(where + ' h5').empty();
+    $(where + ' ul').empty();
+    var elements = $(what);
+    $(where + ' h5').append(elements[0].innerText);
+    for (var i = 0; i < elements.length; i++) {
+        $(where + ' ul').append(list.tpl({
+            style: style,
+            place: '#' + elements[i].id,
+            content: elements[i].innerText
+        }));
+    }
+    $('#wikiLink').empty();
+    var wikiName = elements[0].innerText.split(' ').join('_').replace(/[\.\'\"\!\?\*\,\\\/]/g, '');
+    $('#wikiLink').attr('href', 'https://en.wikipedia.org/wiki/' + wikiName);
+    $('#wikiLink').html('Search ' + elements[0].innerText + ' on Wikipedia');
+    if ( $(window).width() < 768 ) {
+        closeNav()
+    }
+    $(where).fadeIn(200);
+
+}
