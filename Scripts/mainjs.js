@@ -58,7 +58,13 @@ $(document).ready(function () {
 				error: function() {
 					alert('No document to show')
 				}
+				$("div.FemaleGothic").load("resources.html .competencies #" + this.id + " .FemaleGothic");
 			});
+			
+			
+			
+			
+			
 //robe metadati			
 			$('#showperson').click(function() {
 				if (this.checked) 
