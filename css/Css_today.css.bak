@@ -336,43 +336,26 @@ a[href*="#home"]::before {
 a[href*="#about"]::before {
   content: "\f129" !important;
 }
-a[href*="#events"]::before {
+a[href*="#documentation"]::before {
   content: "\f073" !important;
 }
-a[href*="#events"]::before {
+a[href*="#documentation"]::before {
   content: "\f073" !important;
 }
-a[href*="#team"]::before {
-  content: "\f0c0" !important;
-}
-a[href*="#works"]::before {
+
+a[href*="#issues"]::before {
   content: "\f0b1" !important;
 }
-a[href*="#pictures"]::before {
+a[href*="#issue1"]::before {
   content: "\f03e" !important;
 }
-a[href*="#videos"]::before {
+a[href*="#issue2"]::before {
   content: "\f03d" !important;
 }
-a[href*="#books"]::before {
+a[href*="#issue3"]::before {
   content: "\f02d" !important;
 }
-a[href*="#art"]::before {
-  content: "\f1fc" !important;
-}
-a[href*="#awards"]::before {
-  content: "\f02e" !important;
-}
-a[href*="#services"]::before {
-  content: "\f013" !important;
-}
-a[href*="#contact"]::before {
-  content: "\f086" !important;
-}
-a[href*="#followme"]::before {
-  content: "\f099" !important;
-  color: #0084b4;
-}
+
 /*-------------------------------*/
 /*       Hamburger-Cross         */
 /*-------------------------------*/
