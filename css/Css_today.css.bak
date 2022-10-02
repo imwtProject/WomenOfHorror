@@ -35,9 +35,8 @@ a.navbar-brand {
 	color: #097969;
 }
 
-/* ===== colore navbar ===== */
 .bg-dark {
-    background-color: #343a40!important;
+    background-color: #CF6F4C!important;
 }
 
 
