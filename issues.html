@@ -1,26 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>imwt project</title>
-  <!--link to load bootstrap css-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <!-- only team section -->
- <!-- Google icon -->
- <!-- Local stylesheet and javascript --> 
- <!--<style>
- 		.carousel-inner{
-  			width:100%;
-  			max-height: 500px !important;
-            }
- </style>-->
-</head>
-<body>
-	<header>
-	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>ElectrifiedLiterature</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	</head>
+
+	<body>
+    <header>
+	  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container">
-      	<div id="right">
+	  <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+	  <div id="mySidebar" class="sidebar">
+	    
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Documentation</a>
+  <a class="opener">Issues</span>
+                            <ul>
+                                <li><a href="#">Number one</a></li>
+                                <li><a href="#">Number two</a></li>
+								<li><a href="#">Number three</a></li>
+                            </ul></a>
+</div>
+	  <div id="right">
         	<img src="./assets/thunder.png" width="30" height="30" alt="lightning">
           	<a class="navbar-brand" href="BootLayoutDraft.html">Homepage</a>
         </div>
@@ -45,65 +53,138 @@
               Styles
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">1500</a>
-              <a class="dropdown-item" href="#">Gothic</a>
+              <a class="dropdown-item" onclick="swapTheme('css/Css_1500.css')">1500</a>
+              <a class="dropdown-item" onclick="swapTheme('css/Css_today.css')">Today</a>
               <a class="dropdown-item" href="#">Another theme</a>
             </div>
           </span>
         </div>
-       </div>
-       </nav>
+	   
+  </nav>
       </header>
-       
-       <div class="textsection" id="introduction">
+
+<div id="main">
+    <div class="textsection" id="introduction">
        		<center>
             	<h1>Presentation</h1>
        			<p>Some Introduction text</p>
             </center>
        </div>
-       <div id="carousel">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="row">
-                <div class="carousel-inner">                	
-                  		<div class="carousel-item active">                  
-                    		<img class="d-block w-100" src="./assets/Frankenstein.jpg" alt="First slide">
-                  		</div>
-                 		<div class="carousel-item">
-                    		<img class="d-block w-100" src="./assets/Kindred.png" alt="Second slide">
-                  		</div>
-                 		<div class="carousel-item">
-                    		<img class="d-block w-100" src="./assets/Primeval.jpg" alt="Third slide">
-                 		</div>
-                </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-          </div>
+      
+            
           <div class="textsection" id="issuePresentation">
               <center>
                   <h1>About this Issue</h1>
                   <p>Some text</p>
               </center>
            </div>
-          
 
-  <p>&nbsp;</p>
-<!--link to load the js plugins and other-->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  	<div class="container-fluid">
 
-</body>
+		<!-- Main component for a primary marketing message or call to action -->
+		<div class="row clearfix">
+			<div class="col-md-3">
+				<div class="row clearfix border p-2">
+					<div class="col-md-12">
+						<h3>Documents</h3>
+						<ul id="list">
+						</ul>
+					</div>
+				</div>
+				<div class="row clearfix mt-4">
+				    <h5>Highlight in the text:</h5>
+					<div class="col-md-12">
+						<form role="form">
+							           <div class="checkbox"><label>
+								        <input type="checkbox" id="showperson" class="show">Show person</label></div>
+							           <div class="checkbox"><label>
+							        	<input type="checkbox" id="showcharacter" class="show">Show character</label></div>
+							           <div class="checkbox"><label>
+								       <input type="checkbox" id="showliteraryWork" class="show">Show literary work</label></div>
+							            <div class="checkbox"><label>
+								         <input type="checkbox" id="showconcept" class="show">Show concept</label></div>
+							           <div class="checkbox"><label>
+								         <input type="checkbox" id="showrefOther" class="show">Show external references</label></div>
+							            <div class="checkbox"><label>
+								         <input type="checkbox" id="showrefFrankenstein" class="show">Show Frankenstein references</label></div>
+                          </form>
+					</div>
+				</div>
+				<div class="row clearfix mt-4">
+					<div class="col-md-12">
+						<p><b>List down:</b></p>
+                                    <!-- Nav selectors -->
+                                    <ul class="nav nav-pills nav-justified" id="sentenceTab" role="tablist">
+                                        <li class="nav-item">
+							<a class="nav-link active" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="view" aria-selected="true">Info</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link " id="person-tab" data-toggle="tab" href="#person" role="tab" aria-controls="view" aria-selected="true">Person</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" id="character-tab" data-toggle="tab" href="#character" role="tab" aria-controls="home" aria-selected="false">Character</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" id="literaryWork-tab" data-toggle="tab" href="#literaryWork" role="tab" aria-controls="home" aria-selected="false">Book</a>
+						  </li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content" id="sentenceContent">
+							<div class="tab-pane active myBorder myBorder-notop" id="info" role="tabpanel" aria-labelledby="info-tab">
+							</div>
+							<div class="tab-pane myBorder myBorder-notop" id="person" role="tabpanel" aria-labelledby="person-tab">
+								<ul class="minimal"></ul>
+							</div>
+							<div class="tab-pane myBorder myBorder-notop" id="character" role="tabpanel" aria-labelledby="character-tab">
+								<ul class="minimal"></ul>
+							</div>
+							<div class="tab-pane myBorder myBorder-notop" id="literaryWork" role="tabpanel" aria-labelledby="literaryWork-tab">
+								<ul class="minimal"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+			<div class="col-md-9">
+				<div class="jumbotron" id="title"><h1>Sentences</h1> </div>
+				<div id="file"></div>
+			</div>
+		</div>
+     </div>		
+	</div> <!-- /container -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="aboutLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutLabel">About Sentences</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<p>Used for the purpose of the course in Web Technologies for DHDK students at the University of Bologna</p>
+		<p>© 2022 Fabio Vitali. All right reserved.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	
+	<!-- Local stylesheet and javascript -->
+	<link rel="stylesheet" href="css/Css_today.css" id="currentlocalcss">
+	<script src="Scripts/mainjs.js"></script>
+	</body>
 </html>
