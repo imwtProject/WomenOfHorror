@@ -75,9 +75,9 @@ a:any-link {
 /* to fix the right padding of the webpage */
 
 /* this was for opening from the right option */
-/* .pr-3, .px-3 {
+.pr-3, .px-3 {
     padding-right: 0rem!important;
-} */
+} 
 
 /* The sidebar links */
 .sidebar a {
