@@ -29,7 +29,7 @@ a:any-link {
 
 .parallax {
     /* The image used */
-    background-image: url("assets/Frankenstein.jpg");
+    background-image: url("Frankenstein.jpg");
 
     /* Set a specific height */
     min-height: 300px;
@@ -44,7 +44,7 @@ a:any-link {
 
 .parallax2 {
     /* The image used */
-    background-image: url("assets/Frankenstein.jpg");
+    background-image: url("Frankenstein.jpg");
 
     /* Set a specific height */
     min-height: 100px;
