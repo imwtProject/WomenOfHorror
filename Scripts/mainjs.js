@@ -25,7 +25,7 @@ $(document).ready(function () {
 //sidebar
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 function openNav() {
-  document.getElementById("mySidebar").style.width = "25%px";
+  document.getElementById("mySidebar").style.width = "25%";
   document.getElementById("main").style.marginLeft = "250px";
 }
 
@@ -41,7 +41,7 @@ function closeNav() {
 
 
 
-//prende gli articloi da un js senza ricaricare la pagina
+//prende gli articoli da un js senza ricaricare la pagina
 		String.prototype.tpl = function(o) { 
 			var r = this ; 
 			for (var i in o) { 
