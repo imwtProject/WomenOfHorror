@@ -147,10 +147,8 @@ a.navbar-brand {
 
 
 
-body {
-			padding-top: 70px;
-		}
-
+body {}
+			
         /* == Buttons entities == */
         .nav-pills .nav-link.active,
         .nav-pills .show>.nav-link {
