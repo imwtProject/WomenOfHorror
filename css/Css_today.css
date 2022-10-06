@@ -27,7 +27,38 @@ a:any-link {
     cursor: pointer;
 }
 
-/* ===== SIDEBAR ===== */
+.parallax {
+    /* The image used */
+    background-image: url("./assets/Frankenstein.jpg");
+
+    /* Set a specific height */
+    min-height: 300px;
+    max-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("./assets/Frankenstein.jpg");
+
+    /* Set a specific height */
+    min-height: 100px;
+    max-height: 100px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+ /* ===== SIDEBAR ===== */
 .sidebar {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -35,18 +66,25 @@ a:any-link {
   z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
-  background-color: #343a40; /* Black*/
+  background-color: #343a40; /* bootstrap default dark */
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 68px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
 
+/* to fix the right padding of the webpage */
+
+/* this was for opening from the right option */
+/* .pr-3, .px-3 {
+    padding-right: 0rem!important;
+} */
+
 /* The sidebar links */
 .sidebar a {
-  padding: 8px 8px 5px 32px;
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 1.25rem;
-  color: #fff;
+  font-size: 1.45rem;
+  color: #818181;
   display: block;
   transition: 0.3s;
 }
@@ -60,9 +98,9 @@ a:any-link {
 .sidebar .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  left: 25px;
   font-size: 36px;
-  margin-left: 50px;
+  margin-right: 50px;
 }
 
 /* The button used to open the sidebar */
@@ -78,6 +116,8 @@ a:any-link {
 .openbtn:hover {
   background-color: #444;
 }
+
+
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
