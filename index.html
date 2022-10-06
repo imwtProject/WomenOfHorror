@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>imwt project</title>
+  <!--link to load bootstrap css-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- only team section -->
+ <!-- Google icon -->
+ <!-- Local stylesheet and javascript --> 
+ <style>
+ 
+ #firstNav, #secondNav {
+    			border-bottom: 2px solid black;
+                   }
+                   
+/* ===== PARALLAX ===== */
+
+.parallax {
+    /* The image used */
+    background-image: url("./img/Frankenstein.jpg");
+
+    /* Set a specific height */
+    min-height: 300px;
+    max-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("./img/Frankenstein.jpg");
+
+    /* Set a specific height */
+    min-height: 100px;
+    max-height: 100px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+ /* ===== SIDEBAR ===== */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #343a40; /* bootstrap default dark */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 68px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* to fix the right padding of the webpage */
+
+.pr-3, .px-3 {
+    padding-right: 0rem!important;
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.45rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #343a40;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+</style>
+    
+<script>
+	//sidebar
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+} 
+
+
+/* to swap theme and save theme */
+
+function swapTheme(csspath) {
+  document.getElementById('currentlocalcss').setAttribute('href', csspath);
+  // When changing the css (= the historical theme) I also set a key-value in sessionStorage
+  sessionStorage.setItem('href', csspath);
+  }
+  
+  
+  // To save historical theme while browsing on the website
+  // 1. When I change the html (e.g. <a class="..." href="medea.html)></a>") I need to see what is the css I am starting from and KEEP IT
+  $(document).ready(function () {
+    // 2. I save this starting css in a variable
+    var start_style = sessionStorage.getItem('href');
+    // I check if the start_style has a certain value and I change the href accordingly 
+    switch (start_style) {
+      case 'css/aldinecss.css':
+        document.getElementById('currentlocalcss').setAttribute('href', 'css/Css_1500.css');
+        break;
+      
+    }
+  })
+
+
+</script>
+
+</head>
+  <body>
+    <div id="firstNav" class="d-flex justify-content-between px-5 py-2 bg-dark">
+    	<div> 
+        
+        	<button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+            <div id="mySidebar" class="sidebar pr-3">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="#" align="center">About</a>
+              <a href="#" align="center">Documentation</a>
+              <a class="opener" align="center">Issues</a>
+                  <ul text-align="center" style="list-style: none">           
+                    <li><a href="#">Electric Monster</a></li>
+                    <li><a href="#">Bloodsucking Freaks</a></li>
+                    <li><a href="#">Horny Cannibals</a></li>
+                    <li><a href="#">Gothic lagoon party</a></li>
+                  </ul>
+            </div>
+            
+        </div> 
+        
+    	<div><a class="navbar-brand mx-0" href="index.html">Women of Horror</a></div>
+        <div><img class="mt-2" src="./img/thunder.png" width="30" height="30" alt="lightning"></div>
+    </div>
+    <!--   <div>      
+             
+         <div class="pos-f-t">
+            	<nav class="navbar navbar-dark bg-dark">
+                	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  		<span class="navbar-toggler-icon"></span>
+                	</button>
+              	
+                <div class="navbar-collapse collapse" id="navbarToggleExternalContent">
+                  <div class="bg-dark p-4">
+                    <h4 class="text-white">Collapsed content</h4>
+                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                    <p>boh <br> I try to write more to see <br> if this is actually <br> visible <br> or it's <br> hidden</p>
+                  </div>
+                </div>
+               </nav>           
+            </div> -->
+        	
+        <!--    <button type="button" class="navbar-toggler collapsed" data-target="#NavbarCollapse">            	
+              <span class="navbar-toggler-icon">&#9776;</span>
+            </button> 
+        
+        </div>  -->
+        
+        <!--the toggle content-->
+         <!--  <div class="navbar-collapse collapse" id="NavbarCollapse">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Documentation</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink">Issues</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../tech/">Electric Monster</a>
+                        <a class="dropdown-item" href="../climate/">Bloodsucking Freaks</a>
+                        <a class="dropdown-item" href="../space/">Horny Cannibals</a>
+                        <a class="dropdown-item" href="../health/">Gothic lagoon party</a>
+                    </div>  
+                </li>
+              </ul>
+            </div>--> <!-- closes collapse dropdown-->
+         
+           	
+        <div id="secondNav" class="d-flex justify-content-between px-5 py-3">
+            <div onclick="swapTheme('css/Css_1500.css')">1500-1800</div>
+            <div onclick="swapTheme('css/Css_today.css')">XIX century</div>
+            <div>first half of XX</div>
+            <div>second half of XX</div>
+            <div>late XX-start of XXI (print)</div>
+            <div>2030</div>
+    	</div>
+    
+    <!-- parallax bgd -->
+    <div class="parallax"></div>
+    <!-- home body -->
+    
+ <div class="container-fluid">
+  <center><h2 class="fw-light mt-2" id="issues">Lates Issues</h2></center>
+  <hr>
+  	<div class="row px-5">    
+    	<div class="col-lg-4 col-md-12 p-3">
+        	<div class="card">
+            	<img class="card-img-top" src="./img/card1.jpg"/>
+                <div class="card-body">
+                    <h5 class="card-title">Issue 1</h5>
+                    <p class="card-text">Abstract of the article: this will be an introduction to the thematic of the article rn I am just making it long to see how it looks like once added with the spaces ecc</p>
+                </div>
+             </div>
+        </div>             
+        <div class="col-lg-4 col-md-12 p-3">
+        	<div class="card">
+            	<img class="card-img-top" src="./img/card3.jpg"/>
+                <div class="card-body">
+                    <h5 class="card-title">Issue 2</h5>
+                    <p class="card-text">Abstract of the article: this will be an introduction to the thematic of the article rn I am just making it long to see how it looks like once added with the spaces ecc</p>
+                </div>
+             </div>
+        </div>
+        <div class="col-lg-4 col-md-12 p-3">
+        	<div class="card">
+            	<img class="card-img-top" src="./img/card2.jpg"/>
+                <div class="card-body">
+                    <h5 class="card-title">Issue 3</h5>
+                    <p class="card-text">Abstract of the article: this will be an introduction to the thematic of the article rn I am just making it long to see how it looks like once added with the spaces ecc</p>
+                </div>
+             </div>
+        </div>      
+    </div>
+ </div>
+ 
+
+ <div class="parallax2"></div>
+ 
+ <div class="container-fluid">
+    <center><h2 class="fw-light mt-2" id="issues">Readers' favourites</h2></center>
+    <hr>
+    <div class="row px-5">
+    	<div class="col-lg-4 col-md-12 p-3">
+        	<div class="card">
+            	<img class="card-img-top" src="./img/cardA.jpg"/>
+                <div class="card-body">
+                    <h5 class="card-title">Issue 1</h5>
+                    <p class="card-text">Abstract of the article: this will be an introduction to the thematic of the article rn I am just making it long to see how it looks like once added with the spaces ecc</p>
+                </div>
+             </div>
+        </div>             
+        <div class="col-lg-4 col-md-12 p-3">        
+        	<div class="card">
+            	<img class="card-img-top" src="./img/cardB.jpg"/>
+                <div class="card-body">
+                    <h5 class="card-title">Issue 2</h5>
+                    <p class="card-text">Abstract of the article: this will be an introduction to the thematic of the article rn I am just making it long to see how it looks like once added with the spaces ecc</p>
+                </div>
+             </div>
+        </div>
+        <div class="col-lg-4 col-md-12 p-3">
+        	<div class="card">
+            	<img class="card-img-top" src="./img/cardC.jpg"/>
+                <div class="card-body">
+                    <h5 class="card-title">Issue 3</h5>
+                    <p class="card-text">Abstract of the article: this will be an introduction to the thematic of the article rn I am just making it long to see how it looks like once added with the spaces ecc</p>
+                </div>
+             </div>
+        </div>      
+    </div>    
+  </div>
+    
+  </body>
+</html>
