@@ -51,63 +51,6 @@
     
 }
 
- /* ===== SIDEBAR ===== */
-.sidebar {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: #343a40; /* bootstrap default dark */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 68px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-}
-
-/* to fix the right padding of the webpage */
-
-.pr-3, .px-3 {
-    padding-right: 0rem!important;
-}
-
-/* The sidebar links */
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 1.45rem;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
-  color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  left: 25px;
-  font-size: 36px;
-  margin-right: 50px;
-}
-
-/* The button used to open the sidebar */
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #343a40;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-}
-
-.openbtn:hover {
-  background-color: #444;
-}
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
@@ -116,47 +59,6 @@
 }
 </style>
     
-<script>
-	//sidebar
-/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-function openNav() {
-  document.getElementById("mySidebar").style.width = "25%";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-} 
-
-
-/* to swap theme and save theme */
-
-function swapTheme(csspath) {
-  document.getElementById('currentlocalcss').setAttribute('href', csspath);
-  // When changing the css (= the historical theme) I also set a key-value in sessionStorage
-  sessionStorage.setItem('href', csspath);
-  }
-  
-  
-  // To save historical theme while browsing on the website
-  // 1. When I change the html (e.g. <a class="..." href="medea.html)></a>") I need to see what is the css I am starting from and KEEP IT
-  $(document).ready(function () {
-    // 2. I save this starting css in a variable
-    var start_style = sessionStorage.getItem('href');
-    // I check if the start_style has a certain value and I change the href accordingly 
-    switch (start_style) {
-      case 'css/aldinecss.css':
-        document.getElementById('currentlocalcss').setAttribute('href', 'css/Css_1500.css');
-        break;
-      
-    }
-  })
-
-
-</script>
-
 </head>
   <body>
     <div id="firstNav" class="d-flex justify-content-between px-5 py-2 bg-dark">
