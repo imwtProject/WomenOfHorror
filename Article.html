@@ -1,0 +1,237 @@
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>ElectrifiedLiterature</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	</head>
+	<body>
+		<header>
+		<div class="navbar navbar-expand-md bg-light navbar-light text-black fixed-top"> 
+		   <div class="container">
+			  <a href="#" class="navbar-brand"><img src="./assets/thunder.png" width="30" height="30" alt="lightning">logo</a>
+			
+			   <button
+			   class="navbar-toggler"
+			   type="button" 
+			   data-toggle="collapse" data-target="#mainmenu">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			  <div class="collapse navbar-collapse" id="mainmenu">
+				  <ul class="navbar-nav ml-auto">
+					  <li class="nav-item"><a href="#" class="nav-link">Issues</a></li>
+					  <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+					  <li class="nav-item"><a href="#" class="nav-link">Documentation</a></li>
+					  <span class="nav-item dropdown row-reverse">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  Styles
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <a class="dropdown-item" onclick="swapTheme('css/Css_1500.css')">1500</a>
+						  <a class="dropdown-item" onclick="swapTheme('css/Css_today.css')">Today</a>
+						  <a class="dropdown-item" href="#">Another theme</a>
+						</div>
+					  </span>
+				  </ul>
+				</div>
+	
+	
+			</div>
+	
+          
+        </div>
+	   
+  </nav>
+      </header>
+
+
+<!--  Hero  -->
+
+
+</header>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+	<div class="carousel-inner">
+	  <div class="carousel-item carousel-one active ">
+		<img src="/assets/test.jpeg" height="500" class="d-block w-100" alt="..."> 
+		 
+	  </div>
+	
+	</div>
+  </div>
+<section id="hero" class="bg-white text-black text-center text-sm-start py-5">
+	<div class="container">
+		<div class="d-flex"> 
+			<div class="p-2">
+				<h1 class="display-5"><span class="text-">More info</span> </h1>
+				<p2 class="py-1 lead">Each item is checked before dispatch. Le package comprend deux articles pour le prix d'un. The package includes two items for the price of one.</p>
+				<div class="container"> 
+			</div>
+
+			
+		</div>
+	</div>
+		</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!--  main article + side articles  -->
+<div class="container">
+	<div class="row text-center">
+	  <div class="col-sm-3">
+	
+	  </div>
+	  <div class="col-sm-6">
+	
+	  </div>
+	  
+		
+	  <div class="col-sm-3 text-center"></div>
+	</div>
+  </div>
+<section class="py-2">
+	<div class="container">
+		<div class="row clearfix ms-5 text-center">
+			<div class="col-md-3">
+				<div class="row clearfix border p-2 ">
+					<div class="col-md-6">
+						<h3>Documents</h3>
+						<ul id="list">
+						</ul>
+					</div>
+				</div>
+				
+
+
+				
+				<div class="row clearfix mt-4 text-center">
+				    <h5>Highlight in the text:</h5>
+					<div class="col-md-9">
+						<form role="form">
+							           <div class="checkbox"><label>
+								        <input type="checkbox" id="showperson" class="show">Show person</label></div>
+							           <div class="checkbox"><label>
+							        	<input type="checkbox" id="showcharacter" class="show">Show character</label></div>
+							           <div class="checkbox"><label>
+								       <input type="checkbox" id="showliteraryWork" class="show">Show literary work</label></div>
+							            <div class="checkbox"><label>
+								         <input type="checkbox" id="showconcept" class="show">Show concept</label></div>
+							           <div class="checkbox"><label>
+								         <input type="checkbox" id="showrefOther" class="show">Show external references</label></div>
+							            <div class="checkbox"><label>
+								         <input type="checkbox" id="showrefFrankenstein" class="show">Show Frankenstein references</label></div>
+                          </form>
+					</div>
+					
+				</div>
+				<div class="row clearfix mt-4">
+					<div class="col-md-9">
+						<p><b>List down:</b></p>
+                                    <!-- Nav selectors -->
+                                    <ul class="nav nav-pills nav-justified" id="sentenceTab" role="tablist">
+                                        <li class="nav-item">
+							<a class="nav-link active" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="view" aria-selected="true">Info</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link " id="person-tab" data-toggle="tab" href="#person" role="tab" aria-controls="view" aria-selected="true">Person</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" id="character-tab" data-toggle="tab" href="#character" role="tab" aria-controls="home" aria-selected="false">Character</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" id="literaryWork-tab" data-toggle="tab" href="#literaryWork" role="tab" aria-controls="home" aria-selected="false">Book</a>
+						  </li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content" id="sentenceContent">
+							<div class="tab-pane active myBorder myBorder-notop" id="info" role="tabpanel" aria-labelledby="info-tab">
+							</div>
+							<div class="tab-pane myBorder myBorder-notop" id="person" role="tabpanel" aria-labelledby="person-tab">
+								<ul class="minimal"></ul>
+							</div>
+							<div class="tab-pane myBorder myBorder-notop" id="character" role="tabpanel" aria-labelledby="character-tab">
+								<ul class="minimal"></ul>
+							</div>
+							<div class="tab-pane myBorder myBorder-notop" id="literaryWork" role="tabpanel" aria-labelledby="literaryWork-tab">
+								<ul class="minimal"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+			<div class="col-md-6">
+				<div class="jumbotron" id="title"><h1>Sentences</h1> </div>
+				<div id="file"></div>
+			</div>
+
+            <div class="col-sm-3 text-center">
+                <div class="card bg-dark text-white">
+                    <img src="assets/Kindred.png" alt="" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, praesentium!</p>
+                    <a href="" class="btn btn-info">Read</a>
+                    </div>
+        
+        
+                </div>
+            </div>
+		</div>
+     </div>	
+	 
+	</div> <!-- /container -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="aboutLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutLabel">About Sentences</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<p>Used for the purpose of the course in Web Technologies for DHDK students at the University of Bologna</p>
+		<p>© 2022 Fabio Vitali. All right reserved.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+
+		
+			</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+  	<div class="container-fluid">
+
+		<!-- Main component for a primary marketing message or call to action -->
+		
+
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	
+	<!-- Local stylesheet and javascript -->
+	<link rel="stylesheet" href="css/Css_today.css" id="currentlocalcss">
+	<script src="Scripts/mainjs.js"></script>
+	</body>
+</html>

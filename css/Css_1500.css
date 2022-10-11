@@ -22,27 +22,145 @@ body {
 
 a:any-link {
     text-decoration: none;
-    color: purple;
+    color: rgb(165, 26, 165);
     cursor: pointer;
 }
 
+.parallax {
+    /* The image used */
+    background-image: url('assets/Frankenstein.jpg');
+
+    /* Set a specific height */
+    min-height: 300px;
+    max-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url('assets/Frankenstein.jpg');
+
+    /* Set a specific height */
+    min-height: 100px;
+    max-height: 100px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+
+ /* ===== SIDEBAR ===== */
+ .sidebar {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: #343a40; /* bootstrap default dark */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 68px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* to fix the right padding of the webpage */
+  
+  /* this was for opening from the right option */
+  .pr-3, .px-3 {
+	  padding-right: 0rem!important;
+  } 
+  
+  /* The sidebar links */
+  .sidebar a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 1.45rem;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+	color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+	position: absolute;
+	top: 0;
+	left: 25px;
+	font-size: 36px;
+	margin-right: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #343a40;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+  }
+  
+  .openbtn:hover {
+	background-color: #444;
+  }
+  
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+	transition: margin-left .5s; /* If you want a transition effect */
+	padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+	.sidebar {padding-top: 15px;}
+	.sidebar a {font-size: 18px;}
+  }
+  
+
 /* ===== MAIN NAVBAR ===== */
-a.navbar-brand {
+/* a.navbar-brand {
     font-size: 1.45rem;
     font-weight: bold;
     position: relative;
     top: 0.2rem;
-}
+	color: #097969;
+} */
 
-/* ===== colore navbar ===== */
-.bg-dark {
-    background-color: #CF6F4C!important;
-}
+#firstNav, #secondNav {
+	border-bottom: 2px solid black;
+			 }                 
+/*#firstNav {
+	background-color: #4c008a;
+			}*/
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+  }
+  
+  
+  /* ===== colore navbar ===== */
+  .bg-dark {
+	  background-color:  #4c008a !important;
+  }
+  
 
 
-body {
-			padding-top: 70px;
-		}
 
         /* == Buttons entities == */
         .nav-pills .nav-link.active,

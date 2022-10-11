@@ -118,7 +118,6 @@ a:any-link {
 }
 
 
-
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s; /* If you want a transition effect */
@@ -132,16 +131,28 @@ a:any-link {
 }
 
 /* ===== MAIN NAVBAR ===== */
-a.navbar-brand {
+/* a.navbar-brand {
     font-size: 1.45rem;
     font-weight: bold;
     position: relative;
     top: 0.2rem;
 	color: #097969;
+} */
+
+#firstNav, #secondNav {
+  border-bottom: 2px solid black;
+           }                 
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+transition: margin-left .5s; /* If you want a transition effect */
+padding: 20px;
 }
 
+
 /* ===== colore navbar ===== */
-.bg-dark {
+ .bg-dark {
     background-color: #343a40!important;
 }
 

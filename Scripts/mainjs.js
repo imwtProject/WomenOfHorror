@@ -3,8 +3,6 @@ function swapTheme(csspath) {
   document.getElementById('currentlocalcss').setAttribute('href', csspath);
   // When changing the css (= the historical theme) I also set a key-value in sessionStorage
   sessionStorage.setItem('href', csspath);
-  
-
 }
 
 // To save historical theme while browsing on the website
@@ -14,10 +12,9 @@ $(document).ready(function () {
   var start_style = sessionStorage.getItem('href');
   // I check if the start_style has a certain value and I change the href accordingly 
   switch (start_style) {
-    case 'css/aldinecss.css':
+    case 'css/Css_today.css':
       document.getElementById('currentlocalcss').setAttribute('href', 'css/Css_1500.css');
-      break;
-    
+      break; 
   }
 })
 

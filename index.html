@@ -1,147 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-  <title>WoH</title>
-	
-  <!--link to load bootstrap css-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  
-  <!-- only team section -->
-  <!-- Google icon -->
-  <!-- Local stylesheet and javascript --> 
-	
-  <link rel="stylesheet" href="css/Css_today.css" id="currentlocalcss">
-  <script src="Scripts/mainjs.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
- <style> 
- #firstNav, #secondNav {
-    			border-bottom: 2px solid black;
-                   }                 
+    <title>WoH</title>
+
+    <!--link to load bootstrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- only team section -->
+    <!-- Google icon -->
+    <!-- Local stylesheet and javascript -->
 
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
-}
-</style>
-    
-</head>
-	
-<body>
-    <div id="firstNav" class="d-flex justify-content-between px-5 py-2 bg-dark">
-    	<div> 
-        
-        	<button class="openbtn" onclick="openNav()">&#9776; Menu</button>
-            <div id="mySidebar" class="sidebar pr-3">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <a href="#" align="center">About</a>
-              <a href="#" align="center">Documentation</a>
-              <a class="opener" align="center">Issues</a>
-                  <ul text-align="center" style="list-style: none">           
-                    <li><a href="#">Electric Monster</a></li>
-                    <li><a href="#">Bloodsucking Freaks</a></li>
-                    <li><a href="#">Horny Cannibals</a></li>
-                    <li><a href="#">Gothic lagoon party</a></li>
-                  </ul>
-            </div>
-            
-        </div> 
-        
-    	<div><a class="navbar-brand mx-0" href="index.html">Women of Horror</a></div>
-        <div><img class="mt-2" src="./assets/thunder.png" width="30" height="30" alt="lightning"></div>
-</div>
-         
-           	
-        <div id="secondNav" class="d-flex justify-content-between px-5 py-3">
-            <div onclick="swapTheme('css/Css_1500.css')">1500-1800</div>
-            <div onclick="swapTheme('css/Css_today.css')">XIX century</div>
-            <div>first half of XX</div>
-            <div>second half of XX</div>
-            <div>late XX-start of XXI (print)</div>
-            <div>2030</div>
-    	</div>
-    
-    <!-- parallax bgd -->
-    <div class="parallax"></div>
-    <!-- home body -->
-    
- <div class="container-fluid">
-  <center><h2 class="fw-light mt-2" id="issues">Lates Issues</h2></center>
-  <hr>
-  	<div class="row px-5">    
-    	<div class="col-lg-4 col-md-12 p-3">
-        	<div class="card">
-            	<img class="card-img-top" src="./assets/card1.jpg"/>
-                <div class="card-body">
-                    <h5 class="card-title">Issue 1</h5>
-                    <p class="card-text">Abstract of the article: this will be an introduction to the thematic of the article rn I am just making it long to see how it looks like once added with the spaces ecc</p>
-                </div>
-             </div>
-        </div>             
-        <div class="col-lg-4 col-md-12 p-3">
-        	<div class="card">
-            	<img class="card-img-top" src="./assets/card3.jpg"/>
-                <div class="card-body">
-                    <h5 class="card-title">Issue 2</h5>
-                    <p class="card-text">Abstract of the article: this will be an introduction to the thematic of the article rn I am just making it long to see how it looks like once added with the spaces ecc</p>
-                </div>
-             </div>
-        </div>
-        <div class="col-lg-4 col-md-12 p-3">
-        	<div class="card">
-            	<img class="card-img-top" src="./assets/card2.jpg"/>
-                <div class="card-body">
-                    <h5 class="card-title">Issue 3</h5>
-                    <p class="card-text">Abstract of the article: this will be an introduction to the thematic of the article rn I am just making it long to see how it looks like once added with the spaces ecc</p>
-                </div>
-             </div>
-        </div>      
-    </div>
- </div>
- 
-
- <div class="parallax2"></div>
- 
- <div class="container-fluid">
-    <center><h2 class="fw-light mt-2" id="issues">Readers' favourites</h2></center>
-    <hr>
-    <div class="row px-5">
-    	<div class="col-lg-4 col-md-12 p-3">
-        	<div class="card">
-            	<img class="card-img-top" src="./assets/cardA.jpg"/>
-                <div class="card-body">
-                    <h5 class="card-title">Issue 1</h5>
-                    <p class="card-text">Abstract of the article: this will be an introduction to the thematic of the article rn I am just making it long to see how it looks like once added with the spaces ecc</p>
-                </div>
-             </div>
-        </div>             
-        <div class="col-lg-4 col-md-12 p-3">        
-        	<div class="card">
-            	<img class="card-img-top" src="./assets/cardB.jpg"/>
-                <div class="card-body">
-                    <h5 class="card-title">Issue 2</h5>
-                    <p class="card-text">Abstract of the article: this will be an introduction to the thematic of the article rn I am just making it long to see how it looks like once added with the spaces ecc</p>
-                </div>
-             </div>
-        </div>
-        <div class="col-lg-4 col-md-12 p-3">
-        	<div class="card">
-            	<img class="card-img-top" src="./assets/cardC.jpg"/>
-                <div class="card-body">
-                    <h5 class="card-title">Issue 3</h5>
-                    <p class="card-text">Abstract of the article: this will be an introduction to the thematic of the article rn I am just making it long to see how it looks like once added with the spaces ecc</p>
-                </div>
-             </div>
-        </div>      
-    </div>    
-  </div>
-	  <!-- Bootstrap core JavaScript
-	================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
+    <!-- Bootstrap -->
+    <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -149,6 +25,132 @@
 	<!-- Local stylesheet and javascript -->
 	<link rel="stylesheet" href="css/Css_today.css" id="currentlocalcss">
 	<script src="Scripts/mainjs.js"></script>
-    
-  </body>
+
+</head>
+
+<body>
+    <div id="firstNav" class="d-flex justify-content-between px-5 py-2 bg-dark">
+        <div>
+            <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+            <div id="mySidebar" class="sidebar pr-3">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Article.html" align="center">About</a>
+                <a href="#" align="center">Documentation</a>
+                <a class="opener" align="center">Issues</a>
+                <ul text-align="center" style="list-style: none">
+                    <li><a href="#">Electric Monster</a></li>
+                    <li><a href="#">Bloodsucking Freaks</a></li>
+                    <li><a href="#">Horny Cannibals</a></li>
+                    <li><a href="#">Gothic lagoon party</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div><a class="navbar-brand mx-0" href="index.html">Women of Horror</a></div>
+        <div><img class="mt-2" src="./assets/thunder.png" width="30" height="30" alt="lightning"></div>
+    </div>
+
+
+    <div id="secondNav" class="d-flex justify-content-between px-5 py-3">
+        <div><a onclick="swapTheme('css/Css_1500.css')">1500-1800</a></div>
+        <div><a class="nav-link style-nav" onclick="swapTheme('css/Css_today.css')">XIX century</a></div>
+        <div>first half of XX</div>
+        <div>second half of XX</div>
+        <div>late XX-start of XXI (print)</div>
+        <div>2030</div>
+    </div>
+
+    <!-- parallax bgd -->
+    <div class="parallax" style="background-image: url('Frankenstein.jpg');"></div>
+    <!-- home body -->
+
+    <div class="container-fluid">
+        <center>
+            <h2 class="fw-light mt-2" id="issues">Lates Issues</h2>
+        </center>
+        <hr>
+        <div class="row px-5">
+            <div class="col-lg-4 col-md-12 p-3">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/card1.jpg" />
+                    <div class="card-body">
+                        <h5 class="card-title">Issue 1</h5>
+                        <p class="card-text">Abstract of the article: this will be an introduction to the thematic of
+                            the article rn I am just making it long to see how it looks like once added with the spaces
+                            ecc</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 p-3">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/card3.jpg" />
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="Article.html">Issue 2</a></h5>
+                        <p class="card-text">Abstract of the article: this will be an introduction to the thematic of
+                            the article rn I am just making it long to see how it looks like once added with the spaces
+                            ecc</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 p-3">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/card2.jpg" />
+                    <div class="card-body">
+                        <h5 class="card-title">Issue 3</h5>
+                        <p class="card-text">Abstract of the article: this will be an introduction to the thematic of
+                            the article rn I am just making it long to see how it looks like once added with the spaces
+                            ecc</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax2" style="background-image: url('Frankenstein.jpg');"></div>
+
+    <div class="container-fluid">
+        <center>
+            <h2 class="fw-light mt-2" id="issues">Readers' favourites</h2>
+        </center>
+        <hr>
+        <div class="row px-5">
+            <div class="col-lg-4 col-md-12 p-3">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/cardA.jpg" />
+                    <div class="card-body">
+                        <h5 class="card-title">Issue 1</h5>
+                        <p class="card-text">Abstract of the article: this will be an introduction to the thematic of
+                            the article rn I am just making it long to see how it looks like once added with the spaces
+                            ecc</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 p-3">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/cardB.jpg" />
+                    <div class="card-body">
+                        <h5 class="card-title">Issue 2</h5>
+                        <p class="card-text">Abstract of the article: this will be an introduction to the thematic of
+                            the article rn I am just making it long to see how it looks like once added with the spaces
+                            ecc</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 p-3">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/cardC.jpg" />
+                    <div class="card-body">
+                        <h5 class="card-title">Issue 3</h5>
+                        <p class="card-text">Abstract of the article: this will be an introduction to the thematic of
+                            the article rn I am just making it long to see how it looks like once added with the spaces
+                            ecc</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
