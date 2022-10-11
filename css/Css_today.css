@@ -32,8 +32,8 @@ a:any-link {
     background-image: url("assets/Frankenstein.jpg");
 
     /* Set a specific height */
-    min-height: 300px;
-    max-height: 300px;
+    min-height: 700px;
+    max-height: 700px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;

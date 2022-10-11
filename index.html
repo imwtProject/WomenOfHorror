@@ -11,11 +11,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- only team section -->
-    <!-- Google icon -->
-    <!-- Local stylesheet and javascript -->
-
-
+    <!-- Font Awesom icon, use with i element -->
+    <script src="https://kit.fontawesome.com/0d369f4ff3.js" crossorigin="anonymous"></script>
+   
     <!-- Bootstrap -->
     <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -25,6 +23,7 @@
 	<!-- Local stylesheet and javascript -->
 	<link rel="stylesheet" href="css/Css_today.css" id="currentlocalcss">
 	<script src="Scripts/mainjs.js"></script>
+
 
 </head>
 
@@ -66,46 +65,113 @@
     <!-- home body -->
 
     <div class="container-fluid">
-        <center>
-            <h2 class="fw-light mt-2" id="issues">Lates Issues</h2>
-        </center>
-        <hr>
-        <div class="row px-5">
-            <div class="col-lg-4 col-md-12 p-3">
-                <div class="card">
-                    <img class="card-img-top" src="./assets/card1.jpg" />
-                    <div class="card-body">
-                        <h5 class="card-title">Issue 1</h5>
-                        <p class="card-text">Abstract of the article: this will be an introduction to the thematic of
-                            the article rn I am just making it long to see how it looks like once added with the spaces
-                            ecc</p>
-                    </div>
-                </div>
+        <div class="row">
+            <!--carousel title-->
+            <div class="col-6 pt-3">
+                <h3>Latest Issues</h3>
             </div>
-            <div class="col-lg-4 col-md-12 p-3">
-                <div class="card">
-                    <img class="card-img-top" src="./assets/card3.jpg" />
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="Article.html">Issue 2</a></h5>
-                        <p class="card-text">Abstract of the article: this will be an introduction to the thematic of
-                            the article rn I am just making it long to see how it looks like once added with the spaces
-                            ecc</p>
-                    </div>
-                </div>
+            <!--carousel controls-->
+            <div class="col-6 text-right pt-3">
+                <a class="btn btn-dark mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+                <a class="btn btn-dark" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                <!--<button type="button" class="btn btn-default bg-dark mr-1" href="#carouselExampleIndicators2">-->
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
             </div>
-            <div class="col-lg-4 col-md-12 p-3">
-                <div class="card">
-                    <img class="card-img-top" src="./assets/card2.jpg" />
-                    <div class="card-body">
-                        <h5 class="card-title">Issue 3</h5>
-                        <p class="card-text">Abstract of the article: this will be an introduction to the thematic of
-                            the article rn I am just making it long to see how it looks like once added with the spaces
-                            ecc</p>
+
+            <!--carousel inner-->
+
+            <div class="col-12">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+
+                            <div class="row px-5">
+
+                                <div class="col-lg-4 col-md-12 p-3">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./assets/card1.jpg" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">Issue 1</h5>
+                                            <p class="card-text">Abstract of the article: this will be an introduction to the thematic of
+                                                the article rn I am just making it long to see how it looks like once added with the spaces
+                                                ecc</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12 p-3">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./assets/card3.jpg" />
+                                        <div class="card-body">
+                                            <h5 class="card-title"><a href="Article.html">Issue 2</a></h5>
+                                            <p class="card-text">Abstract of the article: this will be an introduction to the thematic of
+                                                the article rn I am just making it long to see how it looks like once added with the spaces
+                                                ecc</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12 p-3">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./assets/card2.jpg" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">Issue 3</h5>
+                                            <p class="card-text">Abstract of the article: this will be an introduction to the thematic of
+                                                the article rn I am just making it long to see how it looks like once added with the spaces
+                                                ecc</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row px-5">
+                                
+                                <div class="col-lg-4 col-md-12 p-3">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./assets/cardA.jpg" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">Issue 1</h5>
+                                            <p class="card-text">Abstract of the article: this will be an introduction to the thematic of
+                                                the article rn I am just making it long to see how it looks like once added with the spaces
+                                                ecc</p>
+                                        </div>
+                                    </div>
+                                </div>                                                     
+                                                            
+                                <div class="col-lg-4 col-md-12 p-3">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./assets/card1.jpg" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">Issue 1</h5>
+                                            <p class="card-text">Abstract of the article: this will be an introduction to the thematic of
+                                                the article rn I am just making it long to see how it looks like once added with the spaces
+                                                ecc</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12 p-3">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./assets/card3.jpg" />
+                                        <div class="card-body">
+                                            <h5 class="card-title"><a href="Article.html">Issue 2</a></h5>
+                                            <p class="card-text">Abstract of the article: this will be an introduction to the thematic of
+                                                the article rn I am just making it long to see how it looks like once added with the spaces
+                                                ecc</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
     </div>
+</div>      
 
 
     <div class="parallax2" style="background-image: url('Frankenstein.jpg');"></div>
