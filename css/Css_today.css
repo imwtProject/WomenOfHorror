@@ -117,6 +117,27 @@ a:any-link {
   background-color: #444;
 }
 
+/*scorll top */
+
+#scrollTop {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 20px;
+  /*background-color: rgba(245, 245, 245, 0.727);
+  border-width: 0px !important;
+  border-style: none !important;
+  color: rgba(9, 9, 9, 0.926);
+  border-radius: 30px; 
+  text-align: center;
+  /*box-shadow: 2px 2px 3px #3336; 
+  z-index: 100;
+  transform: scale(1); 
+  cursor: pointer;
+  padding: 1%; */
+}
+
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
