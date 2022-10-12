@@ -121,21 +121,17 @@ a:any-link {
 
 #scrollTop {
   position: fixed;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   bottom: 40px;
   right: 20px;
-  /*background-color: rgba(245, 245, 245, 0.727);
-  border-width: 0px !important;
-  border-style: none !important;
-  color: rgba(9, 9, 9, 0.926);
-  border-radius: 30px; 
+  padding: 13px 18px;
+  border-radius: 60px;
+  font-size: 15px;
   text-align: center;
-  /*box-shadow: 2px 2px 3px #3336; 
-  z-index: 100;
-  transform: scale(1); 
-  cursor: pointer;
-  padding: 1%; */
+  background-color: #097969;
+  z-index: 2;
+  
 }
 
 
