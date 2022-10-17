@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -28,37 +28,56 @@
 </head>
 
 <body>
-    <div id="firstNav" class="d-flex justify-content-between px-5 py-2 bg-dark">
-        <div>
-            <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
-            <div id="mySidebar" class="sidebar pr-3">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="Article.html" align="center">About</a>
-                <a href="#" align="center">Documentation</a>
-                <a class="opener" align="center">Issues</a>
-                <ul text-align="center" style="list-style: none">
-                    <li><a href="#">Electric Monster</a></li>
-                    <li><a href="#">Bloodsucking Freaks</a></li>
-                    <li><a href="#">Horny Cannibals</a></li>
-                    <li><a href="#">Gothic lagoon party</a></li>
+    <div class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" id="firstNav">
+        <div class="container">
+            <a href="#" class="navbar-brand"><img src="./assets/thunder.png" width="30" height="30"
+                    alt="lightning"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainmenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Documentation</a></li>
+                    <span>
+                        <a class="nav-link dropdown-toggle" href="#" id="issuesDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Issues</a>
+
+                        <div class="dropdown-menu" aria-labelledby="issuesDropdown">
+                            <a class="dropdown-item" href="#">Electric Monster</a>
+                            <a class="dropdown-item" href="#">Bloodsucking Freaks</a>
+                            <a class="dropdown-item" href="#">Horny Cannibals</a>
+                            <a class="dropdown-item" href="#">Gothic lagoon party</a>
+                        </div>
+                    </span>
+
+                    <span class="nav-item dropdown row-reverse">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Styles
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" onclick="swapTheme('css/Css_1500.css')">1500</a>
+                            <a class="dropdown-item" onclick="swapTheme('css/Css_today.css')">Today</a>
+                            <a class="dropdown-item" href="#">Another theme</a>
+                        </div>
+                    </span>
                 </ul>
             </div>
-
         </div>
-
-        <div><a class="navbar-brand mx-0" href="index.html">Women of Horror</a></div>
-        <div><img class="mt-2" src="./assets/thunder.png" width="30" height="30" alt="lightning"></div>
     </div>
 
 
-    <div id="secondNav" class="d-flex justify-content-between px-5 py-3">
+    <!--<div id="secondNav" class="d-flex justify-content-between px-5 py-3">
         <div><a onclick="swapTheme('css/Css_1500.css')">1500-1800</a></div>
         <div><a class="nav-link style-nav" onclick="swapTheme('css/Css_today.css')">XIX century</a></div>
         <div>first half of XX</div>
         <div>second half of XX</div>
         <div>late XX-start of XXI (print)</div>
         <div>2030</div>
-    </div>
+    </div>-->
 
     <!-- parallax bgd -->
     <div class="parallax" style="background-image: url('Frankenstein.jpg');"></div>
