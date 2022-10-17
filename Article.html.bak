@@ -93,7 +93,7 @@
 	<section class="py-2">
 		<div class="container-fluid">
 			<div class="row clearfix mt-4 text-left px-2">
-				<div class="col-md-3" id="metadata">
+				<div class="col-md-3" id="meatadata">
 					<div class="row clearfix border p-2 ">
 						<div class="row clearfix col-md-12">
 							<h3>Documents</h3>

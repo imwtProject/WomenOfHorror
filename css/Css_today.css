@@ -118,6 +118,11 @@ a:any-link {
 }
 
 /*scorll top */
+/*creates a smooth scrolling  */
+html {
+  scroll-behavior: smooth;
+ 
+}
 
 #scrollTop {
   position: fixed;
@@ -173,6 +178,13 @@ padding: 20px;
     background-color: #343a40!important;
 }
 
+/* metadata column */
+#metadata {
+	background-color: beige;
+    
+    position: sticky;
+  
+}
 
 
 			
@@ -283,3 +295,6 @@ padding: 20px;
 		}
 		
 		
+
+
+
