@@ -179,11 +179,11 @@ padding: 20px;
 }
 
 /* metadata column */
-#metadata {
-	background-color: green;
+.metadata {
+    background-color: lavender;
     
     position: sticky;
-  
+    
 }
 
 
