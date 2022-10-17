@@ -181,16 +181,11 @@ padding: 20px;
 /* metadata column */
 .metadata {
     background-color: lavender;
-    padding-left:15px;
-	padding-right:15px; 
-	position: sticky;
+    
+    position: sticky;
+    
 }
 
-.cards { 
-    position: sticky;
-	
-}
-  
 
 			
         /* == Buttons entities == */
