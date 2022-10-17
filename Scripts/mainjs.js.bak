@@ -3,8 +3,6 @@ function swapTheme(csspath) {
   document.getElementById('currentlocalcss').setAttribute('href', csspath);
   // When changing the css (= the historical theme) I also set a key-value in sessionStorage
   sessionStorage.setItem('href', csspath);
-  
-
 }
 
 // To save historical theme while browsing on the website
@@ -14,23 +12,35 @@ $(document).ready(function () {
   var start_style = sessionStorage.getItem('href');
   // I check if the start_style has a certain value and I change the href accordingly 
   switch (start_style) {
-    case 'css/aldinecss.css':
+    case 'css/Css_today.css':
       document.getElementById('currentlocalcss').setAttribute('href', 'css/Css_1500.css');
-      break;
-    
+      break; 
   }
 })
 
 
+//sidebar
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "25%";
+ 
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  
+}
+
+// scrolltop
+
+function goTop() {
+	document.body.scrollTop = 0; // For Safari
+	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera  
+  }
 
 
-
-
-
-
-
-
-//prende gli articloi da un js senza ricaricare la pagina
+//prende gli articoli da un js senza ricaricare la pagina
 		String.prototype.tpl = function(o) { 
 			var r = this ; 
 			for (var i in o) { 

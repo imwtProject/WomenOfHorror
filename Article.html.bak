@@ -94,7 +94,7 @@
 		<div class="container-fluid">
 			<div class="row clearfix mt-4 text-left px-2">
 				<div class="col-md-3">
-				<div class="metadata text-left col-md-3">
+				<div class="metadata text-left">
 					<div class="row clearfix border p-2 ">
 						<div class="row clearfix col-md-12">
 							<h3>Documents</h3>
