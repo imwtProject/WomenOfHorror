@@ -29,11 +29,11 @@ a:any-link {
 
 .parallax {
     /* The image used */
-    background-image: url("assets/Frankenstein.jpg");
+    background-image: url("assets/WoHdefault.png");
 
     /* Set a specific height */
-    min-height: 700px;
-    max-height: 700px;
+    min-height: 600px;
+    max-height: 600px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -129,7 +129,7 @@ a:any-link {
   border-radius: 60px;
   font-size: 15px;
   text-align: center;
-  background-color: #097969;
+  background-color: #560b0b;  
   z-index: 2;
   
 }
@@ -170,7 +170,7 @@ padding: 20px;
 
 /* ===== colore navbar ===== */
  .bg-dark {
-    background-color: #343a40!important;
+    background-color: #560b0b!important;
 }
 
 
@@ -231,7 +231,7 @@ padding: 20px;
 			background-color: #ffffdd;
 		}	
 
-        .text-refFrankenstein {
+    .text-refFrankenstein {
 			background-color: #ffffdd;
 		}	
 		
