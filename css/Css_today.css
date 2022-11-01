@@ -296,6 +296,179 @@ padding: 20px;
 		}
 		
 		
+/*FAB*/
+/*FAB*/
+.fab-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    user-select: none;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+	
+}
+.fab-container:hover {
+    height: 100%;
+}
+.fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-14vh);
+}
+.fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-24vh);
+}
+.fab-container:hover .sub-button:nth-child(4) {
+    transform: translateY(-34vh);
+}
+.fab-container:hover .sub-button:nth-child(5) {
+    transform: translateY(-44vh);
+}
+
+.fab-container:hover .sub-button:nth-child(6) {
+   transform: translateY(-54vh);
+
+}
+
+.fab-container:hover .sub-button:nth-child(7) {
+  transform: translateY(-64vh);
+  
+}
+
+.fab-container .fab {
+    position: relative;
+    height: 12vh;
+    width: 12vh;
+    border-radius: 50%;
+    z-index: 2;
+}
+.fab-container .fab::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 6vh;
+    width: 6vh;
+    background-color: inherit;
+    border-radius: 0 0 10px 0;
+    z-index: -1;
+}
+.fab-container .fab .fab-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.fab-container .sub-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    right: 12;
+    height: 8vh;
+    width: 8vh;
+    background-color: #000000;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.fab-container .sub-button:hover {
+    cursor: pointer;
+}
+.fab-container .sub-button .material-icons {
+    color: white;
+    padding-top: 6px;
+}
+
+.fab-content{
+    background-image: url("https://img.icons8.com/external-justicon-lineal-justicon/64/FFFFFF/external-mask-new-years-eve-justicon-lineal-justicon.png");
+    background-size: 8vh;
+    background-repeat: no-repeat;
+    background-position: center center !important;
+}
+
+.sub-button:nth-child(2){
+    background: url("https://img.icons8.com/wired/64/FFFFFF/quill-with-ink.png");
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(3){
+    background: url("https://img.icons8.com/fluency-systems-regular/48/FFFFFF/edgar-allan-poe.png");
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(4){
+    background: url("https://img.icons8.com/ios/50/FFFFFF/geometric-flowers.png");
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(5){
+    background: url("https://img.icons8.com/ios/50/FFFFFF/vintage-glasses.png");
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+	
+}
+
+.sub-button:nth-child(6){
+    background: url("https://img.icons8.com/ios/50/FFFFFF/workstation.png");
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+	
+}
+
+.sub-button:nth-child(7){
+    background: url("https://img.icons8.com/ios/50/FFFFFF/rocket--v1.png");
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+	
+}
+.fab-container #enable-future:hover{
+    background: url("/typetravel/images/Future/g25.gif") !important;
+    background-size: 10vh !important;
+}
+
+.fab-content:hover{
+    box-shadow: 1px 1px 10px rgb(80, 80, 80) !important;
+}
 
 
+
+
+
+
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: #000000 !important;
+}
+  
+.fab-container .fab::before {
+    display: none;
+}
+  
+.sub-button:hover{
+    background-color: #999999 !important;
+}
+
+.btn-lmode, .btn-dmode{
+    display: none;
+}
+
+#discl:hover {
+    color: white;
+}
+
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: #000000 !important;
+}
 

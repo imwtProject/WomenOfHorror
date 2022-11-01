@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+/* GENERAL RULES - DON'T CHANGE IF YOU DON'T WANT TO CHANGE LAYOUT */
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: end;
+    justify-content: flex-end;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("./assets/parallax.jpg") !important;
+
+    display: block; /* for displaying the text*/
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cover {
+    height: 100vh;
+} 
+
+#footer {
+    height: 25vh;
+}
+
+#firstNav,
+.container-fluid {
+    /* trying to set equal padding for all containers */
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    flex-wrap: wrap !important;
+    width: auto !important;
+}
+
+
+.navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.row {
+    flex-wrap: nowrap;
+    justify-content: center;
+            }
+
+.row>* {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+}
+
+hr {
+    color: white;
+}
+
+
+.card {
+    /*border-left: 1px !important;  
+    border-right: 1px !important; */      
+    border-color:#212529; /*this is the background color from default bootstrap */
+    border-radius: 0%;
+    background-color: #212529;
+} 
+
+.card-body {
+    background-color: white;
+}
+.card-img {
+    border-radius: 0%;
+}
+
+/* styles navigation*/
+
+
+  .ic-stickey {
+    position: fixed;
+    top: 60px;
+    left: -250px; /* not good in ox but how to make it responsive? in vh it comes out on a smaller screen */
+  }
+  .ic-stickey ul {
+    padding: 0px;
+    position:fixed;	
+   /* -webkit-transform: translate(-270px, 0);
+    -moz-transform: translate(-270px, 0);
+    -ms-transform: translate(-270px, 0);
+    -o-transform: translate(-270px, 0);
+    transform: translate(-270px, 0);*/
+  }
+  .ic-stickey ul li {
+    display: block;
+    margin: 5px;
+    background: rgba(33,37,41);
+    width: 300px;
+    text-align: right;
+    padding: 10px;
+    -webkit-border-radius: 0 30px 30px 0;
+    -moz-border-radius: 0 30px 30px 0;
+    border-radius: 0 30px 30px 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 0.5s;
+  }
+  .ic-stickey ul li:hover {
+    background:rgba(33,37,41) !important;
+    -webkit-transform: translate(110px, 0);
+    -moz-transform: translate(110px, 0);
+    -ms-transform: translate(110px, 0);
+    -o-transform: translate(110px, 0);
+    transform: translate(110px, 0);
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .ic-stickey ul li:hover a {
+    color: #fff;
+  }
+  .ic-stickey ul li:hover i {
+    color: #fff;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+  .ic-stickey ul li.Twitter:hover i {
+    background:#1da1f2;
+  }
+  .ic-stickey ul li.fb:hover i {
+    background:#4267b2;
+  }
+  .ic-stickey ul li.whatsapp:hover i {
+    background:#07bc4c;
+  }
+  .ic-stickey ul li.linkedin:hover i {
+    background:#0077b5;
+  }
+  .ic-stickey ul li i {
+       margin-left: 10px;
+      color: #000;
+      background: #fff;
+      padding: 10px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      font-size: 20px;
+      background: #ffffff;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+
+
+/* SPECIFIC STYLE RULES */
