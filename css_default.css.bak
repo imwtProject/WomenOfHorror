@@ -190,5 +190,8 @@ hr {
 }
 
 
-
+#styles {
+	display: flex;
+	justify-content: space-between;
+}
 /* SPECIFIC STYLE RULES */
