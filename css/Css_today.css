@@ -179,7 +179,7 @@ padding: 20px;
 }
 
 /* metadata column */
-.metadata {
+#metadata {
     background-color: lavender;
     padding-left:15px;
 	padding-right:15px;
