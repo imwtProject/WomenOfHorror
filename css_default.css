@@ -134,7 +134,7 @@ hr {
 .ic-stickey ul li:hover a {
   color: #fff;
 }
-.ic-stickey ul li:hover i {
+/*.ic-stickey ul li:hover i {
   color: #fff;
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -146,19 +146,30 @@ hr {
   -ms-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
+} */
+
+.ic-stickey ul li.s1500:hover i {
+  background:rgb(205, 74, 13);
 }
-.ic-stickey ul li.Twitter:hover i {
-  background:#1da1f2;
+.ic-stickey ul li.s1800:hover i {
+  background:rgb(200, 153, 22);
 }
-.ic-stickey ul li.fb:hover i {
-  background:#4267b2;
+.ic-stickey ul li.XX-1:hover i {
+  background:rgb(134, 177, 73);
 }
-.ic-stickey ul li.whatsapp:hover i {
-  background:#07bc4c;
+.ic-stickey ul li.XX-2:hover i {
+  background:rgb(112, 166, 217);
 }
-.ic-stickey ul li.linkedin:hover i {
-  background:#0077b5;
+
+.ic-stickey ul li.lateXX-2000:hover i {
+  background:rgb(6, 89, 167);
 }
+
+.ic-stickey ul li.lateXX-2030:hover i {
+  background:rgb(166, 76, 182);
+}
+
+
 .ic-stickey ul li i {
     margin-left: 10px;
     color: #000;
