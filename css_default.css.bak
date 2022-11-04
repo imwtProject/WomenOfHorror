@@ -60,13 +60,6 @@
   position: fixed;
 }
 
-
-/* jumbotron*/
-#title {
-	color: white;
-}
-
-
 /* #article-content {
   z-index: 1000;
 } */
