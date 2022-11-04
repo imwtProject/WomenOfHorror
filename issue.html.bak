@@ -99,15 +99,14 @@
 		<div class="container-fluid" id="article-content">
 			<div class="row">
 				<!--metadata column-->
-				<div class="col-md-3" id="metadata-column" >
-				<div class="px-3" id="row1">
+				<div class="col-md-3" id="metadata-column">
+					<div class="px-3" id="row1">
 						<h3>Documents</h3>
 						<ul id="list">
 						</ul>
 					</div>
-					
 
-					<div class="px-3 py-3" id="row2">
+					<div class="px-3" id="row2">
 						<h5>Highlight in the text:</h5>
 						<div class="col-md-12">
 							<form role="form">
@@ -179,15 +178,15 @@
 					<div class="py-5 bg-dark text-center" id="title">
 						<h1 class="text-white">Default Article</h1>
 					</div>
-					<div id="file" class="py-2 px-2"></div>
+					<div id="file"></div>
 				</div>
 
 				<!--other articles card-->
 				<div class="col-sm-3 text-center" id="card-column">
-					<div class="card bg-dark text-dark mb-2">
+					<div class="card bg-dark text-white mb-2">
 						<img src="assets/Kindred.png" alt="" class="card-img-top">
 						<div class="card-body text-center">
-							<h4 class="card-title">Bloodsucking Freaks</h4>
+							<h4 class="card-title">Title</h4>
 							<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
 								praesentium!</p>
 							<a href="" class="btn btn-info">Read</a>
@@ -196,10 +195,10 @@
 
 
 
-					<div class="card bg-dark text-dark">
+					<div class="card bg-dark text-white">
 						<img src="assets/Kindred.png" alt="" class="card-img-top">
 						<div class="card-body text-center">
-							<h4 class="card-title">Horny Cannibals</h4>
+							<h4 class="card-title">Title</h4>
 							<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
 								praesentium!</p>
 							<a href="" class="btn btn-info">Read</a>

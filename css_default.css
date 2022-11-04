@@ -104,6 +104,12 @@ hr {
     border-radius: 0%;
 }
 
+.btn-info {
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+
 /* styles navigation*/
 
 .ic-stickey {
@@ -208,19 +214,42 @@ hr {
 
     /* metadata column */
     #metadata-column {
-    background-color: lavender;
+    background-color: #cccccc;
     padding-left:15px;
     padding-right:15px;
+    height: fit-content;
+	position: -webkit-sticky;
     position: sticky;
-
+    top: 80;
     }
+	
+	
+	a {
+    color: black;
+    text-decoration: underline;
+}
+	
+	.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: black;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+	
+	
+	/* toglie i pallini a lato degli articoli */
+	ul {
+    list-style-type: none;
+	padding-left: 0;
+}
 
 
 
     /* == Buttons entities == */
     .nav-pills .nav-link.active,
     .nav-pills .show>.nav-link {
-    background-color: #097969 !important;
+    background-color: black !important;
     font-weight: bold;
     } 
 
@@ -250,6 +279,7 @@ hr {
     margin-top: 1em;
     list-style: none;
     font-style: italic;
+	
     }
 
 
