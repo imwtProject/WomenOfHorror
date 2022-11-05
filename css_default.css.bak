@@ -2,6 +2,14 @@
 
 /* GENERAL RULES - DON'T CHANGE IF YOU DON'T WANT TO CHANGE LAYOUT */
 
+
+body {
+   padding-top: 200px
+}
+
+
+
+
 .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
@@ -59,6 +67,13 @@
   background-image: url("./assets/parallax.jpg") !important;
   position: fixed;
 }
+
+
+/* jumbotron*/
+#title {
+	color: white;
+}
+
 
 /* #article-content {
   z-index: 1000;
