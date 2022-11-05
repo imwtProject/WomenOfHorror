@@ -195,7 +195,8 @@ function goTop() {
 
 		function goto(id) {
 			var t = $(id)[0].offsetTop;
-			$('body').animate({ scrollTop: t }, 200);
+			 $('html, body').animate({
+        scrollTop: $(id).offset().top - 130}, 200);
 			$(id).addClass('animate');
 			setTimeout(function(){
 				$(id).removeClass('animate');
