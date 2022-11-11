@@ -298,13 +298,12 @@ hr {
     margin-top: 1em;
     list-style: none;
     font-style: italic;
+	overflow-x: hidden;
+  overflow-y: scroll;
 	
     }
 
-#sentenceContent {
-	overflow-x: hidden;
-  overflow-y: scroll;
-}
+
 
     .text-person {
     background-color: #ffddff;

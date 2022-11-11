@@ -229,7 +229,7 @@ hr {
     background-color: #cccccc;
     padding-left:15px;
     padding-right:15px;
-    height: 50em ;
+    height: fit-content ;
 	position: -webkit-sticky;
     position: sticky;
     top: 80;
@@ -298,8 +298,6 @@ hr {
     margin-top: 1em;
     list-style: none;
     font-style: italic;
-	overflow-x: hidden;
-  overflow-y: scroll;
 	
     }
 

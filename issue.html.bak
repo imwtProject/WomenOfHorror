@@ -154,7 +154,7 @@
 						</ul>
 
 						<!-- Tab panes -->
-						<div class="tab-content" id="sentenceContent" style="overflow:auto;">
+						<div class="tab-content" id="sentenceContent">
 							<div class="tab-pane active myBorder myBorder-notop" id="info" role="tabpanel"
 								aria-labelledby="info-tab">
 							</div>
