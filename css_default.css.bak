@@ -298,13 +298,15 @@ hr {
     margin-top: 1em;
     list-style: none;
     font-style: italic;
-	height: 10em;
-         overflow-y: auto;
-		 overflow-x: hidden; 
+	
 	
     }
 
-     
+     #sentenceContent {
+		 height: 8.50em;
+         overflow-y: auto;
+		 overflow-x: hidden; 
+	 }
 
 
     .text-person {

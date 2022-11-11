@@ -232,7 +232,7 @@ hr {
     height: fit-content ;
 	position: -webkit-sticky;
     position: sticky;
-    top: 80;
+    top: 60;
     }
 	
 	
@@ -303,7 +303,7 @@ hr {
     }
 
      #sentenceContent {
-		 height: 10em;
+		 height: 8.50em;
          overflow-y: auto;
 		 overflow-x: hidden; 
 	 }
