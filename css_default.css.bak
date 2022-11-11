@@ -270,10 +270,7 @@ hr {
 
 
 
-#sentenceContent {
-	overflow-x: hidden;
-  overflow-y: scroll;
-}
+
 
 
     .myborder {
@@ -294,6 +291,8 @@ hr {
     min-height: 150px;
     width: 100%;
     display: flex;
+	overflow-x: hidden;
+  overflow-y: scroll;
     }
 
     .tab-pane ul {
