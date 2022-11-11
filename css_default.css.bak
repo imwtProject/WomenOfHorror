@@ -229,7 +229,7 @@ hr {
     background-color: #cccccc;
     padding-left:15px;
     padding-right:15px;
-    height: fit-content;
+    height: 50em ;
 	position: -webkit-sticky;
     position: sticky;
     top: 80;
@@ -291,8 +291,7 @@ hr {
     min-height: 150px;
     width: 100%;
     display: flex;
-	overflow-x: hidden;
-  overflow-y: scroll;
+	
     }
 
     .tab-pane ul {
@@ -302,6 +301,10 @@ hr {
 	
     }
 
+#sentenceContent {
+	overflow-x: hidden;
+  overflow-y: scroll;
+}
 
     .text-person {
     background-color: #ffddff;
