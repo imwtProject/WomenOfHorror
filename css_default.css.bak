@@ -270,8 +270,8 @@ hr {
 
 
 
-#row3 {
-	overflow: auto;
+#sentenceContent {
+	overflow: scroll;
 }
 
 
