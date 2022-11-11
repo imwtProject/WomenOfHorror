@@ -325,7 +325,7 @@ hr {
 }
 
 #sentenceContent::-webkit-scrollbar-thumb {
-  background-color: #d6dee1;
+  background-color: black;
   border-radius: 20px;
   border: 6px solid transparent;
   background-clip: content-box;
