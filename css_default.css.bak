@@ -267,6 +267,14 @@ hr {
 
 
 
+
+
+
+#row3 {
+	overflow: auto;
+}
+
+
     .myborder {
     border: solid rgb(220,220,220) 1px;
     padding: 10px;
