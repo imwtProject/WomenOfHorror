@@ -298,14 +298,13 @@ hr {
     margin-top: 1em;
     list-style: none;
     font-style: italic;
+	height: 10em;
+         overflow-y: auto;
+		 overflow-x: hidden; 
 	
     }
 
-     .tab-content {
-		 height: 10em;
-         overflow-y: auto;
-		 overflow-x: hidden; 
-	 }
+     
 
 
     .text-person {
