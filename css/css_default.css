@@ -2,6 +2,11 @@
 
 /* GENERAL RULES - DON'T CHANGE IF YOU DON'T WANT TO CHANGE LAYOUT */
 
+
+
+
+
+
 .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
@@ -9,100 +14,9 @@
     justify-content: flex-end;
 }
 
-
-
-.offcanvas {
-    left: 0;
-    height:100%;
-    position: fixed;
-    top:0;
-    width: 320px;
-    z-index: 2000;
-    transform: translateX( -100% );
-    transition: all 0.25s;
-    overflow-y:scroll;
-    background-color: white;
-}
-
-.closebtn {
-    color:black;
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 36px;
-}
-
-
-#closebtn-1 {
-    display:none;/*value will change via javascript*/
-    top: 5px;
-    right: 0px;
-    z-index: 3;
-    padding: 2px 7px 2px 7px;
-    line-height: 0.8;
-} 
-
-.closebtn:hover {
-    text-decoration: none;
-}
-
-a#closebtn-2 {
-    top: -30px;
-    margin-right: 0.2em;
-    font-size: 2em;
-}
-
-#sticky-eye {
-    position: fixed;
-    top: 33vh;
-    left: 0;
-    height: 40px;
-    overflow: hidden;
-    background: #1611369c; /**#ccb168;**/
-    z-index: 1;
-    font-size: 40px;
-    padding-right: 1%;
-    padding-left: 1%;
-    cursor: pointer;
-    border-radius: 0px 15px 15px 0px;
-	width: 5%;
-    display: none;/*value will change via javascript*/
-}
-
-
-@media only screen and (max-width: 768px) {
-	.sticky #metadataViewer{
-        padding-top:0px;
-    }
-    #metadata-column.offcanvas {
-        z-index:2000;
-    }
-    #closebtn-1 {
-        display:block;
-    }
-
-    #sticky-eye {
-        display:block;
-    }
-    .site {
-        position:relative;
-        overflow-x:hidden;
-    }
-    #article-content {
-        margin-bottom:100px;
-        }
-    
-    
-}
-
-#article-content {
-    font-size:18px;
-    min-height:100vh;
-}
-
 .parallax {
     /* The image used */
-    background-image: url("./assets/parallax.jpg") !important;
+    background-image: url("../assets/parallax.jpg") !important;
 
     display: block; /* for displaying the text*/
 
@@ -151,6 +65,13 @@ a#closebtn-2 {
   position: fixed;
 }
 
+
+/* jumbotron*/
+#title {
+	color: white;
+}
+
+
 /* #article-content {
   z-index: 1000;
 } */
@@ -161,8 +82,7 @@ a#closebtn-2 {
 }
 
 .row {
-    flex-wrap: wrap;
-	display:flex
+    flex-wrap: nowrap;
     justify-content: center;
     margin-right: 0% !important;
     margin-left: 0% !important;
@@ -304,30 +224,25 @@ hr {
 
 /* css vecchio */
 
+
+.px-3 {
+    padding-right: 1rem!important;
+    padding-left: 1rem!important;
+    padding-bottom: 1rem;
+}
+
     /* metadata column */
     #metadata-column {
     background-color: #cccccc;
     padding-left:15px;
     padding-right:15px;
-    height: 100%;
+    height: fit-content ;
 	position: -webkit-sticky;
     position: sticky;
-    top: 80;
-	height: 100vh;
-    
-	 z-index:1300;
-
+    top: 60;
     }
 	
 	
-	
-	.sticky {
-    position: sticky;
-    top: 0;
-  }
-.sticky #metadataViewer {
-        padding-top:60px;       
-}
 	a {
     color: black;
     text-decoration: underline;
@@ -359,6 +274,12 @@ hr {
 
 
 
+
+
+
+
+
+
     .myborder {
     border: solid rgb(220,220,220) 1px;
     padding: 10px;
@@ -377,6 +298,7 @@ hr {
     min-height: 150px;
     width: 100%;
     display: flex;
+	
     }
 
     .tab-pane ul {
@@ -384,7 +306,34 @@ hr {
     list-style: none;
     font-style: italic;
 	
+	
     }
+
+     #sentenceContent {
+		 height: 8em;
+         overflow-y: auto;
+		 overflow-x: hidden; 
+	 }
+
+    /* custom scrollbar */
+#sentenceContent::-webkit-scrollbar {
+  width: 20px;
+}
+
+#sentenceContent::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+#sentenceContent::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+#sentenceContent::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
 
 
     .text-person {
