@@ -12,12 +12,17 @@ $(document).ready(function () {
   var start_style = sessionStorage.getItem('href');
   // I check if the start_style has a certain value and I change the href accordingly 
   switch (start_style) {
-    case 'css/Css_today.css':
-      document.getElementById('currentlocalcss').setAttribute('href', 'css/Css_1500.css');
+    case './css/css_default.css':
+      document.getElementById('currentlocalcss').setAttribute('href', './css/css_default.css');
       break; 
+
+	case './css/css_y2k.css':
+		document.getElementById('currentlocalcss').setAttribute('href', './css/css_y2k.css');
+		break;
   }
 })
 
+// for responsivity in the homepage text
 
 
 
@@ -28,35 +33,6 @@ function goTop() {
 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera  
   }
 
-
-
-function openNav() {
-    
-    $('.offcanvas').css('transform', 'translateX( 0 )');
-    }
-
-function closeNav() {
-    $('.offcanvas').css('transform', 'translateX( -320px )');
-
-}
-
-var expandCollapse = function(){
-    if ( $(window).width() < 768 ) {
-        $(function(){
-            // add a class .collapse to a div .showHide
-
-            $('#metadata-column').addClass('offcanvas');
-        });
-    }
-    else {
-        $(function(){
-            // remove a class .collapse from a div .showHide
-
-            $('#metadata-column').removeClass('offcanvas');
-           
-        });
-    }
-}
 
 //prende gli articoli da un js senza ricaricare la pagina
 		String.prototype.tpl = function(o) { 
@@ -70,17 +46,11 @@ var expandCollapse = function(){
 		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
 		
 		$(document).ready(main);
-		$(document).ready(expandCollapse);
-		$(window).resize(expandCollapse);
 
 
 
 
 		function main() {
-			if ($(window).width() < 768) {
-        closeNav()
-    }
-			
 			$.ajax({
 				method: 'GET',
 				url: 'https://imwtproject.github.io/howdowecallitmagazine/frank.json',
@@ -218,11 +188,9 @@ var expandCollapse = function(){
 		}
 
 		function goto(id) {
-			if ( $(window).width() < 768 ) {
-        closeNav()
-    }
 			var t = $(id)[0].offsetTop;
-			$('body').animate({ scrollTop: t }, 200);
+			 $('html, body').animate({
+        scrollTop: $(id).offset().top - 130}, 200);
 			$(id).addClass('animate');
 			setTimeout(function(){
 				$(id).removeClass('animate');
