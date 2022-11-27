@@ -221,6 +221,32 @@ hr {
     transform: rotate(0deg);
 }
 
+/* style fab */
+
+.fab-styles {
+  position: fixed;
+  left: 20px;
+  top: 90px;
+  transform: scale(1);
+  }
+
+.fab-opener {
+  background-color: cyan;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #3336 ;
+  
+}
+
+.fab-icon {
+  height: 35px;
+  width: 35px;
+  margin-left: 3px;
+  margin-top: 1px;
+}
+
 
 /* css vecchio */
 
@@ -406,4 +432,71 @@ hr {
     display: none; /* for Chrome, Safari, and Opera */	
     }
 
-/* SPECIFIC STYLE RULES */
+
+  /* MEDIA QUERY */
+
+/*nav*/
+
+@media screen and (max-width: 1060px) {
+  .navbar-brand {
+    transform: scale(0.8)
+   }
+}
+
+
+/*cover text*/
+@media screen and (max-width: 600px) {
+  .col2 .col1 .col3 {
+    width: 100%;	
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .col2 .col1 .col3 {
+    width: 50%;	
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .self-defined-grid {
+    width: 100%;
+    height: inherit;
+    display: grid;
+    grid-template-areas: "cover-left cover-center cover-right";
+    grid-template-columns: 0.5fr 2fr 0.5fr;      
+  }
+}
+
+
+@media screen and (max-height: 600px) {
+  #cover-center{
+    transform: scale(0.8)  }
+}
+
+
+@media screen and (max-height: 540px) {
+  .self-defined-grid {
+    width: 100%;
+    height: inherit;
+    display: grid;
+    grid-template-areas: "cover-left cover-center cover-right";
+    grid-template-columns: 0fr 3fr 0fr;      
+  }
+}
+
+/* responsive style nav */
+
+@media screen and (max-width: 992px)
+{
+  .styles-large  {
+    display: none !important;
+
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  .fab-styles {
+    display: none ;}
+}
+

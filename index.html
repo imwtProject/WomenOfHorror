@@ -33,7 +33,7 @@
 
     <header>
 
-        <div class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" id="firstNav">
+        <div class="navbar navbar-expand-lg fixed-top" id="firstNav">
             <a href="index.html" class="navbar-brand">
                 <img src="./assets/thunder.png" width="30" height="30" alt="lightning">
                 Women of Horror
@@ -85,12 +85,12 @@
                 <div class="col1" id="cover-left"></div>
                 <!--made three divs as columns that can be styled in the css!-->
                 <div class="col2" id="cover-center">
-                    <h1 class="text-white" id="cover-text"><q>It is true, we shall be monsters, cut off from all the
+                    <h1 id="cover-text"><q>It is true, we shall be monsters, cut off from all the
                             world;
                             but
                             on that account we shall be more attached to one another.<br>
                         </q>
-                        <h4 class="text-white" style="text-align: right;">― Mary Shelley, Frankenstein</h4>
+                        <h4 class="text" style="text-align: right;">― Mary Shelley, Frankenstein</h4>
                     </h1>
 
                 </div>
@@ -98,12 +98,12 @@
             </div>
         </div>
 
-        <div class="container-fluid bg-dark" id="issues">
+        <div class="container-fluid" id="issues">
 
             <!--carousel title-->
             <div class="row g-0" id="latestIssues">
                 <div class="col-12 pt-3">
-                    <h2 class="text-white text-center">Latest Issues</h2>
+                    <h2 class="text">Latest Issues</h2>
                 </div>
             </div>
 
@@ -151,18 +151,18 @@
                 </div>
 
 
-                <div class="container-fluid bg-dark py-3" id="about">
+                <div class="container-fluid py-3" id="about">
 
                     <hr>
 
                     <!--About section-->
                     <div class="row pt-3" id="about-title">
                         <div class="col-12">
-                            <h2 class="text-white text-center">About</h2>
+                            <h2 class="text-center">About</h2>
                         </div>
                     </div>
 
-                    <div class="textsection text-white pt-3">
+                    <div class="textsection pt-3">
                         <h3>Women of horror</h3>
                         <p>
                             Women of Horror is a magazine that focuses on the intersection between the genre of
@@ -288,13 +288,13 @@
 
                     <div class="row pt-3" id="about-title">
                         <div class="col-12">
-                            <h2 class="text-white text-center pt-3" id="documentation">Some documentation I am
+                            <h2 class="text-center pt-3" id="documentation">Some documentation I am
                                 adding here for
                                 everyone to align to
                             </h2>
                         </div>
                     </div>
-                    <div class="textsection text-white pt-3">
+                    <div class="textsection pt-3">
                         <h3>Guidelines</h3>
                         <p>
                         <ol>
@@ -338,9 +338,9 @@
 
                 </div>
 
-                <!--styles navigation-->
+                <!--styles navigation in lg screen-->
 
-                <div class="ic-stickey">
+                <div class="ic-stickey styles-large">
                     <ul id="styles">
                         <li class="s1500"><a  href="#">1500/1800<i class="fa-solid fa-poo"></i></a></li>
                         <li class="s1800"><a href="#">1800<img class="ico" src="./assets/bat.png" width="30" height="30"></img></a></li>
@@ -351,6 +351,16 @@
                     </ul>
                 </div>
 
+                <!-- style navigation in md and sm screen -->
+
+                <div class="fab-styles">
+                    <button class="fab-opener">
+                        <a onclick= "fabopener()">
+                            <img class="fab-icon" src="./assets/paint.png">
+                        </a>
+                    </button>
+                </div>
+
             </div>
         </div>
 
@@ -358,7 +368,7 @@
 
     <footer>
         <div class="parallax" id="footer">
-            <h2 class="text-white text-center pt-3">Footer</h2>
+            <h2 class="text-center pt-3">Footer</h2>
         </div>
 
     </footer>
