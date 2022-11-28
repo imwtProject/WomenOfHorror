@@ -348,6 +348,85 @@ hr {
   margin-left: 1em
 }
 
+/* style fab */
+
+.fab-styles {
+  position: fixed;
+  left: 20px;
+  top: 60px;
+  transform: scale(1);
+  }
+
+.fab-opener {
+  background-color: rgb(25, 53, 215);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+  transition: all 0.1s ease-out;
+  margin-bottom: 5px
+}
+
+.fab-opener:hover {
+ background-color: rgb(85, 25, 215);
+
+}
+
+.fab-icon {
+  height: 35px;
+  width: 35px;
+  margin-left: 3px;
+  margin-top: 1px;
+}
+
+/*codepen*/
+
+.fab-menu {
+  transform: scale(0); /* this makes it invisible when class not open */
+}
+
+.btn-fab__action .material-icons {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: bold;
+  color: #fff;
+}
+.fab-menu {
+  text-align: right;
+}
+.fab-menu__item {
+  display:block;
+  margin-bottom: 5px;
+  margin-right: 0;
+  padding: 8px 16px;
+  border-radius: 20px;
+  width: 100%;
+  background-color:transparent;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.189);
+
+} 
+
+.btn-fab.open .fab-menu {
+  transform: scale(1); /* after javascript adds class open this is activated */
+}
+
+.btn-fab.open .fab-menu__item {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+.btn-fab.open .fab-menu__item:last-child {
+  transition-delay: 0.15s; 
+}
+.btn-fab.open .fab-menu__item:nth-child(2) {
+  transition-delay: 0.13s; 
+}
+.btn-fab.open .fab-menu__item:first-child {
+  transition-delay: 0.1s; 
+}
+
+
 /* css vecchio */
 
 
@@ -511,11 +590,6 @@ h4 {
     background-color: #ffffdd;
     }	
 
-
-
-
-
-
     .list {
     font-size: 80%;
     line-height: 1.2; 
@@ -608,3 +682,20 @@ h4 {
     grid-template-columns: 0fr 3fr 0fr;      
   }
 }
+
+/* responsive style nav */
+
+@media screen and (max-width: 992px)
+{
+  .styles-large  {
+    display: none !important;
+
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  .fab-styles {
+    display: none ;}
+}
+

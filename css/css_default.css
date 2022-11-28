@@ -4,6 +4,9 @@
 
 
 
+h1,h2,h4, .navbar-brand {
+  color: white;
+}
 
 
 
@@ -223,10 +226,10 @@ hr {
 
 /* style fab */
 
-.fab-styles {
+ .fab-styles {
   position: fixed;
   left: 20px;
-  top: 90px;
+  top: 60px;
   transform: scale(1);
   }
 
@@ -236,8 +239,14 @@ hr {
   height: 50px;
   width: 50px;
   text-align: center;
-  box-shadow: 2px 2px 3px #3336 ;
-  
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+  transition: all 0.1s ease-out;
+  margin-bottom: 5px
+}
+
+.fab-opener:hover {
+ background-color: rgba(0, 255, 255, 0.536)
+
 }
 
 .fab-icon {
@@ -247,6 +256,51 @@ hr {
   margin-top: 1px;
 }
 
+/*codepen*/
+
+.fab-menu {
+  transform: scale(0); /* this makes it invisible when class not open */
+}
+
+.btn-fab__action .material-icons {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: bold;
+  color: #fff;
+}
+.fab-menu {
+  text-align: right;
+}
+.fab-menu__item {
+  display:block;
+  margin-bottom: 5px;
+  margin-right: 0;
+  padding: 8px 16px;
+  border-radius: 20px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.189);
+
+} 
+
+.btn-fab.open .fab-menu {
+  transform: scale(1); /* after javascript adds class open this is activated */
+}
+
+.btn-fab.open .fab-menu__item {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+.btn-fab.open .fab-menu__item:last-child {
+  transition-delay: 0.15s; 
+}
+.btn-fab.open .fab-menu__item:nth-child(2) {
+  transition-delay: 0.13s; 
+}
+.btn-fab.open .fab-menu__item:first-child {
+  transition-delay: 0.1s; 
+}
 
 /* css vecchio */
 
@@ -277,7 +331,7 @@ hr {
 	.nav-link {
     display: block;
     padding: .5rem 1rem;
-    color: black;
+    color: white;
     text-decoration: none;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
@@ -297,14 +351,6 @@ hr {
     background-color: black !important;
     font-weight: bold;
     } 
-
-
-
-
-
-
-
-
 
     .myborder {
     border: solid rgb(220,220,220) 1px;
@@ -384,11 +430,6 @@ hr {
     .text-refFrankenstein {
     background-color: #ffffdd;
     }	
-
-
-
-
-
 
     .list {
     font-size: 80%;

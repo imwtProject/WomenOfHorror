@@ -22,9 +22,6 @@ $(document).ready(function () {
   }
 })
 
-// for responsivity in the homepage text
-
-
 
 // scrolltop
 
@@ -197,5 +194,11 @@ function goTop() {
 			},5000);
 		}
 		
-		
-		
+/* fab styles */ 
+function fabopener()	{
+	var fab = document.getElementsByClassName('fab-opener');
+	var fabWrapper = document.getElementsByClassName('fab-styles');
+
+	fabWrapper[0].classList.toggle('open');
+}
+
