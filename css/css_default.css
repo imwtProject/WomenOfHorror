@@ -64,7 +64,7 @@ h1,h2,h4, .navbar-brand {
 }
 
 #firstNav {
-  height: 10vh;
+  height: 4em;
 }
 
 #hero {
@@ -136,7 +136,7 @@ hr {
 
 .ic-stickey {
   position: fixed;
-  top: 60px;
+  top: 5em;
   left: -250px; /* not good in ox but how to make it responsive? in vh it comes out on a smaller screen */
 }
 .ic-stickey ul {
@@ -325,7 +325,7 @@ hr {
     padding-right:15px;
     height: fit-content ;
 	  position: sticky;
-    top: 10vh; /* stops at navbar */
+    top: 4em; /* stops at navbar */
     }
 	
 	
