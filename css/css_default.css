@@ -70,8 +70,10 @@ h1,h2,h4, .navbar-brand {
 #hero {
   padding-top: 3em;
 }
+
+/*questo background non si sa dove cazzo stia*/
 .background {
-  background-image: url("./assets/parallax.jpg") !important;
+  background-image: url("../assets/img/y2k/skybackground1.png") !important;
   position: fixed;
 }
 
@@ -80,6 +82,10 @@ h1,h2,h4, .navbar-brand {
 #title {
 	color: white;
 }
+
+#main-article {
+  margin-right: 0.3em;
+  }
 
 
 /* #article-content {

@@ -42,7 +42,7 @@ function goTop() {
 		}
 		
 		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
-		var textComparison = `<div class="checkbox" id="compare"><label><input type="checkbox" id="showperson" class="show">$label</label></div>`
+		var textComparison = `<div class="checkbox"><label><input type="checkbox" onclick='compare("$url")' class="show">$label</label></div>`
 		
 		$(document).ready(main);
 
@@ -122,6 +122,26 @@ function goTop() {
 				}
 			});
 		}
+
+		/* SIDE BY SUDE TEXT COMPARISON */
+		function compare(file) {
+			$.ajax({
+				method: 'GET',
+				url: file,
+				success: function(a){
+				$('#second-text').html(a)
+				$('.show').prop("checked", false)
+				addIds() /*calls funcion to add id in the html to metadata*/
+				filltabs()
+				$('#title1').html($('#second-text h1'))
+				},
+				error: function(){
+					alert('could not load file' + file)
+				}
+			});
+		}
+
+
 		
 		function addIds() {
 			addId('.person','person')
