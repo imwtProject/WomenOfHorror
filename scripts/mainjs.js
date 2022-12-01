@@ -34,13 +34,12 @@ function goTop() {
 //prende gli articoli da un js senza ricaricare la pagina
 		String.prototype.tpl = function(o) { 
 			var r = this ; 
-			console.log(r)
-			console.log(o)
 			for (var i in o) { 
 				console.log(i)			
 				r = r.replace(new RegExp("\\$"+i, 'g'),o[i])  
 			} 
 			return r 
+			console.log(r)
 		}
 		
 		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
