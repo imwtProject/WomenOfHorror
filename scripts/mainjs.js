@@ -42,10 +42,9 @@ function goTop() {
 		}
 		
 		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
+		var textComparison = `<label><input type="checkbox" id="showperson" class="show">$label</label>`
 		
 		$(document).ready(main);
-
-
 
 
 		function main() {
@@ -55,7 +54,7 @@ function goTop() {
 				success: function(d) {
 					for (var i=0; i<d.length; i++) {
 						$('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
-						$('#compare').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
+						$('#compare').append(textComparison.tpl({url:d[i].url, label: d[i].label}))
 					}	
 				},
 				error: function() {
@@ -204,3 +203,14 @@ function fabopener()	{
 	fabWrapper[0].classList.toggle('open');
 }
 
+/* responsive fab */
+
+$(document).ready(function () {
+	var styletag = document.getElementById('currentlocalcss')
+	var style = styletag.getAttribute('href')
+	var coverleft = document.getElementById('cover-left')
+	var coverright = document.getElementById('cover-right')
+	if( style === './css/css_y2k.css' ) {
+		coverleft.innerHTML= "<img src='./assets/img/y2k/holographicstargreen.png' width='30' height='30'></img>"
+		coverright.innerHTML="<img src='./assets/img/y2k/holographicstargreen.png' width='30' height='30'></img>"
+	}})	
