@@ -42,7 +42,7 @@ function goTop() {
 		}
 		
 		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
-		var textComparison = `<label><input type="checkbox" id="showperson" class="show">$label</label>`
+		var textComparison = `<div class="checkbox" id="compare"><label><input type="checkbox" id="showperson" class="show">$label</label></div>`
 		
 		$(document).ready(main);
 
