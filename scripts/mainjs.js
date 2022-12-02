@@ -125,6 +125,11 @@ function goTop() {
 
 		/* SIDE BY SUDE TEXT COMPARISON */
 		function compare(file) {
+			var compArt = document.getElementById("main-article");
+			var compDisplay = document.getElementById("compare-article");
+			compDisplay.style.display = "block";
+			compArt.classList.add("col-md-6");
+
 			$.ajax({
 				method: 'GET',
 				url: file,
@@ -133,8 +138,8 @@ function goTop() {
 				$('.show').prop("checked", false)
 				addIds() /*calls funcion to add id in the html to metadata*/
 				filltabs()
-				$('#title1').html($('#second-text h1'))
-				},
+				$('#title1').html($('#second-text h1'))				
+					},
 				error: function(){
 					alert('could not load file' + file)
 				}
