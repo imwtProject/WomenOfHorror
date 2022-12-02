@@ -128,6 +128,7 @@ function goTop() {
 			var compArt = document.getElementById("main-article");
 			var compDisplay = document.getElementById("compare-article");
 			compDisplay.style.display = "block";
+			compArt.classList.remove("col-md-12");
 			compArt.classList.add("col-md-6");
 
 			$.ajax({
@@ -145,6 +146,11 @@ function goTop() {
 				}
 			});
 		}
+
+		/* function to deselect compare text 
+		I add id=open
+		then I call a function eventlistener click that changes back the main-art div and the display value AND takes id=open away
+		but maybe already works with the checkbox?*/
 
 
 		
