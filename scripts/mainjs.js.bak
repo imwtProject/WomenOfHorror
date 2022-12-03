@@ -139,7 +139,7 @@ function goTop() {
 				$('.show').prop("checked", false)
 				addIds() /*calls funcion to add id in the html to metadata*/
 				filltabs()
-				$('#title1').html($('#second-text h1'))				
+				$('#title1').html($('#file h1'))				
 					},
 				error: function(){
 					alert('could not load file' + file)
