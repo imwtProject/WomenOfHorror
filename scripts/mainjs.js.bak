@@ -134,8 +134,8 @@ function goTop() {
 			$.ajax({
 				method: 'GET',
 				url: file,
-				success: function(d){
-				$('#second-text').html(d)
+				success: function(a){
+				$('#second-text').html(a)
 				$('.show').prop("checked", false)
 				addIds() /*calls funcion to add id in the html to metadata*/
 				filltabs()
@@ -252,7 +252,7 @@ $(document).ready(function () {
 
 
 
-/*  accordion */
+
 
 $('.panel-collapse').on('show.bs.collapse', function () {
     $(this).siblings('.panel-heading').addClass('active');
