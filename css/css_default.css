@@ -331,9 +331,24 @@ hr {
     padding-left:15px;
     padding-right:15px;
     height: fit-content ;
+	height:900px;
 	  position: sticky;
+	  overflow-y: auto;
+	  
     top: 4em; /* stops at navbar */
     }
+	
+	/* Hide scrollbar for Chrome, Safari and Opera */
+	#metadata-column::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+     #metadata-column {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+	
 	
 	
 	a {
@@ -618,3 +633,10 @@ hr {
 	-moz-transform: rotate(180deg);
 	transform: rotate(180deg);
 } 
+
+
+
+#file{
+	height:900px;
+	overflow-y:scroll;
+}
