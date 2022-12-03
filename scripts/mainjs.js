@@ -216,6 +216,78 @@ function goTop() {
 			}
 		}
 
+
+
+
+
+
+
+/* PROVE METADATA 2 */ 
+
+
+
+
+		function addIds2() {
+			addId2('.person','person')
+			addId2('.character', 'character')
+			addId2('.literaryWork', 'literaryWork')
+		}
+		
+		function addId2(what, prefix) {
+			var id = '0'
+			var elements = $(what); 
+			for (var i=0; i<elements.length; i++) {
+				elements[i].id = prefix + "-" + id++
+			}
+		}
+		function filltabs2(){
+			fillInfo2("#second-text", "#info")
+			filltab2("#second-text .person","list-person","#person")
+			filltab2("#second-text .character","list-character","#character")
+			filltab2("#second-text .literaryWork","list-literaryWork","#literaryWork")
+		}
+		
+		function fillInfo2(from, where) {
+			var item = `
+				<p class="list title"><b>Title: </b> $title</p>
+				<p class="list author"><b>Author: </b> $author</p>
+				<p class="list author"><b>Publishing date: </b> $date</p>
+				<p class="list author"><b>Issue: </b> $issue</p>
+				<p class="list author"><b>Headings: </b><ul>$headings</ul></p>
+				
+				` ;
+			$(where).empty(); 
+
+			var title = $(from + ' h1')[0].innerText
+			var author = $(from + ' .byline')[0].innerText
+		    var date = $(from + ' .dateline')[0].innerText
+			var issue = $(from + ' .issued')[0].innerText
+			var headingList = $(from + ' h2')
+			var headings = ""
+			for (var i=0; i<headingList.length; i++) {
+				headings += "<li class='small'>"+headingList[i].innerHTML+"</li>"
+			}
+			$(where).append(item.tpl( {
+				author: author,
+				title: title,
+				date: date,
+				issue: issue,
+				headings: headings
+			}))
+		}
+		
+		function filltab2(what,style,where) {
+			var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
+			var elements = $(what); 
+			$(where+' ul').empty(); 
+			for (var i=0; i<elements.length; i++) {
+				$(where+' ul').append(list.tpl({
+					style:style, 
+					place: '#'+elements[i].id,
+					content: elements[i].innerHTML
+				}) )
+			}
+		}
 		function goto(id) {
 			var t = $(id)[0].offsetTop;
 			 $('html, body').animate({

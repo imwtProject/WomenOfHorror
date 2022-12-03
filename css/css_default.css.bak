@@ -331,7 +331,7 @@ hr {
     padding-left:15px;
     padding-right:15px;
     height: fit-content ;
-	height:900px;
+	height:500px;
 	  position: sticky;
 	  overflow-y: auto;
 	  
@@ -637,6 +637,11 @@ hr {
 
 
 #file{
-	height:950px;
-	overflow-y:scroll;
+	height:900px;
+	overflow-y:auto;
+}
+
+#second-text{
+	height:900px;
+	overflow-y:auto;
 }
