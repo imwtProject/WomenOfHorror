@@ -240,21 +240,21 @@
 										<!-- Nav selectors -->
 										<ul class="nav nav-pills nav-justified" id="sentenceTab" role="tablist">
 											<li class="nav-item">
-												<a class="nav-link active" id="info-tab" data-toggle="tab" href="#info"
+												<a class="nav-link active" id="info-tab" data-toggle="tab" href="#info2"
 													role="tab" aria-controls="view" aria-selected="true">Info</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link " id="person-tab" data-toggle="tab" href="#person"
+												<a class="nav-link " id="person-tab" data-toggle="tab" href="#person2"
 													role="tab" aria-controls="view" aria-selected="false">Person</a>
 											</li>
 											<li class="nav-item">
 												<a class="nav-link" id="character-tab" data-toggle="tab"
-													href="#character" role="tab" aria-controls="home"
+													href="#character2" role="tab" aria-controls="home"
 													aria-selected="false">Character</a>
 											</li>
 											<li class="nav-item">
 												<a class="nav-link" id="literaryWork-tab" data-toggle="tab"
-													href="#literaryWork" role="tab" aria-controls="home"
+													href="#literaryWork2" role="tab" aria-controls="home"
 													aria-selected="false">Book</a>
 											</li>
 										</ul>
