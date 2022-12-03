@@ -241,10 +241,10 @@ function goTop() {
 			}
 		}
 		function filltabs2(){
-			fillInfo2("#second-text", "#info")
-			filltab2("#second-text .person","list-person","#person")
-			filltab2("#second-text .character","list-character","#character")
-			filltab2("#second-text .literaryWork","list-literaryWork","#literaryWork")
+			fillInfo2("#second-text", "#info2")
+			filltab2("#second-text .person","list-person","#person2")
+			filltab2("#second-text .character","list-character","#character2")
+			filltab2("#second-text .literaryWork","list-literaryWork","#literaryWork2")
 		}
 		
 		function fillInfo2(from, where) {
