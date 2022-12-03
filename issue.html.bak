@@ -103,8 +103,9 @@
   <div class="panel panel-default">
     <div class="panel-heading active" role="tab" id="headingOne">
       <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <a class=" btn-nav-accordion collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
          Select main Article
+		 <i class="fas fa-chevron-up"></i>
         </a>
       </h4>
 	  <div class="article-list p-3">
@@ -261,18 +262,18 @@
 
 										<!-- Tab panes -->
 										<div class="tab-content myBorder" id="sentenceContent">
-											<div class="tab-pane active" id="info" role="tabpanel"
+											<div class="tab-pane active" id="info2" role="tabpanel"
 												aria-labelledby="info-tab">
 											</div>
-											<div class="tab-pane" id="person" role="tabpanel"
+											<div class="tab-pane" id="person2" role="tabpanel"
 												aria-labelledby="person-tab">
 												<ul class="minimal"></ul>
 											</div>
-											<div class="tab-pane" id="character" role="tabpanel"
+											<div class="tab-pane" id="character2" role="tabpanel"
 												aria-labelledby="character-tab">
 												<ul class="minimal"></ul>
 											</div>
-											<div class="tab-pane" id="literaryWork" role="tabpanel"
+											<div class="tab-pane" id="literaryWork2" role="tabpanel"
 												aria-labelledby="literaryWork-tab">
 												<ul class="minimal"></ul>
 											</div>
