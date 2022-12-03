@@ -135,11 +135,11 @@ function goTop() {
 				method: 'GET',
 				url: file,
 				success: function(d){
-				$('#file').html(d)
+				$('#second-text').html(d)
 				$('.show').prop("checked", false)
 				addIds() /*calls funcion to add id in the html to metadata*/
 				filltabs()
-				$('#title').html($('#file h1'))				
+				$('#title1').html($('#file h1'))				
 					},
 				error: function(){
 					alert('could not load file' + file)

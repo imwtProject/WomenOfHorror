@@ -124,7 +124,7 @@ function goTop() {
 		}
 
 		/* SIDE BY SUDE TEXT COMPARISON */
-		function compare(second-text) {
+		function compare(file) {
 			var compArt = document.getElementById("main-article");
 			var compDisplay = document.getElementById("compare-article");
 			compDisplay.style.display = "block";
