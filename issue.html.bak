@@ -240,7 +240,7 @@
 									<div class="list-down" id="row3">
 										<p><b>List down:</b></p>
 										<!-- Nav selectors -->
-										<ul class="nav nav-pills nav-justified" id="sentenceTab" role="tablist">
+										<ul class="nav nav-pills nav-justified" id="sentenceTab" role="tablist2">
 											<li class="nav-item">
 												<a class="nav-link active" id="info-tab" data-toggle="tab" href="#info2"
 													role="tab" aria-controls="view" aria-selected="true">Info</a>
