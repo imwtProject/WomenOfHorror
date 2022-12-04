@@ -85,7 +85,12 @@ h1,h2,h4, .navbar-brand {
 
 #main-article {
   margin-right: 0.3em;
+  overflow-y:auto;
   }
+
+#compare-article {
+  overflow-y: auto;
+}
 
 
 /* #article-content {
@@ -327,13 +332,13 @@ hr {
 
     /* metadata column */
     #metadata-column {
-    background-color: ;
     padding-left:15px;
     padding-right:15px;
     height: fit-content ;
-	height:800px;
+	  height:800px;
 	  position: sticky;
 	  overflow-y: auto;
+    overscroll-behavior: contain;
 	  
     top: 4em; /* stops at navbar */
     }
@@ -355,12 +360,10 @@ hr {
 /* scroll per i due articoli */
 #file{
 	height:900px;
-	overflow-y:auto;
-}
+	}
 
 #second-text{
-	height:900px;
-	overflow-y:auto;
+	height:900px;	
 }
 	
 	a {
