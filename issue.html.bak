@@ -305,7 +305,7 @@
 
 						<!--adding div for text comparison -->
 
-						<div class="col-md-6" id="compare-article" style="display: none;">
+						<div class="col-md-6" id="compare-article" >
 							<div class="py-5 bg-dark text-center" id="title1">
 								<h1>Second Article</h1>
 							</div>
