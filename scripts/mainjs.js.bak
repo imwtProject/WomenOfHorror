@@ -133,7 +133,7 @@ function goTop() {
 
 
 
-        function load(file) {
+        function load2(file) {
 			$.ajax({
 				method: 'GET',
 				url: file,

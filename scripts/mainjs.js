@@ -129,11 +129,8 @@ function goTop() {
 			var compDisplay = document.getElementById("compare-article");
 			compDisplay.style.display = "block";
 			compArt.classList.remove("col-md-12");
-		compArt.classList.add("col-md-6");}
+			compArt.classList.add("col-md-6");
 
-
-
-        function load2(file) {
 			$.ajax({
 				method: 'GET',
 				url: file,
