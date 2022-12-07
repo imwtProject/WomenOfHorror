@@ -83,19 +83,23 @@ h1,h2,h4, .navbar-brand {
 	color: white;
 }
 
+/* scroll per i due articoli */
+
 #main-article {
   margin-right: 0.3em;
+  height: 90vh;
   overflow-y:auto;
   }
 
 #compare-article {
   overflow-y:auto;
+  height:90vh;
 }
 
 
-/* #article-content {
+#article-content {
   z-index: 1000;
-} */
+} 
 
 .navbar-expand-lg {
     flex-wrap: nowrap;
@@ -354,17 +358,7 @@ hr {
   scrollbar-width: none;  /* Firefox */
 }
 	
-	
-	
-	
-/* scroll per i due articoli */
-#file{
-	height:900px;
-	}
 
-#second-text{
-	height:900px;	
-}
 	
 	a {
     color: black;
@@ -595,26 +589,17 @@ hr {
     display: none ;}
 }
 
-
-
-
-
-
-
-
-
-
-
 .wrapper{
   width:100%;
+  height:100vh;
+  overflow-y: auto;
 }
+
 @media(max-width:992px){
  .wrapper{
   width:100%;
 } 
-
 }
-
 
 
 .panel {
@@ -623,11 +608,11 @@ hr {
 	margin-top: 0;
 }
 
-
 .panel-heading {
   padding: 0;
 	border:0;
 }
+
 .panel-title>a, .panel-title>a:active{
 	display:block;
 	padding:15px;
@@ -640,8 +625,6 @@ hr {
 	text-decoration:none;
 }
 
-
-
 .panel-title{
 	border-bottom: 1px solid black;
 }
@@ -649,13 +632,13 @@ hr {
 
 .fa-chevron-up {
     transition: all 0.3s ease;
-	float:right;
+	  float:right;
  }
 .btn-nav-accordion[aria-expanded="true"] .fa-chevron-down {
   transform: rotate(180deg);
   float:right;
 }
 .btn-nav-accordion.collapsed .fa-chevron-up {
-  transform: rotate(180deg);
+   transform: rotate(180deg);
    float:right;
 }
