@@ -96,7 +96,8 @@ h1,h2,h4, .navbar-brand {
 }
 
 #article-content {
-  z-index: 1000; /*non va comunque perché position static */
+  height: 92vh;
+  margin-top: 8vh;
 } 
 
 .navbar-expand-lg {
