@@ -63,13 +63,23 @@ h1,h2,h4, .navbar-brand {
     width: auto !important;
 }
 
+#main-content {
+  background-color: #900690;
+}
+
 #firstNav {
   height: 4em;
 }
 
 #hero {
-  padding-top: 3em;
+  height: auto;
+  background-color: #cccc00;
+  color: black !important;
+  padding-top: 10vh;
+  text-align: center;
+  padding-bottom:3vh;
 }
+
 
 /*questo background non si sa dove cazzo stia*/
 .background {
@@ -96,8 +106,10 @@ h1,h2,h4, .navbar-brand {
 }
 
 #article-content {
-  height: 92vh;
-  margin-top: 8vh;
+  height: 100vh;
+  padding-top: 1em;
+  padding-right: 1em;
+  background-color:rgb(112, 166, 217);
 } 
 
 .navbar-expand-lg {
