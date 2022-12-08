@@ -47,8 +47,6 @@ function goTop() {
 		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
 		var textComparison = `<div class="radio"><label><input type="radio" onclick='compare("$url")'>$label</label></div>`
 		
-		$("input[name='radio']:checked").val()
-		
 		$(document).ready(main);
 
 
