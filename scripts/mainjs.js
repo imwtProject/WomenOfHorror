@@ -293,8 +293,6 @@ function goTop() {
 		}
 		function goto(id) {
 			var t = $(id)[0].offsetTop; /* DOM element, read only property*/
-			console.log(t)
-			console.log($(id).offsetParent)
 			var x = $(id).offset()
 			console.log(x.top)
 			 $('html, body').animate(
@@ -307,8 +305,8 @@ function goTop() {
 			setTimeout(function(){
 				$(id).removeClass('animate');
 			},5000);
-			
-			alert("Top: " + $(id).top + " Left: " + $(id).left);
+
+			alert("Top: " + x.top + " Left: " + x.left);
 		}
 		
 /* fab styles */ 
