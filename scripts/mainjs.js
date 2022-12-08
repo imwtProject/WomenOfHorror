@@ -128,7 +128,7 @@ function goTop() {
 		}
 
 		/* SIDE BY SUDE TEXT COMPARISON */
-		function compare(file) {
+	/*	function compare(file) {
 			var compArt = document.getElementById("main-article");
 			var compDisplay = document.getElementById("compare-article");
 			compDisplay.style.display = "block";
@@ -141,7 +141,7 @@ function goTop() {
 				success: function(d){
 				$('#second-text').html(d)
 				$('.show').prop("checked", false)
-				addIds() /*calls funcion to add id in the html to metadata*/
+				addIds()
 				filltabs()
 				$('#title1').html($('#second-text h1'))				
 					},
@@ -149,7 +149,7 @@ function goTop() {
 					alert('could not load file' + file)
 				}
 			});
-		}
+		} */
 
 		/* function to deselect compare text 
 		I add id=open
