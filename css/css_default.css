@@ -8,6 +8,9 @@ h1,h2,h4, .navbar-brand {
   color: white;
 }
 
+.text {
+  color:#000 !important;
+}
 
 
 .navbar-collapse {
@@ -98,10 +101,12 @@ h1,h2,h4, .navbar-brand {
 #main-article {
   margin-right: 0.3em;
   overflow-y:auto;
+  height: 100vh;
   }
 
 #compare-article {
   overflow-y:auto;  
+  height: 100vh;
 }
 
 #article-content {
@@ -128,7 +133,7 @@ h1,h2,h4, .navbar-brand {
 .row>* {
     padding-left: 0% !important;
     padding-right: 0% !important;
-    height:100vh /* only article scroll not entire page*/
+   /* height:100vh  only article scroll not entire page*/
 
 }
 
@@ -355,6 +360,7 @@ hr {
     position: sticky;
 	  overflow-y: auto;
     overscroll-behavior: contain;
+    height: 100vh;
     /* margin-top: 4em;  stops at navbar */
     }
 	
@@ -499,8 +505,7 @@ Hide scrollbar for IE, Edge and Firefox
     margin: 0; 
     }
 
-
-    .animate {
+  .animate {
     animation-name: bgcolor ;
     animation-duration: 0.75s ; 
     animation-iteration-count: 3;

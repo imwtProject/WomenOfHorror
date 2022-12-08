@@ -36,9 +36,9 @@ function goTop() {
 			/* this = String {`<li><a href='#' onclick='load("$url")'>$label</a></li>`} made into a string*/
 			/* o ={url: 'articles/FemaleGothic.html', label: 'Female Gothic'}  fore every article in the json AND both for main art and second art*/
 			var r = this ; 			
-			for (var i in o) { 		
-				console.log(i)							
-				r = r.replace(new RegExp("\\$"+i, 'g'),o[i])  
+			for (var i in o) { 										
+				r = r.replace(new RegExp("\\$"+i, 'g'),o[i])  /* prima iterazione in cui i= url : 1) $url > g  2) g > 'articles/FemaleGothic.html' */
+															/* seconda iter i=lable : 1) $lable > g 2) g > 'Female Gothic' */
 			} 
 			/* r once replaced = <li><a href='#' onclick='load("articles/FemaleGothic.html")'>Female Gothic</a></li>*/
 			return r 
@@ -294,13 +294,21 @@ function goTop() {
 			}
 		}
 		function goto(id) {
-			var t = $(id)[0].offsetTop;
-			 $('html, body').animate({
-        scrollTop: $(id).offset().top - 130}, 200);
+			var t = $(id)[0].offsetTop; /* DOM element, read only property*/
+			var x = $(id).offset()
+			console.log(x.top)
+			 $('html, body').animate(
+				{ /*performs a custom animation of a set of CSS properties. (selector).animate({styles},speed,easing,callback)*/
+        	scrollTop: x.top - 130} /* jQuery method */
+												, 200); 
 			$(id).addClass('animate');
+
+			/* this removes the class animate after 5 seconds */
 			setTimeout(function(){
 				$(id).removeClass('animate');
 			},5000);
+
+			alert("Top: " + x.top + " Left: " + x.left);
 		}
 		
 /* fab styles */ 
