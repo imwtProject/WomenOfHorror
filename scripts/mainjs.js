@@ -296,8 +296,7 @@ function goTop() {
 		function goto(id) {
 			var t = $(id)[0].offsetTop; /* DOM element, read only property*/
 			var x = $(id).offset()
-			console.log(x.top)
-			 $('html, body').animate(
+			$('#main-article').animate(
 				{ /*performs a custom animation of a set of CSS properties. (selector).animate({styles},speed,easing,callback)*/
         	scrollTop: x.top - 130} /* jQuery method */
 												, 200); 
@@ -307,9 +306,7 @@ function goTop() {
 			setTimeout(function(){
 				$(id).removeClass('animate');
 			},5000);
-
-			alert("Top: " + x.top + " Left: " + x.left);
-		}
+			}
 		
 /* fab styles */ 
 function fabopener()	{
