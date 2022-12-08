@@ -33,18 +33,19 @@ function goTop() {
 
 //prende gli articoli da un js senza ricaricare la pagina
 		String.prototype.tpl = function(o) { 
-			console.log(this)
-			console.log(o)	
+			/* this = String {`<li><a href='#' onclick='load("$url")'>$label</a></li>`} made into a string*/
+			/* o ={url: 'articles/FemaleGothic.html', label: 'Female Gothic'}  fore every article in the json AND both for main art and second art*/
 			var r = this ; 			
-			for (var i in o) { 									
+			for (var i in o) { 		
+				console.log(i)							
 				r = r.replace(new RegExp("\\$"+i, 'g'),o[i])  
 			} 
-			console.log(r)
+			/* r once replaced = <li><a href='#' onclick='load("articles/FemaleGothic.html")'>Female Gothic</a></li>*/
 			return r 
 		}
 		
 		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
-		var textComparison = `<div class="radio"><label><input type="radio" onclick='compare("$url")' class="show">$label</label></div>`
+		var textComparison = `<div class="radio"><label><input type="radio" onclick='compare("$url")'>$label</label></div>`
 		
 		$(document).ready(main);
 
@@ -126,7 +127,7 @@ function goTop() {
 		}
 
 		/* SIDE BY SUDE TEXT COMPARISON */
-	/*	function compare(file) {
+		function compare(file) {
 			var compArt = document.getElementById("main-article");
 			var compDisplay = document.getElementById("compare-article");
 			compDisplay.style.display = "block";
@@ -147,7 +148,7 @@ function goTop() {
 					alert('could not load file' + file)
 				}
 			});
-		} */
+		} 
 
 		/* function to deselect compare text 
 		I add id=open
