@@ -101,8 +101,7 @@ h1,h2,h4, .navbar-brand {
   }
 
 #compare-article {
-  overflow-y:auto;
-  
+  overflow-y:auto;  
 }
 
 #article-content {
@@ -110,6 +109,8 @@ h1,h2,h4, .navbar-brand {
   padding-top: 1em;
   padding-right: 1em;
   background-color:rgb(112, 166, 217);
+  position:sticky;
+  top: 4em;
 } 
 
 .navbar-expand-lg {

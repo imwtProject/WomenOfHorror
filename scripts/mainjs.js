@@ -37,8 +37,8 @@ function goTop() {
 			for (var i in o) { 					
 				r = r.replace(new RegExp("\\$"+i, 'g'),o[i])  
 			} 
-			return r 
 			console.log(r)
+			return r 
 		}
 		
 		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
