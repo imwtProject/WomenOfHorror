@@ -257,8 +257,12 @@ padding-top: 3em;
 }
 
 
-.text-center{
-font-family: TONYSTREES
+.intro{
+  padding: 90px 50px;
+    text-align: center;
+    border-top: 40px solid black;
+    border-image: linear-gradient(to left, #000 50%, transparent 50%) 100% 1;
+font-family: NHLSanJose
 }
 
 .lead {
