@@ -23,56 +23,66 @@
 	<!-- Local stylesheet and javascript -->
 	<link rel="stylesheet" href="./css/css_default.css" id="currentlocalcss">
 	<script src="scripts/mainjs.js"></script>
-  
+
+	  <!--change navbar background-->
+	  <script>
+        $(function () {
+      $(document).scroll(function () {
+          var $nav = $(".navbar");
+          var dropdown =$(".dropdown-menu");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+          dropdown.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+          console.log(this)
+        });
+    });
+    </script>
+
+
 </head>
 
 <body>
-	<header>
-		<div class="navbar navbar-expand-lg  fixed-top" id="firstNav">
-			<a href="index.html" class="navbar-brand">
-				<img src="./assets/thunder.png" width="30" height="30" alt="lightning">
-				Women of Horror
-			</a>
+	
+    <header>
+
+        <div class="navbar navbar-expand-lg fixed-top" id="firstNav">
+            <a href="index.html" class="navbar-brand">
+                <img src="./assets/thunder.png" width="30" height="30" alt="lightning">
+                Women of Horror
+            </a>
 
 
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-			<div class="collapse navbar-collapse" id="mainmenu">
-				<ul class="navbar-nav ml-auto">
+            <div class="collapse navbar-collapse" id="mainmenu">
+                <ul class="navbar-nav ml-auto">
 
-					<li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
 
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-							aria-expanded="false">
-							Issues
-						</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="issue.html">Electric Monster</a></li>
-							<li><a class="dropdown-item" href="#"
-									onclick="alert('This Issue has not been published yet');">Bloodsucking Freaks</a>
-							</li>
-							<li><a class="dropdown-item" href="#"
-									onclick="alert('This Issue has not been published yet');">Horny Cannibals</a></li>
-							<li><a class="dropdown-item" href="#"
-									onclick="alert('This Issue has not been published yet');">Gothic lagoon party</a>
-							</li>
-						</ul>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Issues
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="issue.html">Electric Monster</a></li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="alert('This Issue has not been published yet');">Bloodsucking Freaks</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="alert('This Issue has not been published yet');">Horny Cannibals</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item"><a href="#about-title" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="documentation.html" class="nav-link">Documentation</a></li>
+                </ul>
+            </div>
+        </div>
 
-					</li>
-
-
-					<li class="nav-item"><a href="#about-title" class="nav-link">About</a></li>
-					<li class="nav-item"><a href="documentation.html" class="nav-link">Documentation</a></li>
-				</ul>
-			</div>
-		</div>
-
-	</header>
+    </header>
 
 	<main>
-		<!--  Hero  -->
+		<!-- Hero  -->
 		<!--
 		<section id="hero" class="bg-white text-black text-center">
 			<div class="container" style="padding-top: 20px">
@@ -95,8 +105,6 @@
 					le prix d'un. The package includes two items for the price of one.</p>
 			</div>
 		</div>
-
-		<div class="background"></div>
 
 		<!--  main article + side articles  -->
 
@@ -157,6 +165,7 @@
 												</form>
 											</div>
 										</div>
+
 										<div class="list-down" id="row3">
 											<p><b>List down:</b></p>
 											<!-- Nav selectors -->
@@ -205,6 +214,7 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingTwo">
 									<h4 class="panel-title">
@@ -304,14 +314,9 @@
 									</div>
 								</div>
 							</div>
-
 						</div>
 					</div>
-
 				</div>
-
-
-
 
 				<!--document column-->
 				<div class="col-md-9" id="article-column">
@@ -332,58 +337,17 @@
 							<div id="second-text" class="py-2 px-2"></div>
 						</div>
 					</div>
-				</div>
-
-
-				<!--other articles card
-
-				<div class="col-md-3" id="article-column2">
-					<div class="py-5 bg-dark text-center" id="title">
-						<h1>Second Article</h1>
-					</div>
-					<div id="file" class="py-2 px-2"></div>
-				</div>-->
-
-
-
-				<!--
-
-				<div class="col-sm-3 text-center" id="card-column">
-					<div class="card bg-dark text-dark mb-2">
-						<img src="assets/Kindred.png" alt="" class="card-img-top">
-						<div class="card-body text-center">
-							<h4 class="card-title">Bloodsucking Freaks</h4>
-							<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-								praesentium!</p>
-							<a href="" class="btn btn-info">Read</a>
-						</div>
-					</div>
-
-
-
-					<div class="card bg-dark text-dark">
-						<img src="assets/Kindred.png" alt="" class="card-img-top">
-						<div class="card-body text-center">
-							<h4 class="card-title">Horny Cannibals</h4>
-							<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-								praesentium!</p>
-							<a href="" class="btn btn-info">Read</a>
-						</div>
-
-
-
-
-					</div>
-				</div> -->
+				</div>				
 			</div>
 		</div>
 
-
 		<!-- /container -->
 
-
-		<!-- Modal -->
-		<div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="aboutLabel" aria-hidden="true">
+		<!-- Modal
+					
+		MA QUESTO DA DOVE VIENE?
+	-->
+		<!-- <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="aboutLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -402,8 +366,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
-
+		</div> -->
 
 		<!-- scroll top
 		<button class="btn btn-light btn-circle btn-xl" id="scrollTop" onclick="goTop()">
@@ -442,8 +405,8 @@
 			integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
 			crossorigin="anonymous"></script>
 
-
 	</main>
+
 	<footer>
 		<div id="footer">
 			<h2 class="text-center pt-3">Footer</h2>

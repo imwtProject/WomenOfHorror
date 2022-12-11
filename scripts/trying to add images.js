@@ -38,3 +38,16 @@ function compareArticle() {
 	y.removeAttribute("class");
 	$('.indexcompare').css('display', 'none');
   }
+
+
+  /* responsive fab */
+
+$(document).ready(function () {
+	var styletag = document.getElementById('currentlocalcss')
+	var style = styletag.getAttribute('href')
+	var coverleft = document.getElementById('cover-left')
+	var coverright = document.getElementById('cover-right')
+	if( style === './css/css_y2k.css' ) {
+		coverleft.innerHTML= "<img src='./assets/img/y2k/holographicstargreen.png' width='30' height='30'></img>"
+		coverright.innerHTML="<img src='./assets/img/y2k/holographicstargreen.png' width='30' height='30'></img>"
+	}})	

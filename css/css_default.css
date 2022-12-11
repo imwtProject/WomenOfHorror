@@ -1,10 +1,47 @@
 @charset "UTF-8";
 
-/* GENERAL RULES - DON'T CHANGE IF YOU DON'T WANT TO CHANGE LAYOUT */
+/* cose che non si sa cosa sono */
 
+.breath {
+  margin-top: 15px;
+  }
+  
+.small {
+  font-size: 80%;
+  line-height: 1.2; 
+  margin: 0; 
+  }
 
+.btn-info {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
 
-h1,h2,h4, .navbar-brand {
+.animate {
+animation-name: bgcolor ;
+animation-duration: 0.75s ; 
+animation-iteration-count: 3;
+animation-fill-mode: backwards;
+}
+
+@keyframes bgcolor {
+from {
+background-color: #ffffff;
+}
+
+to {
+background-color: #cccc00;
+}
+}
+
+/* general titles and containers and links */
+
+h1,h2,h4 {
+  color: white !important;  
+}
+
+hr {
   color: white;
 }
 
@@ -12,36 +49,97 @@ h1,h2,h4, .navbar-brand {
   color:#000 !important;
 }
 
+.text-center {
+  color: black
+}
+
+.container-fluid {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 0% !important;
+  margin-right: 0% !important;
+  flex-wrap: wrap !important;
+  width: auto !important;
+}
+
+.row {
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-right: 0% !important;
+  margin-left: 0% !important;
+          }
+
+.row>* {
+  padding-left: 0% !important;
+  padding-right: 0% !important;
+ /* height:100vh  only article scroll not entire page*/
+}
+
+/* toglie i pallini a lato degli articoli */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+/* navbar */
+
+#firstNav {
+  height: 4em;
+
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 0% !important;
+  margin-right: 0% !important;
+  flex-wrap: wrap !important;
+  width: auto !important;
+}
+
+.navbar-expand-lg {
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.navbar-brand {
+  color: white;
+}
 
 .navbar-collapse {
-    flex-basis: 100%;
-    flex-grow: 1;
-    align-items: end;
-    justify-content: flex-end;
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: end;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  display: block;
+  padding: .5rem 1rem;
+  color: white;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 .parallax {
-    /* The image used */
-    background-image: url("../assets/parallax.jpg") !important;
+  /* The image used */
+  background-image: url("../assets/parallax.jpg") !important;
 
-    display: block; /* for displaying the text*/
+  display: block; /* for displaying the text*/
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #cover {
-    height: 100vh;
+  height: 100vh;
 } 
 
-#footer {
-    height: 25vh;
-}
-
-/* the text in the cover (parallax img)*/
 .self-defined-grid {
   width: 100%;
   height: inherit;
@@ -51,120 +149,26 @@ h1,h2,h4, .navbar-brand {
     
 }
 
+.star {
+  transform: scale(0);
+}
+
 #cover-text {
-      padding-top: 20vh;
-}
-
-#firstNav,
-.container-fluid, #hero {
-    /* trying to set equal padding for all containers */
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-left: 0% !important;
-    margin-right: 0% !important;
-    flex-wrap: wrap !important;
-    width: auto !important;
-}
-
-#main-content {
-  background-color: #900690;
-}
-
-#firstNav {
-  height: 4em;
-}
-
-#hero {
-  height: auto;
-  background-color: #cccc00;
-  color: black !important;
-  padding-top: 10vh;
-  text-align: center;
-  padding-bottom:3vh;
-}
-
-
-/*questo background non si sa dove cazzo stia*/
-.background {
-  background-image: url("../assets/img/y2k/skybackground1.png") !important;
-  position: fixed;
-}
-
-
-/* jumbotron*/
-#title {
-	color: white;
-}
-
-/* scroll per i due articoli */
-
-#main-article {
-  margin-right: 0.3em;
-  overflow-y:auto;
-  height: 100vh;
-  }
-
-#compare-article {
-  overflow-y:auto;  
-  height: 100vh;
-}
-
-#article-content {
-  height: 100vh;
-  padding-top: 1em;
-  padding-right: 1em;
-  background-color:rgb(112, 166, 217);
-  position:sticky;
-  top: 4em;
-} 
-
-.navbar-expand-lg {
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-
-.row {
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-right: 0% !important;
-    margin-left: 0% !important;
-            }
-
-.row>* {
-    padding-left: 0% !important;
-    padding-right: 0% !important;
-   /* height:100vh  only article scroll not entire page*/
-
-}
-
-#row1, #row2, #row3 {
-    display:block;
-	padding:15px;
-}
-
-hr {
-    color: white;
+  padding-top: 20vh;
 }
 
 .card {
-    /*border-left: 1px !important;  
-    border-right: 1px !important; */      
-    border-color:#212529; /*this is the background color from default bootstrap */
-    border-radius: 0%;
-    background-color: #212529;
+  border-color:#212529; /*this is the background color from default bootstrap */
+  border-radius: 0%;
+  background-color: #212529;
 } 
 
 .card-body {
-    background-color: white;
-}
-.card-img {
-    border-radius: 0%;
+  background-color: white;
 }
 
-.btn-info {
-    color: white;
-    background-color: black;
-    border-color: black;
+.card-img {
+  border-radius: 0%;
 }
 
 /* styles navigation*/
@@ -246,7 +250,6 @@ hr {
   background:rgb(166, 76, 182);
 }
 
-
 .ic-stickey ul li i {
     margin-left: 10px;
     color: #000;
@@ -268,7 +271,7 @@ hr {
 
 /* style fab */
 
- .fab-styles {
+.fab-styles {
   position: fixed;
   left: 20px;
   top: 60px;
@@ -288,7 +291,6 @@ hr {
 
 .fab-opener:hover {
  background-color: rgba(0, 255, 255, 0.536)
-
 }
 
 .fab-icon {
@@ -322,7 +324,6 @@ hr {
   width: 100%;
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.189);
-
 } 
 
 .btn-fab.open .fab-menu {
@@ -344,104 +345,165 @@ hr {
   transition-delay: 0.1s; 
 }
 
-/* css vecchio */
+/* footer */
 
-
-.px-3 {
-    padding-right: 1rem!important;
-    padding-left: 1rem!important;
-    padding-bottom: 1rem;
+#footer {
+  height: 25vh;
 }
 
-    /* metadata column */
-    #metadata-column {
-    padding-left:15px;
-    padding-right:15px;
-    position: sticky;
-	  overflow-y: auto;
-    overscroll-behavior: contain;
-    height: 100vh;
-    /* margin-top: 4em;  stops at navbar */
-    }
-	
-	/* Hide scrollbar for Chrome, Safari and Opera 
-	#metadata-column::-webkit-scrollbar {
-    display: none;
+/* ISSUE PAGE */
+
+#hero {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10vh;
+  padding-bottom:3vh;
+  margin-left: 0% !important;
+  margin-right: 0% !important;
+  flex-wrap: wrap !important;
+  width: auto !important;
+  height: auto;
+  background-color: #cccc00;
+  color: black !important;  
+  text-align: center;  
 }
 
-Hide scrollbar for IE, Edge and Firefox
-     #metadata-column {
-  -ms-overflow-style: none;  /* IE and Edge
-  scrollbar-width: none;  Firefox 
-}
-*/
-
-	a {
-    color: black;
-    text-decoration: underline;
-}
-	
-	.nav-link {
-    display: block;
-    padding: .5rem 1rem;
-    color: white;
-    text-decoration: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-}
-	
-	
-	/* toglie i pallini a lato degli articoli */
-	ul {
-    list-style-type: none;
-	padding-left: 0;
+#main-content {
+  background-color: #900690;
 }
 
+#article-content {
+  height: 100vh;
+  padding-top: 1em;
+  padding-right: 1em;
+  background-color:rgb(112, 166, 217);
+  position:sticky;
+  top: 4em;
+} 
 
+#metadata-column {
+  padding-left:15px;
+  padding-right:15px;
+  position: sticky;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  height: 100vh;
+  /* margin-top: 4em;  stops at navbar */
+  }
 
-    /* == Buttons entities == */
-    .nav-pills .nav-link.active,
-    .nav-pills .show>.nav-link {
-    background-color: black !important;
-    font-weight: bold;
-    } 
+.wrapper{
+  width:100%;
+  overflow-y: auto;
+}
 
-    .nav-pills .nav-link {
-      background-color: #a8bbbf;
-    }
+.panel {
+	background-color: #cccccc;
+	margin: 15px;
+	margin-top: 0;
+}
 
-    .myborder {
-    border: solid rgb(220,220,220) 1px;
-    padding: 10px;
-    }
-    
-    .breath {
-    margin-top: 15px;
-    }
+.panel-heading {
+  padding: 0;
+	border:0;
+}
 
-    .tab-pane {
-    font-size: 1.15em;
-    min-height: 150px;
-    width: 100%;
-    display: flex;
-	
-    }
+.panel-title{
+	border-bottom: 1px solid black;
+}
 
-    .tab-pane ul {
-    margin-top: 1em;
-    list-style: none;
-    font-style: italic;
-	
-	
-    }
+.panel-title>a, .panel-title>a:active{
+	display:block;
+	padding:15px;
+  color:#555;
+  font-size:16px;
+  font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:1px;
+  word-spacing:3px;
+	text-decoration:none;
+}
 
-     #sentenceContent {
-		  height: 8em;
-      overflow-y: auto;
-		  overflow-x: hidden; 
-      margin-top: 0.5em;
-	 }
+/* arrows accordion*/
 
-    /* custom scrollbar */
+.fa-chevron-up {
+    transition: all 0.3s ease;
+	  float:right;
+ }
+
+.btn-nav-accordion[aria-expanded="true"] .fa-chevron-down {
+  transform: rotate(180deg);
+  float:right;
+}
+
+.btn-nav-accordion.collapsed .fa-chevron-up {
+   transform: rotate(180deg);
+   float:right;
+}
+
+/* not sure where is this list cause in the dynamic load of the articles is an id not a class */
+
+.list {
+  font-size: 80%;
+  line-height: 1.2; 
+  margin: 0; 
+  white-space: nowrap; 
+  overflow-x: hidden;
+  list-style-position:inside;  
+  }
+  
+.list a {
+color: black;
+margin: 0; 
+}
+
+.list::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */	
+  }
+
+/* metadata */
+
+#row1, #row2, #row3 {
+  display:block;
+padding:15px;
+}
+
+/* list down */
+
+/* button entities in metadata column */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+background-color: black !important;
+font-weight: bold;
+} 
+
+.nav-pills .nav-link {
+  background-color: #a8bbbf;
+}
+
+/* tab panes */
+
+.tab-pane {
+  font-size: 1.15em;
+  min-height: 150px;
+  width: 100%;
+  display: flex;
+}
+
+.tab-pane ul {
+  margin-top: 1em;
+  list-style: none;
+  font-style: italic;
+}
+
+#sentenceContent {
+  height: 8em;
+  overflow-y: auto;
+  overflow-x: hidden; 
+  margin-top: 0.5em;
+ }
+
+/* custom scrollbar */
+
 #sentenceContent::-webkit-scrollbar {
   width: 20px;
 }
@@ -458,86 +520,57 @@ Hide scrollbar for IE, Edge and Firefox
 }
 
 #sentenceContent::-webkit-scrollbar-thumb:hover {
-  background-color: #a8bbbf;
+background-color: #a8bbbf;
 }
 
-
-
-
-
-
-
-
-
-    .text-person {
-    background-color: #ffddff;
-    }
-
-    .text-character {
-    background-color: #ddffdd;
-    }
-    .text-literaryWork {
-    background-color: #ffffdd;
-    }	
-
-    .text-concept {
-    background-color: #ffddff;
-    }
-
-    .text-refOther {
-    background-color: #ffffdd;
-    }	
-
-    .text-refFrankenstein {
-    background-color: #ffffdd;
-    }	
-
-    .list {
-    font-size: 80%;
-    line-height: 1.2; 
-    margin: 0; 
-    white-space: nowrap; 
-    overflow-x: hidden;
-    list-style-position:inside;  
-    }
-    .list a {
-    color: black;
-    margin: 0; 
-    }
-
-  .animate {
-    animation-name: bgcolor ;
-    animation-duration: 0.75s ; 
-    animation-iteration-count: 3;
-    animation-fill-mode: backwards;
-    }
-
-    @keyframes bgcolor {
-    from {
-    background-color: #ffffff;
-    }
-
-    to {
-    background-color: #cccc00;
-    }
-    }
-
-
-    .small {
-    font-size: 80%;
-    line-height: 1.2; 
-    margin: 0; 
-    }
-
-    .list::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */	
-    }
-
-.text-center {
-  color: black
+.myborder {
+  border: solid rgb(220,220,220) 1px;
+  padding: 10px;
 }
 
-  /* MEDIA QUERY */
+/* highlights style */
+
+.text-person {
+  background-color: #ffddff;
+}
+
+.text-character {
+  background-color: #ddffdd;
+}
+.text-literaryWork {
+  background-color: #ffffdd;
+}	
+
+.text-concept {
+  background-color: #ffddff;
+}
+
+.text-refOther {
+  background-color: #ffffdd;
+}	
+
+.text-refFrankenstein {
+  background-color: #ffffdd;
+}	
+
+/* article column */
+
+#main-article {
+  margin-right: 0.3em;
+  overflow-y:auto;
+  height: 100vh;
+}
+
+#title {
+	color: white;
+}
+
+#compare-article {
+  overflow-y:auto;  
+  height: 100vh;
+}
+
+ /* MEDIA QUERY */
 
 /*nav*/
 
@@ -546,7 +579,6 @@ Hide scrollbar for IE, Edge and Firefox
     transform: scale(0.8)
    }
 }
-
 
 /*cover text*/
 @media screen and (max-width: 600px) {
@@ -571,12 +603,10 @@ Hide scrollbar for IE, Edge and Firefox
   }
 }
 
-
 @media screen and (max-height: 600px) {
   #cover-center{
     transform: scale(0.8)  }
 }
-
 
 @media screen and (max-height: 540px) {
   .self-defined-grid {
@@ -594,65 +624,19 @@ Hide scrollbar for IE, Edge and Firefox
 {
   .styles-large  {
     display: none !important;
-
   }
-
 }
 
 @media screen and (min-width: 992px) {
   .fab-styles {
-    display: none ;}
-}
-
-.wrapper{
-  width:100%;
-  overflow-y: auto;
+    display: none ;
+  }
 }
 
 @media(max-width:992px){
  .wrapper{
-  width:100%;
-} 
+    width:100%;
+  } 
 }
 
 
-.panel {
-	background-color: #cccccc;
-	margin: 15px;
-	margin-top: 0;
-}
-
-.panel-heading {
-  padding: 0;
-	border:0;
-}
-
-.panel-title>a, .panel-title>a:active{
-	display:block;
-	padding:15px;
-  color:#555;
-  font-size:16px;
-  font-weight:bold;
-	text-transform:uppercase;
-	letter-spacing:1px;
-  word-spacing:3px;
-	text-decoration:none;
-}
-
-.panel-title{
-	border-bottom: 1px solid black;
-}
-
-
-.fa-chevron-up {
-    transition: all 0.3s ease;
-	  float:right;
- }
-.btn-nav-accordion[aria-expanded="true"] .fa-chevron-down {
-  transform: rotate(180deg);
-  float:right;
-}
-.btn-nav-accordion.collapsed .fa-chevron-up {
-   transform: rotate(180deg);
-   float:right;
-}

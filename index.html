@@ -25,6 +25,19 @@
     <link rel="stylesheet" href="./css/css_default.css" id="currentlocalcss">
     <script src="scripts/mainjs.js"></script>
 
+    <!--change navbar background-->
+    <script>
+        $(function () {
+      $(document).scroll(function () {
+          var $nav = $(".navbar");
+          var dropdown =$(".dropdown-menu");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+          dropdown.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+          console.log(this)
+        });
+    });
+    </script>
+
 
 </head>
 
@@ -71,15 +84,16 @@
             </div>
         </div>
 
-
-
     </header>
 
     <main>
 
         <div class="parallax" id="cover">
             <div class="self-defined-grid">
-                <div class="col1" id="cover-left"></div>
+                <div class="col1" id="cover-left">
+                    <img src='./assets/img/y2k/holographicstar.png' width='3em' height='3em' class="star"></img>
+                </div>
+
                 <!--made three divs as columns that can be styled in the css!-->
                 <div class="col2" id="cover-center">
                     <h1 id="cover-text"><q>It is true, we shall be monsters, cut off from all the
@@ -89,36 +103,31 @@
                         </q>
                         <h4 class="text" style="text-align: right;">― Mary Shelley, Frankenstein</h4>
                     </h1>
-
                 </div>
-                <div class="col3" id="cover-right"></div>
+
+                <div class="col3" id="cover-right">
+                    <img src='./assets/img/y2k/holographicstar.png' width='3em' height='3em' class="star"></img>
+                </div>               
             </div>
         </div>
 
         <div class="container-fluid" id="issues">
 
-            <!--carousel title-->
-             
+            <!--carousel title-->         
 
-                <div class="row g-0" id="latestIssues">
-                    <div class="col-12 pt-3 text-center">
-                        <h2 class="text">Latest Issues</h2>
-                    </div>
+            <div class="row g-0" id="latestIssues">
+                <div class="col-12 pt-3 text-center">
+                    <h2 class="text">Latest Issues</h2>
                 </div>
+            </div>
 
-
-                <!--carousel inner-->
+                <!--cards-->
                 <div class="col-12">
-
-                    <!--data-ride used to mark a carousel as animating starting at page load-->
-
                     <div class="card-group">
-                        <div class="card" id="radial">
+                        <div class="card">
                             <div class="card-body">
-                                <img src="./assets/img/Bloodsucking-freaks.jfif" class="card-img-top" alt="...">
-                                <h5 class="card-title"><a href="#"
-                                        onclick="alert('This Issue has not been published yet');">Bloodsucking
-                                        Freaks</a></h5>
+                                <img src="./assets/img/electric-monsters.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-title"><a href="issue.html">Electric Monster</a></h5>
                                 <p class="card-text">Abstract of the article: this will be an introduction to the
                                     thematic of the article rn I am just making it long to see how it looks like once
                                     added with the spaces ecc</p>
@@ -127,8 +136,10 @@
 
                         <div class="card">
                             <div class="card-body">
-                                <img src="./assets/img/electric-monsters.jpg" class="card-img-top" alt="...">
-                                <h5 class="card-title"><a href="issue.html">Electric Monster</a></h5>
+                                <img src="./assets/img/Bloodsucking-freaks.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-title"><a href="#"
+                                        onclick="alert('This Issue has not been published yet');">Bloodsucking
+                                        Freaks</a></h5>
                                 <p class="card-text">Abstract of the article: this will be an introduction to the
                                     thematic of the article rn I am just making it long to see how it looks like once
                                     added with the spaces ecc</p>
@@ -147,9 +158,7 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
 
             <div class="container-fluid py-3" id="about">
 
@@ -282,7 +291,6 @@
                     </p>
                 </div>
 
-
                 <hr>
 
                 <div class="row pt-3" id="about-title">
@@ -293,6 +301,7 @@
                         </h2>
                     </div>
                 </div>
+
                 <div class="textsection pt-3">
                     <h3>Guidelines</h3>
                     <p>
@@ -359,7 +368,7 @@
             <div class="fab-styles btn-fab">
                 <button class="fab-opener btn-fab__action" id="fab">
                     <a onclick="fabopener()">
-                        <img class="fab-icon" src="./assets/paint.png">
+                        <img class="fab-icon">
                     </a>
                 </button>
                 <nav class="fab-menu">
@@ -373,7 +382,6 @@
             </div>
 
         </div>
-
     </main>
 
     <footer>
