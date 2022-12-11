@@ -343,3 +343,15 @@ $('.panel-collapse').on('show.bs.collapse', function () {
   $('.panel-collapse').on('hide.bs.collapse', function () {
     $(this).siblings('.panel-heading').removeClass('active');
   });
+
+
+
+  /*  change navbar color */
+  
+        $(function () {
+      $(document).scroll(function () {
+          var $nav = $(".navbar");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+     
