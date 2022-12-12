@@ -390,6 +390,25 @@
                 </ul>
             </div>
 
+            <!-- style navigation in md and sm screen -->
+
+            <div class="fab-styles btn-fab">
+                <button class="fab-opener btn-fab__action" id="fab">
+                    <a onclick="fabopener()">
+                        <img class="fab-icon" src="./assets/paint.png">
+                    </a>
+                </button>
+                <nav class="fab-menu">
+                    <button class="fab-menu__item">1500/1800</button>
+                    <button class="fab-menu__item">1800</button>
+                    <button class="fab-menu__item"onclick="swapTheme('./css/css_1930.css')">XX-1</button>
+                    <button class="fab-menu__item"onclick="swapTheme('./css/css_1980.css')">XX-2</button>
+                    <button class="fab-menu__item" onclick="swapTheme('./css/css_y2k.css')">y2k</button>
+                    <button class="fab-menu__item">2030</button>
+                </nav>
+            </div>
+
+
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"

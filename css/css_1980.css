@@ -262,7 +262,7 @@ padding-top: 3em;
     text-align: center;
     border-top: 40px solid black;
     border-image: linear-gradient(to left, #000 50%, transparent 50%) 100% 1;
-font-family: NHLSanJose
+font-family: TONYSTREES
 }
 
 .lead {
@@ -505,9 +505,11 @@ hr {
   transform: translate(-270px, 0);*/
 }
 .ic-stickey ul li {
+  color: white;
   display: block;
   margin: 5px;
-  background: rgba(33,37,41);
+  background: white;
+  border: 5px solid #c53030;
   width: 300px;
   text-align: right;
   padding: 10px;
@@ -521,7 +523,8 @@ hr {
   transition: all 0.5s;
 }
 .ic-stickey ul li:hover {
-  background:rgba(33,37,41) !important;
+  background:#c53030 !important;
+  border: 5px solid white;
   -webkit-transform: translate(110px, 0);
   -moz-transform: translate(110px, 0);
   -ms-transform: translate(110px, 0);
@@ -597,7 +600,7 @@ hr {
   }
 
 .fab-opener {
-  background-color: cyan;
+  background-color: white;
   border-radius: 50%;
   height: 50px;
   width: 50px;
@@ -608,7 +611,7 @@ hr {
 }
 
 .fab-opener:hover {
- background-color: rgba(0, 255, 255, 0.536)
+ background-color: #c53030
 
 }
 
@@ -642,9 +645,18 @@ hr {
   border-radius: 20px;
   width: 100%;
   background-color: #fff;
+  border: 4px solid #db0102;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.189);
 
 } 
+
+
+.fab-menu__item:hover {
+  background-color: #db0102;
+  border: 4px solid white;
+
+}
+
 
 .btn-fab.open .fab-menu {
   transform: scale(1); /* after javascript adds class open this is activated */
@@ -747,11 +759,20 @@ hr {
 
 
 @media(max-width:992px){
- .wrapper{
-  width:100%;
+ #metadata-column{
+  width:50%;
 } 
 
 }
+
+
+@media(max-width:600px){
+  #metadata-column{
+   width:100%;
+ } 
+ 
+ }
+ 
 
 
 

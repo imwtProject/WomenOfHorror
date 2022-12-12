@@ -184,10 +184,9 @@ background: linear-gradient(rgba(0,0,0,0.5),
 	font-family: POSTER;
 }
 
-
 .intro {
 	font-family: COMPRESSED;
-	padding:90px 50px;
+	margin:90px 50px;
 	text-align:center;
 }
 
@@ -450,9 +449,9 @@ hr {
 
 
 
-.ic-stickey ul li.s1500  {
+/*.ic-stickey ul li.s1500  {
   background:rgb(205, 74, 13);
-} 
+} */
 
 .ic-stickey ul li:hover {
   background:rgba(33,37,41) !important;
@@ -532,7 +531,7 @@ hr {
   }
 
 .fab-opener {
-  background-color: cyan;
+  background-color: #db0102;
   border-radius: 50%;
   height: 50px;
   width: 50px;
@@ -543,7 +542,7 @@ hr {
 }
 
 .fab-opener:hover {
- background-color: rgba(0, 255, 255, 0.536)
+ background-color: #db0102
 
 }
 
@@ -564,7 +563,7 @@ hr {
   font-size: 36px;
   line-height: 1;
   font-weight: bold;
-  color: #fff;
+  color: #db0102;
 }
 .fab-menu {
   text-align: right;
@@ -576,10 +575,15 @@ hr {
   padding: 8px 16px;
   border-radius: 20px;
   width: 100%;
-  background-color: #fff;
+  background-color: #db0102;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.189);
 
 } 
+
+.fab-menu__item:hover {
+  background-color: white;
+
+}
 
 .btn-fab.open .fab-menu {
   transform: scale(1); /* after javascript adds class open this is activated */
@@ -722,7 +726,13 @@ hr {
     text-decoration: underline;
 }
 	
-	
+
+a:hover {
+  color:white;
+}
+
+
+
 	.textsection P {
 		text-align-last: left;
 text-align: right;
@@ -758,9 +768,13 @@ text-align: right;
 }
 
 .nav-pills .nav-link:hover{
-	color:black
+	color:white
 }
 
+
+.nav-link:focus, .nav-link:hover{
+  color:white;
+}
 
 
 .nav-pills .nav-link.active {
