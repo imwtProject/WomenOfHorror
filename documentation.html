@@ -1,21 +1,251 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="generator" content="AlterVista - Editor HTML"/>
-  <title></title>
-</head>
-<body>
+<html lang="en" class="h-100">
 
-  <h1>early 2000: y2k</h1>
-  <p>fonts: <br>
-  <ul>
-    <li><a href="https://fontlot.com/418513/digibop-y2k-display-font/">digibot font</a></li>
-    <li><a href="https://ifonts.xyz/fluta-y2k-font.html">fluta digital bubblegum font</a></li>
-    <li><a href="https://www.dafont.com/good-timing.font">good timing, good times 1998 inspired font. (Good for lowercase?)</a></li>
-    <li><a href="http://planet.dk/fonts/">The website of the freelance danish design studio that created the font Planet Funk</a></li>
-  </ul>
-  some png taken from <a href="https://www.pngfind.com/">pngfind</a>
-  </p>
+<head>
+    <title>WoH</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--link to load bootstrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"> </script>
+
+
+    <!-- Font Awesom icon, use with i element -->
+    <script src="https://kit.fontawesome.com/0d369f4ff3.js" crossorigin="anonymous"></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Local stylesheet and javascript -->
+    <link rel="stylesheet" href="./css/css_default.css" id="currentlocalcss">
+    <script src="scripts/mainjs.js"></script>
+   <style>
+   
+
+
+   </style>
+    <!--change navbar background-->
+    
+
+
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!--direction flex, works flexing by columns not rows-->
+
+    <header>
+
+        <div class="navbar navbar-expand-lg fixed-top" id="firstNav">
+            <a href="index.html" class="navbar-brand">
+                <img src="./assets/thunder.png" width="30" height="30" alt="lightning">
+                Women of Horror
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainmenu">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Issues
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="issue.html">Electric Monster</a></li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="alert('This Issue has not been published yet');">Bloodsucking Freaks</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="alert('This Issue has not been published yet');">Horny Cannibals</a></li>
+                            </ul>
+
+                    </li>
+
+
+                    <li class="nav-item"><a href="#about-title" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="documentation.html" class="nav-link">Documentation</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+      <div class="container-fluid" id="hero-documentation">
+        <div class="intro">
+          <h1>Electric Monsters</h1>
+          <p>Each item is checked before dispatch. Le package comprend deux articles
+            pour
+            le prix d'un. The package includes two items for the price of one.</p>
+        </div>
+      </div>
+
+        <div class="container-fluid" id="documentation">
+          <div class="container-fluid content" style="position: relative;">
+            <div class="row" id="text-start" data-bs-spy="scroll" data-bs-target="#navbar-documentation">
+                <!-- scrollspy navbar start -->
+                <div class="col-md-3 col-sm-1 d-none d-md-block" id="menu-card">
+                    <nav id="navbar-documentation" class="navbar  flex-column align-items-stretch p-3">
+                        <h2 class="navbar-brand mb-3" href="#item-1">Documentation</h2>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#item-1" id="it1">Women of Horror</a>
+                            <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-1-1" id="it1-1">The content</a>
+                            <a class="nav-link ms-3 my-1" href="#item-1-2" id="it1-2">Markup</a>
+                            </nav>
+                            <a class="nav-link" href="#item-2" id="it2">Layout and typographic styles</a>
+                            <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-2-1" id="it2-1">1500</a>
+                            <a class="nav-link ms-3 my-1" href="#item-2-2" id="it2-2">1800</a>
+                            <a class="nav-link ms-3 my-1" href="#item-2-3" id="it2-3">1930</a>
+                            <a class="nav-link ms-3 my-1" href="#item-2-4" id="it2-4">1980</a>
+                            <a class="nav-link ms-3 my-1" href="#item-2-4" id="it2-5">y2k</a>
+                            <a class="nav-link ms-3 my-1" href="#item-2-4" id="it2-6">Future</a>
+                            </nav>
+                        </nav>
+                    </nav>
+                    
+                </div>
+                <!-- scrollspy navbar end -->
+
+                <!-- scrollspy content start -->
+                <div class="col-md-9 col-xs-11">
+                    <div data-bs-spy="scroll" data-bs-target="#navbar-documentation" data-bs-offset="35" class="scrollspy p-4" tabindex="0" id="main-background">
+                        <h3 id="item-1" class="mb-3 mt-1">Women of Horror</h3>
+                        <p><b><i>Women of Horror</i></b> is a magazine that focuses on the intersection between the genre of horror in a broad sense and the the representation and conceptualization of femininity.</p><p> Every issue gathers critical articles about a particular work of interest or relevant theme, allowing the reader to explore different perspectives and gazes on the same topic, as well as acquire an in-depth theoretical knowledge about women and mostruosity. 
+                        <hr>
+                        <h5 id="item-1-1" class="mb-3 mt-1" >The concept</h5>
+                        <p>The magazine is thematically organized around three main areas, each one linked to one main character from a relevant fiction horror book written by a woman or that has one as the protagonist. The articles contained in the issues are all brief essays considering the literary work under a scientific way.</p>
+<p>Up until now the website contains:</p>
+<p>-<b><i></i>Bloodsucking Vampires</i></b>, here the character under consideration is Carmilla the vampire, from the homonymous gothic novella written by Sheridan Le Fanu. The story is narrated by a young woman preyed upon by a female vampire named Carmilla, later revealed to be Mircalla, Countess Karnstein (Carmilla is an anagram of Mircalla). The character is a prototypical example of the lesbian vampire, expressing romantic desires toward the protagonist. The novella, predating Bram Stoker&apos;s Dracula (1897) by 26 years, notably never acknowledges homosexuality as an antagonistic trait, leaving it subtle and morally ambiguous.</p>
+<p>-<b><i></i>Electric Monsters</i></b>, which studies the well-known figure of Frankenstein&rsquo;s monster. The &ldquo;creature&rdquo;, is the main character of the notably famous work of Mary Shelley published in 1818, which tells the story of Victor Frankenstein, a young scientist who creates a sapient creature in an unorthodox scientific experiment.</p>
+<p>-<b><i></i>Horny Cannibals</i></b>, puts under the scope the movie Raw, a 2016 French-Belgian coming-of-age horror drama film written and directed by Julia Ducournau, and starring Garance Marillier, Ella Rumpf, and Rabah Nait Oufella.The plot follows a young vegetarian&apos;s first year at veterinary school, where she tastes meat for the first time and develops a craving for flesh. The film premiered at the 2016 Cannes Film Festival on 14 May 2016 and was theatrically released in the United States on 10 March 2017 by Focus World, and in France on 15 March 2017 by Wild Bunch. The film received critical acclaim, with praise for Ducournau&apos;s direction and screenplay, though was met with some controversy for its graphic content.</p>
+<p>The resource collects issues organized in thematic magazines and enriched with meaningful metadata for active use of the contents.&nbsp;The portal can be viewed according to 6 typographic styles, each referring to a different period, mostly based on original resources (such as magazines, printed books, computer graphics, and more), which were edited accordingly to our needs.</p>
+<p>Each issue of the magazine shows the articles side by side on the same web page and allows for a comparative analysis of the available metadata.A the moment the website is composed of three main Html pages:</p>
+<p>-The homepage, index.html in our repository, provides information about the overall structure of Women of Horror. This page, as well as all the others, contains navigation buttons that allow the users to navigate through the different styles. From here the user can select one of the three issues available, at the moment only Electric Monsters is available.</p>
+<p>-The issue page (issue.html), it contains each text, marked up and uploaded through an ajax function. &nbsp;The user can simply select the article he requires and enjoy the reading experience. Also, in order to allow a comparative analysis of the available metadata, it is possible to visualize two articles side by side.</p>
+<p>-The Documentation page (documentation.html), currently displayed, contains the documentation of the project.</p>   
+                        <hr>
+                        <h5 id="item-1-2" class="mb-3 mt-1">Markup</h5>
+                        <p>The articles were tagged with significant metadata mainly using classes. Each metadata tag, mainly &lt;span&gt; tags, specify the following metadata types as classes:&nbsp;</p>
+                        <p>-&quot;<i>person</i>&quot;, every time a writer or a scholar is mentioned in the articles</p>
+                        <p>-&quot;<i>character</i>&quot;, where the characters from the fictional books under consideration are mentioned</p>
+                        <p>-&quot;<i>literaryWork</i>&quot;, each time a fiction or non-fiction book is regarded</p>
+                        <p>-&quot;<i>concept</i>&quot;, in order to highlight the main recurring themes an concepts studied in the &nbsp;articles available</p>
+                        <p>-&quot;<i>refOther</i>&quot;, refers to all the external references explicitly quoted in the articles</p>
+                        <p>-&quot;<i>refFrankenstein</i>&quot;, linked to the explicit quotes extracted from Shelley&apos;s book.</p>
+                        <p>&nbsp;By selecting a checkbox, the articles scroll to the first occurrence of the selected data, while every occurrence is highlighted with a random background color. &nbsp;By clearing the checkbox, the text backgrounds become transparent again. Moreover, &nbsp;all the metadata found by the checkboxes are showcased on tabs, and, by clicking the specific name, the user is brought to the part in the text where the metadata is stored for a more specific analysis. This is obtained through a few Javascript functions and the use of Jquery selectors, again on an already marked-up text.</p>
+                        <p>As already mentioned, we offer the possibility to compare two texts side by side thanks to a dedicated function and employing a JSON file containing the Html of the articles.</p>
+                        
+                       
+
+                        
+
+                        <hr>
+                        <h3 id="item-2" class="mb-3 mt-1">Layout and typographic styles</h3>
+                        <p>Each one of the styles - <b>Renaissance</b>, <b>Secession</b>, <b>1980s</b> and <b>Future</b> - was inspired by original sources, carefully selected after an accurate research to offer real content from each epoque, from the font to the design. The process of selection of visual references and subsequent editing by the developers is detailed in the following paragraphs. A further style was added to be used as default theme, called <a onclick="changeThemeDoc(this.id)" href="#" id="enable-default" >Basic Style</a>. Since it is not based on any historical design trend, it is not featured in the following documentation. It was designed to provide a basic theme for users that are only interested in reading the articles without experimenting with styles.</p>
+                        <p>In the next sections, we will guide you through the design of each theme, explaining the decisions behind the design. You can click on the style names in the titles to change the theme.</p>
+                            <hr id="before-1500">
+                           <!----> <button onclick="changeThemeDoc(this.id)" href="#" class="try-style" id="enable-renaissance" data-bs-toggle="tooltip" data-placement="top" title="Switch style!"><h5 id="item-2-1" class="mb-3 mt-1">1500</h5></button>
+                        
+                        <p> Robe 1500</p>
+                        <hr id="before-1800">
+                        <button onclick="changeThemeDoc(this.id)" href="#" class="try-style" id="enable-secession" data-bs-toggle="tooltip" data-placement="top" title="Switch style!"><h5 id="item-2-2" class="mb-3 mt-1">1800</h5></button>
+                        <p> Robe 1800</p>
+                      
+                        <hr id="before-1930">
+                        <button onclick="changeThemeDoc(this.id)" href="#" class="try-style" id="enable-eighty" data-bs-toggle="tooltip" data-placement="top" title="Switch style!"><h5 id="item-2-3" class="mb-3 mt-1">1930</h5></button>
+                        <p> Robe blabla</p>
+
+                        <hr id="before-1980">
+                        <button onclick="changeThemeDoc(this.id)" href="#" class="try-style" id="enable-future" data-bs-toggle="tooltip" data-placement="top" title="Switch style!"><h5 id="item-2-4" class="mb-3 mt-1">1980</h5></button>
+                        <p> Robe blabla</p>
+
+                        <hr id="before-y2k">
+                        <button onclick="changeThemeDoc(this.id)" href="#" class="try-style" id="enable-future" data-bs-toggle="tooltip" data-placement="top" title="Switch style!"><h5 id="item-2-5" class="mb-3 mt-1">y2k</h5></button>
+                        <p> Robe blabla</p>
+
+                        <hr id="before-future">
+                        <button onclick="changeThemeDoc(this.id)" href="#" class="try-style" id="enable-future" data-bs-toggle="tooltip" data-placement="top" title="Switch style!"><h5 id="item-2-5" class="mb-3 mt-1">future</h5></button>
+                        <p> Robe blabla</p>
+
+
+                        
+
+
+
+
+
+
+
+                    </div>
+                    </div>
+                <!-- scrollspy content end -->
+                 </div>
+            </div>
+
+            
+
+
+
+
+
+
+
+
+
+
+
+            <!--styles navigation in lg screen-->
+
+            <div class="ic-stickey styles-large">
+                <ul id="styles">
+                    <li class="s1500"><a href="#">1500/1800<i class="fa-solid fa-poo"></i></a></li>
+                    <li class="s1800"><a href="#">1800<img class="ico" src="./assets/bat.png" width="30"
+                                height="30"></img></a></li>
+                    <li class="XX-1"><a onclick="swapTheme('./css/css_1930.css')">XX-1<img class="ico"
+                                src="./assets/martini.png" width="30" height="30"></img></a></li>
+                    <li class="XX-2"><a onclick="swapTheme('./css/css_1980.css')">XX-2<img class="ico"
+                                src="./assets/hand.png" width="30" height="30"></img></a></li>
+                    <li class="lateXX-2000"><a onclick="swapTheme('./css/css_y2k.css')">y2k<img class="ico"
+                                src="./assets/processor.png" width="30" height="30"></img></a></li>
+                    <li class="s2030"><a href="#">2030<i class="fa-solid fa-poo"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- style navigation in md and sm screen -->
+
+            <div class="fab-styles btn-fab">
+                <button class="fab-opener btn-fab__action" id="fab">
+                    <a onclick="fabopener()">
+                        <img class="fab-icon">
+                    </a>
+                </button>
+                <nav class="fab-menu">
+                    <button class="fab-menu__item">1500/1800</button>
+                    <button class="fab-menu__item">1800</button>
+                    <button class="fab-menu__item"onclick="swapTheme('./css/css_1930.css')">XX-1</button>
+                    <button class="fab-menu__item"onclick="swapTheme('./css/css_1980.css')">XX-2</button>
+                    <button class="fab-menu__item" onclick="swapTheme('./css/css_y2k.css')">y2k</button>
+                    <button class="fab-menu__item">2030</button>
+                </nav>
+            </div>
+
+        </div>
+    </main>
+
+    
 </body>
+
 </html>

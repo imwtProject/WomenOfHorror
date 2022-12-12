@@ -299,8 +299,12 @@ color: black
 
 
 /* jumbotron*/
-#title {
-	color: white;
+#title {color: black;
+  -webkit-clip-path: polygon(0.25rem 0.75rem, 100% 0.5rem, calc(100% - 0.5rem) calc(100% - 0.25rem), 0.8587897rem calc(100% - 1rem));
+  clip-path: polygon(0.25rem 0.75rem, 100% 0.5rem, calc(100% - 0.5rem) calc(100% - 0.25rem), 0.8587897rem calc(100% - 1rem));
+  background-color: #d69e2e;
+  font-family: 'Bassanova';
+  font-size: x-large;
 }
 
 #main-article {

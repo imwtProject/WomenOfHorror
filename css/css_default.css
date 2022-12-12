@@ -570,6 +570,127 @@ background-color: #a8bbbf;
   height: 100vh;
 }
 
+
+
+
+
+
+/*  DOCUMENTATION PAGE */
+
+
+#hero-documentation {
+  height: auto;
+    background-color: #cccc00;
+    color: black !important;
+    padding-top: 10vh;
+    text-align: center;
+    padding-bottom: 3vh;
+    
+}
+
+#firstNav, #hero-documentation {
+  padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    flex-wrap: wrap !important;
+    width: auto !important;
+}
+
+.content{
+    margin-top: 0vh;
+    height: 40vh !important;
+}
+
+
+
+.nav-pills{
+    max-width: inherit !important;
+}
+
+#menu-card .nav-link{
+    font-size: 2.5vh;
+}
+
+li .nav-item, a.nav-link{
+    font-size: 2.5vh;
+}
+
+.scrollspy {
+    height: 87vh;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+:focus-visible{
+    outline: none;
+}
+
+hr {
+    margin-right: 1.5rem;
+    border-top: 3px solid rgb(110, 110, 110);
+}
+
+
+.sub-button::content{
+    background-size: 3vh !important;
+}
+
+.content #text-start{
+    height: 92vh;
+}
+
+body{
+     margin-top: 8vh;
+}
+
+#menu-card .navbar-brand{
+    font-size: 4vh !important;
+    color: black;
+}
+
+
+ #documentation .nav-link:focus, .nav-link:hover {
+    color: black;
+}
+
+#menu-card .navbar {
+    height: unset !important;
+    margin-top: 1rem;
+    background-color: #cccc !important;
+    font-size: 3vh;
+}
+
+#navbar-documentation .nav-pills .nav-link {
+  background-color: transparent;
+}
+
+#navbar-documentation .nav-pills .nav-link.active {
+  background-color: transparent !important ;
+  color:black;
+
+}
+
+h5{
+    font-size: 5vh !important;
+}
+
+h6{
+    padding-top: 1rem;
+}
+
+
+
+
+@media (max-width: 1200px){
+    #menu-card .navbar-brand{
+        font-size: 3vh !important;
+    }
+}
+
  /* MEDIA QUERY */
 
 /*nav*/

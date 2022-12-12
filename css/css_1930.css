@@ -186,7 +186,7 @@ background: linear-gradient(rgba(0,0,0,0.5),
 
 .intro {
 	font-family: COMPRESSED;
-	margin:90px 50px;
+	padding:90px 50px;
 	text-align:center;
 }
 
