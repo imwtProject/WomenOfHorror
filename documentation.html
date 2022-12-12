@@ -26,6 +26,7 @@
     <script src="scripts/mainjs.js"></script>
    <style>
    
+   
 
 
    </style>
@@ -35,7 +36,7 @@
 
 </head>
 
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100" id="bodyDoc">
     <!--direction flex, works flexing by columns not rows-->
 
     <header>
@@ -154,30 +155,31 @@
 
                         <hr>
                         <h3 id="item-2" class="mb-3 mt-1">Layout and typographic styles</h3>
-                        <p>Each one of the styles - <b>Renaissance</b>, <b>Secession</b>, <b>1980s</b> and <b>Future</b> - was inspired by original sources, carefully selected after an accurate research to offer real content from each epoque, from the font to the design. The process of selection of visual references and subsequent editing by the developers is detailed in the following paragraphs. A further style was added to be used as default theme, called <a onclick="changeThemeDoc(this.id)" href="#" id="enable-default" >Basic Style</a>. Since it is not based on any historical design trend, it is not featured in the following documentation. It was designed to provide a basic theme for users that are only interested in reading the articles without experimenting with styles.</p>
-                        <p>In the next sections, we will guide you through the design of each theme, explaining the decisions behind the design. You can click on the style names in the titles to change the theme.</p>
+                        <p>Each one of the styles  was inspired by original sources, carefully selected after an accurate research to offer real content from each epoque, from the font to the design. The process of selection of visual references and subsequent editing by the developers is detailed in the following paragraphs. 
+                        In the next sections, we will guide you through the design of each theme, explaining the decisions behind the design. You can click on the style names in the titles to change the theme.</p>
                             <hr id="before-1500">
-                           <!----> <button onclick="changeThemeDoc(this.id)" href="#" class="try-style" id="enable-renaissance" data-bs-toggle="tooltip" data-placement="top" title="Switch style!"><h5 id="item-2-1" class="mb-3 mt-1">1500</h5></button>
+                           <!----> <button onclick="swapTheme('./css/css_1500.css')" href="#" class="try-style" id="enable-1500"   data-bs-toggle="tooltip" data-placement="top" title="Try this style!"><h5 id="item-2-1" class="mb-3 mt-1">1500</h5></button>
                         
                         <p> Robe 1500</p>
+
                         <hr id="before-1800">
-                        <button onclick="changeThemeDoc(this.id)" href="#" class="try-style" id="enable-secession" data-bs-toggle="tooltip" data-placement="top" title="Switch style!"><h5 id="item-2-2" class="mb-3 mt-1">1800</h5></button>
+                        <button onclick="swapTheme('./css/css_1800.css')" href="#" class="try-style" id="enable-1800"   data-bs-toggle="tooltip" data-placement="top" title="Try this style!"><h5 id="item-2-2" class="mb-3 mt-1">1800</h5></button>
                         <p> Robe 1800</p>
                       
                         <hr id="before-1930">
-                        <button onclick="changeThemeDoc(this.id)" href="#" class="try-style" id="enable-eighty" data-bs-toggle="tooltip" data-placement="top" title="Switch style!"><h5 id="item-2-3" class="mb-3 mt-1">1930</h5></button>
+                        <button onclick="swapTheme('./css/css_1930.css')" href="#" class="try-style" id="enable-1930" data-bs-toggle="tooltip" data-placement="top" title="Try this style!"><h5 id="item-2-3" class="mb-3 mt-1">1930</h5></button>
                         <p> Robe blabla</p>
 
                         <hr id="before-1980">
-                        <button onclick="changeThemeDoc(this.id)" href="#" class="try-style" id="enable-future" data-bs-toggle="tooltip" data-placement="top" title="Switch style!"><h5 id="item-2-4" class="mb-3 mt-1">1980</h5></button>
+                        <button onclick="swapTheme('./css/css_1980.css')" href="#" class="try-style" id="enable-1980"  data-bs-toggle="tooltip" data-placement="top" title="Try this style!"><h5 id="item-2-4" class="mb-3 mt-1">1980</h5></button>
                         <p> Robe blabla</p>
 
                         <hr id="before-y2k">
-                        <button onclick="changeThemeDoc(this.id)" href="#" class="try-style" id="enable-future" data-bs-toggle="tooltip" data-placement="top" title="Switch style!"><h5 id="item-2-5" class="mb-3 mt-1">y2k</h5></button>
+                        <button onclick="swapTheme('./css/css_y2k.css')" href="#" class="try-style" id="enable-y2k"  data-bs-toggle="tooltip" data-placement="top" title="Try this style!"><h5 id="item-2-5" class="mb-3 mt-1">y2k</h5></button>
                         <p> Robe blabla</p>
 
                         <hr id="before-future">
-                        <button onclick="changeThemeDoc(this.id)" href="#" class="try-style" id="enable-future" data-bs-toggle="tooltip" data-placement="top" title="Switch style!"><h5 id="item-2-5" class="mb-3 mt-1">future</h5></button>
+                        <button onclick="swapTheme('./css/css_future.css')" href="#" class="try-style" id="enable-future"  data-bs-toggle="tooltip" data-placement="top" title="Try this style!"><h5 id="item-2-5" class="mb-3 mt-1">future</h5></button>
                         <p> Robe blabla</p>
 
 
