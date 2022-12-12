@@ -186,7 +186,7 @@ background: linear-gradient(rgba(0,0,0,0.5),
 
 .intro {
 	font-family: COMPRESSED;
-	padding:90px 50px;
+	margin:90px 50px;
 	text-align:center;
 }
 
@@ -430,6 +430,7 @@ hr {
 .ic-stickey ul li {
   display: block;
   margin: 5px;
+  color: #db0102;
   background: #db0102;
   width: 300px;
   text-align: right;
@@ -445,13 +446,6 @@ hr {
 
 }
 
-
-
-
-
-/*.ic-stickey ul li.s1500  {
-  background:rgb(205, 74, 13);
-} */
 
 .ic-stickey ul li:hover {
   background:rgba(33,37,41) !important;
@@ -905,9 +899,7 @@ background-color: #db0102;}
 
 
 
-.
-
-input[type="checkbox" i] {
+.input[type="checkbox" i] {
     background-color: red;
 }
 
@@ -929,6 +921,230 @@ input[type="checkbox" i] {
 .p-2 .text-center{
 	margin-right:50px;
 }
+
+
+
+
+
+
+/*  DOCUMENTATION PAGE */
+
+
+#bodyDoc {
+  background-color: #f4f5eb;
+}
+
+#hero-documentation {
+  height: auto;
+    background-color: transparent;
+    color: black !important;
+    padding-top: 10vh;
+    text-align: center;
+    padding-bottom: 3vh;
+    
+}
+
+
+#firstNav, #hero-documentation {
+  padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    flex-wrap: wrap !important;
+    width: auto !important;
+    
+}
+
+#hero-documentation .intro {
+font-family: futurismo;
+text-decoration: underline overline #db0102;
+}
+
+
+
+
+.content{
+  margin-top: 0vh;
+  height: 40vh !important;
+}
+
+
+#documentation .nav-pills{
+  max-width: inherit !important;
+}
+
+#menu-card .nav-link{
+  font-size: 2.5vh;
+}
+
+#navbar-documentation li .nav-item, #navbar-documentation a.nav-link{
+  font-size: 2.5vh;
+}
+
+
+.scrollspy {
+  height: 87vh;
+  overflow-y: scroll;
+  background-color: #EC9F05;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+:focus-visible{
+  outline: none;
+}
+
+hr {
+  margin-right: 1.5rem;
+  border-top: 3px solid rgb(110, 110, 110);
+}
+
+
+.sub-button::content{
+  background-size: 3vh !important;
+}
+
+.content #text-start{
+  height: 92vh;
+}
+
+
+#documentation .content{
+  margin-top: 8vh;
+  background-color: transparent !important;
+}
+
+#bodyDoc .container-fluid {
+  background-color: transparent !important;
+}
+
+#menu-card .navbar-brand{
+  font-size: 4vh !important;
+  color: black;
+
+}
+
+
+#documentation .nav-link:focus, .nav-link:hover {
+  color: black;
+}
+
+#menu-card .navbar {
+  height: unset !important;
+  
+  background-color: #f4f5eb  !important;
+  font-size: 3vh;
+}
+
+#navbar-documentation .nav-pills .nav-link {
+background-color: transparent;
+}
+
+#navbar-documentation .nav-pills .nav-link.active {
+background-color: transparent !important ;
+color:black;
+
+}
+
+
+#navbar-documentation .nav-pills .nav-link:hover {
+  color: black;
+}
+
+h5{
+  font-size: 5vh !important;
+}
+
+h6{
+  padding-top: 1rem;
+}
+
+
+
+
+@media (max-width: 1200px){
+  #menu-card .navbar-brand{
+      font-size: 3vh !important;
+  }
+}
+
+#item-2-3{
+font-family: futurismo;
+padding-top: 1rem;
+font-size: 5vh; 
+letter-spacing: 0.5rem; 
+}
+
+#item-2-4{
+font-family: Hitchcock;
+padding-top: 1rem;
+font-size: 5vh; 
+letter-spacing: 0.5rem; 
+}
+
+
+
+.try-style{
+text-decoration: none;
+font-size: 2.5vh;
+text-transform: uppercase;
+border: none;
+margin-bottom: 1vh;
+}
+
+.try-style#enable-1930{
+background-color: transparent;
+transition: all 0.5s ease;
+font-family: "Bembo", garamond, serif;
+}
+
+.try-style#enable-1930:hover{
+-webkit-background-clip: text !important;
+background-clip: text !important;
+background-image: linear-gradient(rgba(0,0,0,0.1)0%,rgba(0,0,0,0.1)100%),url("/typetravel/images/Renaissance/nav-decor.png");
+background-size: 20vh;
+-webkit-text-fill-color: transparent;
+background-position: bottom;
+}
+
+.try-style#enable-1980{
+background-color: transparent;
+transition: all 0.5s ease;
+font-family: "Bembo", garamond, serif;
+}
+
+.try-style#enable-1980:hover{
+-webkit-background-clip: text !important;
+background-clip: text !important;
+background-image: linear-gradient(rgba(0,0,0,0.1)0%,rgba(0,0,0,0.1)100%),url("/typetravel/images/Renaissance/nav-decor.png");
+background-size: 20vh;
+-webkit-text-fill-color: transparent;
+background-position: bottom;
+}
+
+
+/*  FINE DOCUMENTATION PAGE */
+
+
+
+/* TEAM */
+
+
+
+
+
+#theteam .card {
+  border-color: transparent;
+  border-radius: 0%;
+  background-color: transparent;
+
+}
+/* FINE TEAM */
+
+
+
  /* MEDIA QUERY */
 
 /*nav*/
