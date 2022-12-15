@@ -284,6 +284,8 @@ q::after {
     transform: scale(0.8);
     }
 
+    /* clip-path: polygon(12px 0,calc(100% - 12px) 0,100% 12px,100% calc(100% - 12px),calc(100% - 12px) 100%,12px 100%,0 calc(100% - 12px),0 12px); */
+
 #issues {
   background-image: url("../assets/img/1800/bg1.jpg");
   border: 20px solid;

@@ -16,6 +16,10 @@ $(document).ready(function () {
       document.getElementById('currentlocalcss').setAttribute('href', './css/css_default.css');
       break; 
 
+	case './css/css_1500-1800.css':
+		document.getElementById('currentlocalcss').setAttribute('href', './css/css_1500-1800.css');
+		break; 
+
 	case './css/css_y2k.css':
 		document.getElementById('currentlocalcss').setAttribute('href', './css/css_y2k.css');
 		break;
@@ -30,6 +34,10 @@ $(document).ready(function () {
 
 	case './css/css_1800.css':
 		document.getElementById('currentlocalcss').setAttribute('href', './css/css_1800.css');
+		break;
+
+		case './css/css_2030.css':
+		document.getElementById('currentlocalcss').setAttribute('href', './css/css_2030.css');
 		break;
 
   }
