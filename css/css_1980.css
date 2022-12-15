@@ -113,24 +113,33 @@ body {
     }
 	
 
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(219,1,2)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
+.navbar-toggler-icon {
+  background-image: url("../assets/img/1980/hamburger.png") !important; 
+    }
 
-.custom-toggler.navbar-toggler {
-  border-color: #db0102;
-} 
+
 
 .navbar-toggler {
     padding: .25rem .75rem;
     font-size: 1.25rem;
     line-height: 1;
     background-color: transparent;
-    border: 1px solid transparent;
+    border: 1px solid black;
     border-radius: .25rem;
     transition: box-shadow .15s ease-in-out;
 }
 
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+   box-shadow: 0 0 0 0rem;
+}
+
+.navbar-collapse.show {
+background-color: white;
+
+}
 
 
 a:hover {
@@ -623,6 +632,11 @@ hr {
   width: 35px;
   margin-left: 3px;
   margin-top: 1px;
+  background-image: url("../assets/img/1980/hand.svg");
+  background-size: contain;
+  border-radius: 100%; /* to make some wierd border go away*/
+  position: relative;
+  right: 3px;
 }
 
 /*codepen*/
@@ -761,12 +775,7 @@ hr {
 }
 
 
-@media(max-width:992px){
- #metadata-column{
-  width:50%;
-} 
 
-}
 
 
 @media(max-width:600px){
@@ -1322,7 +1331,10 @@ font-family: "Bembo", garamond, serif;
     display: none ;}
 }
 
-
+@media screen and (max-height: 600px) {
+#cover-center{
+    transform: scale(0.8);}
+}
 
 
 

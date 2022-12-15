@@ -63,7 +63,11 @@ src: url('../assets/fonts/1930/POSTER.otf') format('truetype');}
 src: url('../assets/fonts/1930/podiumsharpDueDieci.otf') format('truetype');}
 	
 	
-	
+@font-face {
+  font-family:Staatliches-Regular ;
+  src: url(Staatliches-Regular.ttf);
+src: url('../assets/fonts/1930/Staatliches-Regular.ttf') format('truetype');}
+
 	
 	
 	
@@ -185,16 +189,34 @@ h4.text {
 
  #hero {
 background: linear-gradient(rgba(0,0,0,0.5),
-	 rgba(0,0,0,0.5)), url("../assets/img/1930/bolted.jpg");
+	 rgba(0,0,0,0.5)), url("../assets/img/1930/ombrello.gif");
 	 color:white;
 	font-family: POSTER;
 }
 
 .intro {
-	font-family: COMPRESSED;
+	font-family: Staatliches-Regular;
 	padding:90px 50px;
 	text-align:center;
 }
+
+
+.intro h1 {
+	font-family: Staatliches-Regular;
+	font-size: 4rem;
+  color: #f4f5eb;
+  text-shadow: -5px 0 #db0102, 0 1px #db0102, 1px 0 #db0102, 0 -1px #db0102;
+}
+
+.intro p {
+  font-family: podiumsharpDueDieci;
+  text-indent: 0%;
+    word-spacing: 1rem;
+    color: #f4f5eb;
+    font-size: 1.5rem;
+    border-bottom: 5px solid transparent;
+}
+
 
 
 .navbar a:hover {
@@ -487,6 +509,7 @@ hr {
   -ms-transition: all 1s;
   -o-transition: all 1s;
   transition: all 0.5s;
+  cursor: pointer;
 
 }
 
@@ -681,7 +704,9 @@ hr {
 }
 
 
-
+#main-content {
+  background-color: #f4f5eb !important;
+}
 
 
 
@@ -1324,6 +1349,11 @@ background-position: bottom;
 
 
 
+@media screen and (max-height: 600px) {
+  #cover-center{
+      transform: scale(0.8);}
+  }
+  
 
 
 
