@@ -14,15 +14,21 @@
 
 
 body {
-	font-family:News Gothic Regular ;
+	font-family:'Poppins', sans-serif;
+  color: white;
+text-shadow: 0px 0px 10px #6200ff,
+0px 0px 20px #6200ff,
+0px 0px 40px #6200ff,
+0px 0px 80px #6200ff,
+0px 0px 120px #6200ff;
 }
 
 
 
 
 .nav-link {
-  font-family: 'Bassanova';
-    color: black;
+  font-family:'Poppins', sans-serif, medium;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     display: block;
     padding: .5rem 1rem;
@@ -46,32 +52,38 @@ body {
 
 
 .navbar.scrolled {
-  background: linear-gradient(180deg, #3F0420 0%, #2A2895 100%);
+  background: linear-gradient(180deg, #3F0420 0%, #3F0420 100%); 
   backdrop-filter: blur(50px);
 
   transition: background-color 500ms linear;
 }
 
 .navbar.scrolled .nav-link {
-  color:black;
+  color:rgb(255, 255, 255);
 }
 
 .navbar.scrolled .navbar-brand {
-  color:black;
+  color:rgb(255, 255, 255);
 }
 
  
 .navbar {
 	
-	background-color: rgb(255, 1, 1);
+  background: linear-gradient(180deg, #3F0420 0%, #3F0420 100%); 
 	
 }
 
 
 .navbar-brand {
-	font-family: "TonysTrees" ; 
-	color: #c53030;
-	font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+color: #fff;
+
+text-shadow: 0px 0px 10px #6200ff,
+0px 0px 20px #6200ff,
+0px 0px 40px #6200ff,
+0px 0px 80px #6200ff,
+0px 0px 120px #6200ff;
+
 	
     }
 	
@@ -96,14 +108,16 @@ body {
 
 
 
-a:hover {
-  color:#c53030;
-}
 
 
 
 .nav-link:focus, .nav-link:hover{
-  color:#c53030;
+  color:#e7dafb;
+  text-shadow: 0px 0px 10px #6200ff,
+0px 0px 20px #6200ff,
+0px 0px 40px #6200ff,
+0px 0px 80px #6200ff,
+0px 0px 120px #6200ff;
 }
 
 
@@ -126,6 +140,7 @@ a:hover {
 
 #cover {
     height: 100vh;
+  
 } 
 
 
@@ -134,10 +149,12 @@ a:hover {
 
 #footer {
     height: 25vh;
+
 }
 
 /* the text in the cover (parallax img)*/
 .self-defined-grid {
+  
   width: 100%;
   height: inherit;
   display: grid;
@@ -145,7 +162,14 @@ a:hover {
   grid-template-columns: 1fr 1fr 1fr;
     
 }
+.text-center{
+  background: linear-gradient(180deg, #3F0420 0%, #2A2895 100%);
 
+}
+.text-dark {
+  --bs-text-opacity: 1;
+color: rgba(255, 255, 255, 1)!important;
+}
 
 .col1 {
   background-image: url('../assets/new.png');
@@ -159,7 +183,7 @@ a:hover {
   background-image: url( '../assets/shape\ 2.png' );
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: top 25vh left 0px;
+  background-position: top 20vh left 0px;
 
 }
 
@@ -177,7 +201,7 @@ text-shadow: 0px 0px 10px #6200ff,
   left: 265px;
   top: 217px;
   
-  font-family: 'poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 46px;
@@ -189,7 +213,7 @@ text-shadow: 0px 0px 10px #6200ff,
 
 
 .text  {
-  font-family: Hitchcock;
+  font-family:'Poppins', sans-serif;
 }
 
 
@@ -219,7 +243,7 @@ background-size: contain;
 background-position-y: 50px;
 background-repeat: no-repeat;*/
 padding-top: 3em;
-  border-bottom:20px solid black;
+  border-bottom:20px solid rgb(255, 0, 0);
   border-image: linear-gradient(to right, #000 50%, transparent 50%) 100% 1;
   position: relative;
   padding-right:3px;
@@ -241,11 +265,11 @@ padding-top: 3em;
     text-align: center;
     border-top: 40px solid black;
     border-image: linear-gradient(to left, #000 50%, transparent 50%) 100% 1;
-font-family: TONYSTREES
+font-family: 'Poppins', sans-serif;
 }
 
 .lead {
-font-family: News Gothic Regular;
+font-family: 'Poppins', sans-serif;
 padding-left: 50vh;
     padding-right: 50vh;
     line-height: 200%;
@@ -282,7 +306,7 @@ color: black
   -webkit-clip-path: polygon(0.25rem 0.75rem, 100% 0.5rem, calc(100% - 0.5rem) calc(100% - 0.25rem), 0.8587897rem calc(100% - 1rem));
   clip-path: polygon(0.25rem 0.75rem, 100% 0.5rem, calc(100% - 0.5rem) calc(100% - 0.25rem), 0.8587897rem calc(100% - 1rem));
   background-color: #d69e2e;
-  font-family: 'Bassanova';
+  font-family: 'Poppins', sans-serif;
   font-size: x-large;
 }
 
@@ -323,155 +347,122 @@ color: black
 }
 
 hr {
-    color: white;
+    color: rgb(0, 220, 236);
+}
+#issues {
+  background: linear-gradient(180deg, #370F30 0%, #3F0420 100%); 
+                    ;
 }
 
 .card {
-    border-left: 15px solid #c53030 !important;  
-    border-right: 15px solid #c53030 !important;  
-    border-bottom: 15px solid #c53030 !important;     
-    /*border:20px solid #c53030; this is the background color from default bootstrap */
-    border-radius: 0%;
-    background-color: #c53030;
+  /*border-left: 1px !important;  
+  border-right: 1px !important; */ 
+  background-color: rgba(255, 255, 255, 0); 
+  border-color:#370f3000; /*this is the background color from default bootstrap */
+  box-shadow: 0px 0px 2px #6200ff,
+0px 0px 4px #6200ff,
+0px 0px 8px #6200ff,
+0px 0px 16px #6200ff,
+0px 0px 32px #6200ff;
+
 } 
-
-
-
-
-
 
 .card-body {
-  background-color: white;
-  color: #97266d;    
+  
+  border-radius:2rem;
+  
+  
 }
 
-
-
-
-.card-body {
-  transition: all 0.25s;
-}
-
-
-.card-body {
-  -webkit-clip-path: polygon(0.25rem 0.75rem, 100% 0.5rem, calc(100% - 0.5rem) calc(100% - 0.25rem), 0.8587897rem calc(100% - 1rem));
-          clip-path: polygon(0.25rem 0.75rem, 100% 0.5rem, calc(100% - 0.5rem) calc(100% - 0.25rem), 0.8587897rem calc(100% - 1rem));
-} 
-
-
-.card-img-top {
-  transition: all 0.25s;
-}
-
-
-.card-img-top {
-  -webkit-clip-path: polygon(0.25rem 1.75rem, 100% 0.8rem, calc(100% - 0.5rem) calc(100% - 0.25rem), 0.8587897rem calc(100% - 1rem));
-    clip-path: polygon(0.25rem 1.75rem, 100% 0.8rem, calc(100% - 0.5rem) calc(100% - 0.25rem), 0.8587897rem calc(100% - 1rem));
-} 
-
-
-
-
-.card {
-  transition: all 0.25s;
-}
-.card:hover {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-.card {
-  -webkit-clip-path: polygon(0.25rem 0.75rem, 100% 0.5rem, calc(100% - 0.5rem) calc(100% - 0.25rem), 0.8587897rem calc(100% - 1rem));
-          clip-path: polygon(0.25rem 0.75rem, 100% 0.5rem, calc(100% - 0.5rem) calc(100% - 0.25rem), 0.8587897rem calc(100% - 1rem));
-} 
 .card-img {
-    border-radius: 0%;
+
+ 
+  background-image: url("../assets/issue1-2030.png");  
+  border-radius:2rem;
+
 }
 
 .btn-info {
-    color: white;
-    background-color: black;
-    border-color: black;
+  color: rgb(255, 255, 255);
+  background-color: #001426;
+  border-color: #001426;
 }
+
+.card:hover {
+  transform: scale(105%); 
+  
+  
+}
+
+.card-body {
+  
+/*border-right-color: black;*/
+border-right:2px  rgba(255, 255, 255, 0);
+text-align: left;
+
+
+}
+
+
 
 a {
-  font-family: OPTIVenus-BoldExtended;
-  color: black;
-  text-decoration: underline;
+  font-family:'Poppins', sans-serif, bold;
+color:#ffffff;
+text-shadow: 0px 0px 10px #6200ff,
+0px 0px 20px #6200ff,
+0px 0px 40px #6200ff,
+0px 0px 80px #6200ff,
+0px 0px 120px #6200ff;
+  text-align: left;
  
 }
+a:hover {
+  font-family:'Poppins', sans-serif, bold;
+color:#ffffff;
+text-shadow: 0px 0px 10px #6200ff,
+0px 0px 20px #6200ff,
+0px 0px 40px #6200ff,
+0px 0px 80px #6200ff,
+0px 0px 120px #6200ff;
 
-
-
-
-#about {
-  /*background-color: #313031;*/
-  color: #db0102;
-  transform: skew(2deg, 2deg);
-  border-right: 2em solid #313031;
-  border-left: 2em solid #313031;
 }
+
+
+
+
+
 
 h3 {
-  font-family:Bassanova;
+  font-family:'Poppins', sans-serif;
 }
 
-#latestIssues {
-  clip-path: polygon(39% 0, 63% 12%, 65% 82%, 32% 100%);
-    background-color: #d69e2e;
-  color:black;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-   font-family:Hitchcock;
+#latestIssues  {
+font-family:'Poppins', sans-serif;
+color:#ffffff;
+text-shadow: 0px 0px 10px #6200ff,
+0px 0px 20px #6200ff,
+0px 0px 40px #6200ff,
+0px 0px 80px #6200ff,
+0px 0px 120px #6200ff;
 }
+
+   
+
 
 
 #about-title  {
-  clip-path: polygon(38% 7%, 61% 29%, 58% 97%, 39% 98%);
-  background-color: #d69e2e;
-  color:black;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-   font-family:Hitchcock;
-}
-
-.textsection p:first-of-type {
-  clip-path: polygon(2% 0, 97% 11%, 99% 100%, 0 100%);
-        background-color: #d69e2e;
-  color:black;
-  padding: 2rem;
-}
-
-.textsection p:nth-of-type(2n) {
-  clip-path: polygon(2% 0, 97% 11%, 99% 100%, 0 100%);
-  background-color: #d69e2e;
-color:black;
-padding: 2rem;
+  font-family:'Poppins', sans-serif;
+  color:#ffffff;
+  text-shadow: 0px 0px 10px #6200ff,
+  0px 0px 20px #6200ff,
+  0px 0px 40px #6200ff,
+  0px 0px 80px #6200ff,
+  0px 0px 120px #6200ff;
   
 }
 
 
 
-hr {
-  position: relative;
-  opacity: 1;
-   border: none;
-  height: 12px;
-    background: #313031;
-       
-    }
-
-    hr:not([size]) {
-      height: 12px;
-  }
-
-
-
-/* styles navigation*/
 
 .ic-stickey {
   position: fixed;
@@ -815,7 +806,7 @@ color:white;
   background-color: black;
   color: white;
   padding: 5px;
-  font-family: NHLSanJose;
+  font-family: 'Poppins', sans-serif;
 
 }
 
