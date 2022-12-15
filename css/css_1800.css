@@ -783,6 +783,10 @@ text-decoration: none;
   column-rule: solid;
 }
 
+#main-article img {
+  transform: scale(0);
+}
+
 #compare-article {
   overflow-y:auto;  
   height: 100vh;
@@ -790,6 +794,10 @@ text-decoration: none;
   column-gap: 1em;
   text-align: justify;
   column-rule: solid;
+}
+
+#compare-article img {
+  transform: scale(0);
 }
 
 footer {
