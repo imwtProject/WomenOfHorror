@@ -476,6 +476,8 @@ q::after {
 footer {
   background-image: url("../assets/img/1800/bg1.jpg");
   height: 25vh;
+  z-index: 1000;
+  position: relative;
 }
 
 /* ISSUE PAGE */

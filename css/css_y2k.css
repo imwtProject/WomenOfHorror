@@ -485,6 +485,8 @@ a.dropdown-item:hover{
 
 footer {
   height: 25vh;
+  z-index: 1000;
+  position: relative;
 }
 
 /* ISSUE PAGE */
@@ -743,10 +745,43 @@ border: 2px solid rgb(5, 88, 255)
   height: 100vh;
 }
 
+#main-article::-webkit-scrollbar {
+  width: 23px;
+}
+
+#main-article::-webkit-scrollbar-track {
+background-color: transparent;
+border-color: rgb(25, 53, 215);
+}
+
+#main-article::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, #262626, #eaeaea, #262626);
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
 #compare-article {
   overflow-y:auto;  
   height: 100vh;
 }
+
+#compare-article::-webkit-scrollbar {
+  width: 23px;
+}
+
+#compare-article::-webkit-scrollbar-track {
+background-color: transparent;
+border-color: rgb(25, 53, 215);
+}
+
+#compare-article::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, #262626, #eaeaea, #262626);
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
 
 footer {
   background-image: url("../assets/img/y2k/lava.gif");
