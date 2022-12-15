@@ -282,9 +282,8 @@ q::after {
     display: block;
     top: -1em;
     transform: scale(0.8);
+    clip-path: polygon(50px 0,calc(100% - 50px) 0,100% 50px,100% calc(100% - 50px),calc(100% - 50px) 100%,50px 100%,0 calc(100% - 50px),0 50px);
     }
-
-    /* clip-path: polygon(12px 0,calc(100% - 12px) 0,100% 12px,100% calc(100% - 12px),calc(100% - 12px) 100%,12px 100%,0 calc(100% - 12px),0 12px); */
 
 #issues {
   background-image: url("../assets/img/1800/bg1.jpg");
@@ -336,6 +335,13 @@ q::after {
 /*still doesn't work*/ 
 .team {
   column-count: 0 !important;
+}
+
+.team img {
+  transform: scale(0.8);
+  filter: grayscale(67%) sepia(50%);
+  clip-path: polygon(50px 0,calc(100% - 50px) 0,100% 50px,100% calc(100% - 50px),calc(100% - 50px) 100%,50px 100%,0 calc(100% - 50px),0 50px);
+  
 }
 
 /* styles navigation*/
