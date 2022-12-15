@@ -19,6 +19,13 @@ $(document).ready(function () {
 	case './css/css_y2k.css':
 		document.getElementById('currentlocalcss').setAttribute('href', './css/css_y2k.css');
 		break;
+
+	case './css/css_1930.css':
+		document.getElementById('currentlocalcss').setAttribute('href', './css/css_1930.css');
+		break;
+	case './css/css_1980.css':
+		document.getElementById('currentlocalcss').setAttribute('href', './css/css_1980.css');
+		break;
   }
 })
 
@@ -337,10 +344,10 @@ $('.panel-collapse').on('show.bs.collapse', function () {
 
   /*  change navbar color */
   
-        $(function () {
-      $(document).scroll(function () {
-          var $nav = $(".navbar");
-          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        });
-    });
-     
+  $(function () {
+	$(document).scroll(function () {
+		var $nav = $("#firstNav");
+		$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	  });
+  });
+   

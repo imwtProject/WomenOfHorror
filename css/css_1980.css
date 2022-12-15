@@ -143,7 +143,10 @@ a:hover {
   color:#c53030;
 }
 
-
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #1e2125;
+  background-color: #c5303079;
+}
 
 
 .parallax {
@@ -299,12 +302,8 @@ color: black
 
 
 /* jumbotron*/
-#title {color: black;
-  -webkit-clip-path: polygon(0.25rem 0.75rem, 100% 0.5rem, calc(100% - 0.5rem) calc(100% - 0.25rem), 0.8587897rem calc(100% - 1rem));
-  clip-path: polygon(0.25rem 0.75rem, 100% 0.5rem, calc(100% - 0.5rem) calc(100% - 0.25rem), 0.8587897rem calc(100% - 1rem));
-  background-color: #d69e2e;
-  font-family: 'Bassanova';
-  font-size: x-large;
+#title {
+	color: white;
 }
 
 #main-article {
@@ -840,6 +839,9 @@ color:white;
 
 
 
+
+
+
 	
 	
 /* scroll per i due articoli */
@@ -1014,6 +1016,243 @@ color:white;
 
  
 
+
+
+
+    #compare {
+font-family: OPTIVenus-BoldExtended;
+color: black;
+    }
+
+
+
+    /* article column */
+
+#main-article {
+  margin-right: 0.3em;
+  overflow-y:auto;
+  height: 100vh;
+}
+
+
+#compare-article {
+  overflow-y:auto;  
+  height: 100vh;
+}
+
+
+
+/*  DOCUMENTATION PAGE */
+
+
+#hero-documentation {
+  height: auto;
+    
+    color: black !important;
+    padding-top: 10vh;
+    text-align: center;
+    padding-bottom: 3vh;
+    
+}
+
+
+#firstNav, #hero-documentation {
+  padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    flex-wrap: wrap !important;
+    width: auto !important;
+}
+
+
+.content{
+  margin-top: 0vh;
+  height: 100vh !important;
+}
+
+
+#documentation .nav-pills{
+  max-width: inherit !important;
+}
+
+#menu-card .nav-link{
+  font-size: 2.5vh;
+}
+
+#navbar-documentation li .nav-item, #navbar-documentation a.nav-link{
+  font-size: 2.5vh;
+}
+
+
+.scrollspy {
+  height: 87vh;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+:focus-visible{
+  outline: none;
+}
+
+#bodyDoc hr {
+  margin-right: 1.5rem;
+  color: black;
+}
+
+
+.sub-button::content{
+  background-size: 3vh !important;
+}
+
+.content #text-start{
+  height: 92vh;
+}
+
+
+#documentation .content{
+  margin-top: 8vh;
+  background-color: transparent !important;
+}
+
+
+#menu-card .navbar-brand{
+  font-size: 4vh !important;
+  color:black;
+  font-family: 'OPTIVenus-BoldExtended';
+
+}
+
+#main-background h3 {
+  font-family: 'impact', sans-serif !important;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: 6px;
+}
+
+#main-background h5 {
+  font-family: 'impact', sans-serif !important;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: 6px;
+  text-align: right;
+}
+
+
+
+#documentation .nav-link:focus, .nav-link:hover {
+  color: #c53030 ;
+}
+
+#menu-card .navbar {
+  height: unset !important;
+  margin-top: 1rem;
+ 
+  font-size: 3vh;
+}
+
+#navbar-documentation .nav-pills .nav-link {
+background-color: transparent;
+}
+
+#navbar-documentation .nav-pills .nav-link.active {
+background-color: transparent !important ;
+color:black;
+
+}
+
+#bodyDoc h5{
+  font-size: 5vh !important;
+}
+
+#bodyDoc h6{
+  padding-top: 1rem;
+}
+
+
+
+
+@media (max-width: 1200px){
+  #menu-card .navbar-brand{
+      font-size: 3vh !important;
+  }
+}
+
+#item-2-3{
+font-family: futurismo;
+padding-top: 1rem;
+font-size: 5vh; 
+letter-spacing: 0.5rem; 
+}
+
+#item-2-4{
+font-family: Hitchcock;
+padding-top: 1rem;
+font-size: 5vh; 
+letter-spacing: 0.5rem; 
+}
+
+
+
+.try-style{
+text-decoration: none;
+font-size: 2.5vh;
+text-transform: uppercase;
+border: none;
+margin-bottom: 1vh;
+}
+
+.try-style#enable-1930{
+background-color: transparent;
+transition: all 0.5s ease;
+}
+
+.try-style#enable-1930:hover{
+  background-color: white;
+  
+}
+
+.try-style#enable-1980{
+background-color: transparent;
+transition: all 0.5s ease;
+font-family: "Bembo", garamond, serif;
+}
+
+.try-style#enable-1980:hover{
+  background-color: white;
+
+}
+
+
+/*  FINE DOCUMENTATION PAGE */
+
+
+
+/* TEAM */
+
+
+
+
+/* FINE TEAM */
+#theteam .card {
+  border-color: transparent;
+  border-radius: 0%;
+  background-color: transparent;
+
+}
+
+
+
+
+
+    
 
 
   /* MEDIA QUERY */

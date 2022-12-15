@@ -85,20 +85,27 @@ body {
     /* The image used */
     
     font-family: Basaro;
-	
+    background-image: url("../assets/img/1930/paper.png") !important;
 	
     display: block; /* for displaying the text*/
 	
-    background: linear-gradient(rgba(0,0,0,0.5),
-	 rgba(0,0,0,0.5)), url("../assets/img/1930/depero927.jpg");
-	 color: black;
-    /* Create the parallax scrolling effect 
+   /* background-color: #f4d215;
+     Create the parallax scrolling effect 
     background-attachment: fixed;
     background-position: center;
     background-repeat:repeat;
    background-blend-mode: lighten;
    background-image: url("depero927.jpg") !important;*/
 }
+
+.col3 {
+  background-image: url( '../assets/img/1930/aperol.png' );
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom 5vh right 0vh;
+
+}
+
 
 #cover {
     height: 100vh;
@@ -112,8 +119,12 @@ body {
 
 #footer {
     height: 25vh;
+    background-color: #fec000;
 }
 
+footer {
+  background-color: #fec000;
+}
 /* the text in the cover (parallax img)*/
 
 /* the text in the cover (parallax img)*/
@@ -131,21 +142,16 @@ body {
       
 	 /*text-align-last:justify;
      text-align: justify;*/
-     color: white;
-	 font-family: COMPRESSED;
-	 /**/
-	 transform: rotate(180deg);
-	 border: 5px solid;
-   margin: 90px 50px;
- font-size: 55px;
-     
-  text-align: center;
-  
-   
-	 
-  width: fit-content;
-block-size: fit-content;
-  padding: 10px;
+     color: #fec000;
+     font-family: 'LibbyHeavy';
+     transform: rotate(180deg);
+     border: 5px solid;
+     margin: 90px 70px;
+     font-size: 25px;
+     text-align: center;
+     width: fit-content;
+     block-size: fit-content;
+     padding: 10px;
 	 
 }
 
@@ -154,7 +160,7 @@ block-size: fit-content;
 
 
 h4.text {
-	font-family: podiumsharpDueDieci;
+	font-family: LOT;
 	color: red;
 	 font-size: 50px;
 	
@@ -186,29 +192,37 @@ background: linear-gradient(rgba(0,0,0,0.5),
 
 .intro {
 	font-family: COMPRESSED;
-	margin:90px 50px;
+	padding:90px 50px;
 	text-align:center;
 }
 
 
+.navbar a:hover {
+  color: #fec000;
+}
+
+
 .navbar.scrolled {
-	color: #fcfaf6;
-  background-color: #db0102 !important;
+	color: #db0102;
+  background-color: #fec000 !important;
   transition: background-color 500ms linear;
+  border-bottom-style: dotted;
+	border-bottom-color: #db0102;
+	
 }
 
 .navbar.scrolled .nav-link {
-  color:#f9ede1;
+  color:#db0102;
 }
 
 .navbar.scrolled .navbar-brand {
-  color:#f9ede1;
+  color:#db0102;
 }
 
 
 .navbar {
-	border-bottom-style: solid;
-	border-bottom-color: #db0102;
+	border-bottom-style: dotted;
+	border-bottom-color: #fec000;
 	
 	
 }
@@ -222,25 +236,42 @@ background: linear-gradient(rgba(0,0,0,0.5),
     }
 	
 
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(219,1,2)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+.navbar-toggler-icon {
+  background-image: url("../assets/img/1930/hamburger.png") !important; 
+
 }
 
 .custom-toggler.navbar-toggler {
   border-color: #db0102;
 } 
 
+
+
+
 .navbar-toggler {
     padding: .25rem .75rem;
     font-size: 1.25rem;
     line-height: 1;
-    background-color: transparent;
-    border: 1px solid transparent;
+    
+    border: 1px solid red;
     border-radius: .25rem;
     transition: box-shadow .15s ease-in-out;
 }
 
 
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+   box-shadow: 0 0 0 0rem;
+}
+
+
+
+
+.dropdown-item:focus, .dropdown-item:hover {
+  
+  background-color: #01b28f;
+}
 
 h2 {
 		font-family: Futurismo; 
@@ -250,8 +281,9 @@ h2 {
 		
 		
 	.textsection h3{
-		font-family: 1797-COMPRESSED; 
+		font-family:COMPRESSED; 
 	color: #db0102;
+  font-size: xx-large;
 	
 	}
 		
@@ -290,6 +322,11 @@ h2 {
 
 
 
+
+#latestIssues {
+  padding-bottom: 20px;
+}
+
 /* #article-content {
   z-index: 1000;
 } */
@@ -313,19 +350,19 @@ h2 {
 
 #row1, #row2, #row3 {
     display:block;
-	border-bottom: 5px solid red;
+	border-bottom: 5px solid #db0102;
 }
 
 #row1{
-	border-left: 5px solid red;
+	border-left: 5px solid #db0102;
 }
 
 #row2{
-	border-right: 5px solid red;
+	border-right: 5px solid #db0102;
 }
 
 #row3{
-	border-left: 5px solid red;
+	border-left: 5px solid #db0102;
 }
 
 
@@ -337,8 +374,13 @@ hr {
 
 
 .container-fluid{
-	background-color: #EC9F05;
+	
 	padding-bottom: 5%;
+  background-image:url( '../assets/img/1930/paper.png' ); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-color: #EC9F05;*/
+  
 }
 
 .card {
@@ -384,7 +426,9 @@ hr {
   max-width: 8ch;
 }
 
-
+.card p {
+  border-bottom: 5px solid transparent;
+}
 
 
 
@@ -398,7 +442,7 @@ hr {
 
 #about {
 	background-color: #f4f5eb;
-	color: #db0102;
+	color: black;
 	
 }
 
@@ -448,7 +492,7 @@ hr {
 
 
 .ic-stickey ul li:hover {
-  background:rgba(33,37,41) !important;
+  background:#fec000 !important;
   -webkit-transform: translate(110px, 0);
   -moz-transform: translate(110px, 0);
   -ms-transform: translate(110px, 0);
@@ -457,7 +501,7 @@ hr {
   background: rgba(255, 255, 255, 0.4);
 }
 .ic-stickey ul li:hover a {
-  color: #fff;
+  color: #db0102;
 }
 /*.ic-stickey ul li:hover i {
   color: #fff;
@@ -525,14 +569,15 @@ hr {
   }
 
 .fab-opener {
-  background-color: #db0102;
+  background-color: transparent;
   border-radius: 50%;
   height: 50px;
   width: 50px;
   text-align: center;
   box-shadow: 0 0 12px rgba(0,0,0,0.5);
   transition: all 0.1s ease-out;
-  margin-bottom: 5px
+  margin-bottom: 5px;
+  border-color: #fec000;
 }
 
 .fab-opener:hover {
@@ -545,6 +590,13 @@ hr {
   width: 35px;
   margin-left: 3px;
   margin-top: 1px;
+  background-image: url("../assets/img/1930/campari.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  border-radius: 100%;
+  right: 3px;
 }
 
 /*codepen*/
@@ -681,6 +733,15 @@ hr {
 	border-left: 1px solid black;
 }
 
+.panel-title a:hover {
+  color: #fec000
+}
+
+
+.panel a:hover {
+  color: #fec000
+}
+
 
 .fa-chevron-up {
     transition: all 0.3s ease;
@@ -714,10 +775,17 @@ hr {
 	padding-top: 2%;
 }
 	
-	a {
+	#about a {
 		font-family:LibbyHeavy;
-    color: black;
-    text-decoration: underline;
+    color: #fec000;
+    text-decoration: underline overline;
+    vertical-align: super;
+}
+
+ a {
+  font-family:LibbyHeavy;
+  color: black;
+  text-decoration: underline ;;
 }
 	
 
@@ -727,16 +795,34 @@ a:hover {
 
 
 
-	.textsection P {
-		text-align-last: left;
-text-align: right;
-	}
 	
-	.textsection p:nth-of-type(2){
-		text-align: left;
+/*about*/
+  .textsection p:first-of-type {
+    word-spacing: 30px;
+    transform-origin: center top;
+    text-align-last: left;
+text-align: right;
+color: black;
+font-family: basaro;
+border-right: 5px solid black;
+    padding-right: 9px;
+    border-bottom: 5px solid transparent;
+
+  }
+	
+
+
+  P {
+    text-align: left;
 		word-spacing: 0.5rem;
 		text-indent: 30%;
+    word-spacing: -4px;
+    color: black;
+    font-family: Ultra-Regular;
+    border-bottom: 5px solid black;
+    padding-bottom: 9px;
 	}
+	
 	
 	/* toglie i pallini a lato degli articoli */
 	ul {
@@ -924,6 +1010,19 @@ background-color: #db0102;}
 
 
 
+/* article column */
+
+#main-article {
+  margin-right: 0.3em;
+  overflow-y:auto;
+  height: 100vh;
+}
+
+
+#compare-article {
+  overflow-y:auto;  
+  height: 100vh;
+}
 
 
 
@@ -985,7 +1084,7 @@ text-decoration: underline overline #db0102;
 .scrollspy {
   height: 87vh;
   overflow-y: scroll;
-  background-color: #EC9F05;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar{
@@ -997,8 +1096,7 @@ text-decoration: underline overline #db0102;
 }
 
 hr {
-  margin-right: 1.5rem;
-  border-top: 3px solid rgb(110, 110, 110);
+  border-top: 5px dashed #fec000;
 }
 
 
@@ -1022,7 +1120,9 @@ hr {
 
 #menu-card .navbar-brand{
   font-size: 4vh !important;
-  color: black;
+  color: #01b28f;
+  font-family: LOT;
+  padding-top: 20px;
 
 }
 
@@ -1034,7 +1134,7 @@ hr {
 #menu-card .navbar {
   height: unset !important;
   
-  background-color: #f4f5eb  !important;
+  background-color: #EC9F05  !important;
   font-size: 3vh;
 }
 
@@ -1053,15 +1153,25 @@ color:black;
   color: black;
 }
 
-h5{
+#bodyDoc h5{
   font-size: 5vh !important;
 }
 
-h6{
+#bodyDoc h6{
   padding-top: 1rem;
 }
 
-
+#bodyDoc p {
+  text-align: left;
+    word-spacing: normal;
+    text-indent: 0%;
+    
+    color: black;
+    font-family: Ultra-Regular;
+    border-bottom: 5px solid transparent;
+   
+    
+}
 
 
 @media (max-width: 1200px){

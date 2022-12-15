@@ -457,6 +457,7 @@ a {
 /* not sure where is this list cause in the dynamic load of the articles is an id not a class */
 
 .list {
+  font-family: futurismo;
   font-size: 80%;
   line-height: 1.2; 
   margin: 0; 
@@ -615,7 +616,7 @@ background-color: #a8bbbf;
 
 .content{
   margin-top: 0vh;
-  height: 40vh !important;
+  height: 100vh !important;
 }
 
 
@@ -668,6 +669,7 @@ hr {
 #menu-card .navbar-brand{
   font-size: 4vh !important;
   color: black;
+  
 }
 
 
