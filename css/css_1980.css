@@ -181,8 +181,14 @@ a:hover {
 
 #footer {
     height: 25vh;
+    background-color: transparent;
 }
 
+footer {
+ 
+  position: relative;
+  z-index: 9999;
+}
 /* the text in the cover (parallax img)*/
 .self-defined-grid {
   width: 100%;
@@ -609,7 +615,7 @@ hr {
  .fab-styles {
   position: fixed;
   left: 20px;
-  top: 60px;
+  top: 70px;
   transform: scale(1);
   }
 

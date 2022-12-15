@@ -15,20 +15,19 @@ src: url('../assets/fonts/1930/LibbyHeavy.ttf') format('truetype');}
 
 
  @font-face {
-    font-family: 'Breite Grotesk Condensed';
-    font-style: normal;
-    font-weight: normal;
-    src: local('../assets/fonts/1930/Breite Grotesk Condensed'), url('Condensed.woff') format('woff');
+  font-family:Condensed;
+  src: url(Condensed.otf) ;
+  src: url('../assets/fonts/1930/Condensed.otf')format('opentype');
+    
     }
     
 	
 	
 	
 	@font-face {
-  font-family:'Ultra-Regular';
-  src: local('Ultra-Regular'), url('Ultra-Regular.ttf') format('ttf');
-  src: local('Ultra-Regular'), url('Ultra-Regular.woff') format('woff');
-  src: local('../assets/fonts/1930/Ultra-Regular'), url('Ultra-Regular.woff2') format('woff2');
+  font-family:Ultra-Regular;
+  src: url(Ultra-Regular.ttf);
+  src: url('../assets/fonts/1930/Ultra-Regular') format('truetype');
 }
 	
 	
@@ -124,11 +123,16 @@ body {
 #footer {
     height: 25vh;
     background-color: #fec000;
+    position: relative;
 }
 
 footer {
   background-color: #fec000;
+  position: relative;
+  z-index: 9999;
 }
+
+
 /* the text in the cover (parallax img)*/
 
 /* the text in the cover (parallax img)*/
@@ -587,7 +591,7 @@ hr {
  .fab-styles {
   position: fixed;
   left: 20px;
-  top: 60px;
+  top: 70px;
   transform: scale(1);
   }
 
@@ -841,9 +845,9 @@ border-right: 5px solid black;
     text-align: left;
 		word-spacing: 0.5rem;
 		text-indent: 30%;
-    word-spacing: -4px;
+    word-spacing: -2px;
     color: black;
-    font-family: Ultra-Regular;
+    font-family: Condensed;
     border-bottom: 5px solid black;
     padding-bottom: 9px;
 	}
@@ -1079,9 +1083,11 @@ background-color: #db0102;}
     
 }
 
-#hero-documentation .intro {
+#hero-documentation .intro h1{
 font-family: futurismo;
 text-decoration: underline overline #db0102;
+color: black;
+text-shadow: -5px 0 transparent, 0 1px transparent, 1px 0 transparent, 0 -1px transparent;
 }
 
 
@@ -1092,6 +1098,10 @@ text-decoration: underline overline #db0102;
   height: 40vh !important;
 }
 
+
+#bodyDoc .content {
+  height: auto !important;
+}
 
 #documentation .nav-pills{
   max-width: inherit !important;
