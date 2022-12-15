@@ -533,6 +533,8 @@ hr {
   -ms-transition: all 1s;
   -o-transition: all 1s;
   transition: all 0.5s;
+  cursor: pointer;
+
 }
 .ic-stickey ul li:hover {
   background:#c53030 !important;
