@@ -784,7 +784,13 @@ text-decoration: none;
 }
 
 #main-article img {
-  transform: scale(0);
+  filter: grayscale(67%) sepia(50%);
+  clip-path: polygon(50px 0,calc(100% - 50px) 0,100% 50px,100% calc(100% - 50px),calc(100% - 50px) 100%,50px 100%,0 calc(100% - 50px),0 50px);
+  }
+
+#main-article img::before {
+  content: url("../assets/img/1800/columnRule.png");
+  display: inline;
 }
 
 #compare-article {
@@ -797,8 +803,9 @@ text-decoration: none;
 }
 
 #compare-article img {
-  transform: scale(0);
-}
+  filter: grayscale(67%) sepia(50%);
+  clip-path: polygon(50px 0,calc(100% - 50px) 0,100% 50px,100% calc(100% - 50px),calc(100% - 50px) 100%,50px 100%,0 calc(100% - 50px),0 50px);
+  }
 
 footer {
   background-image: url("../assets/img/1800/bg1.jpg");
