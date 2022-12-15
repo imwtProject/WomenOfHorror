@@ -23,9 +23,15 @@ $(document).ready(function () {
 	case './css/css_1930.css':
 		document.getElementById('currentlocalcss').setAttribute('href', './css/css_1930.css');
 		break;
+
 	case './css/css_1980.css':
 		document.getElementById('currentlocalcss').setAttribute('href', './css/css_1980.css');
 		break;
+
+	case './css/css_1800.css':
+		document.getElementById('currentlocalcss').setAttribute('href', './css/css_1800.css');
+		break;
+
   }
 })
 

@@ -28,14 +28,14 @@
     <!--change navbar background-->
     <script>
         $(function () {
-      $(document).scroll(function () {
-          var $nav = $(".navbar");
-          var dropdown =$(".dropdown-menu");
-          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-          dropdown.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-          console.log(this)
+            $(document).scroll(function () {
+                var $nav = $(".navbar");
+                var dropdown = $(".dropdown-menu");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                dropdown.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                console.log(this)
+            });
         });
-    });
     </script>
 
 
@@ -73,7 +73,7 @@
                             </li>
                             <li><a class="dropdown-item" href="#"
                                     onclick="alert('This Issue has not been published yet');">Horny Cannibals</a></li>
-                            </ul>
+                        </ul>
 
                     </li>
 
@@ -101,19 +101,19 @@
                             but
                             on that account we shall be more attached to one another.<br>
                         </q>
-                        <h4 class="text" style="text-align: right;">― Mary Shelley, Frankenstein</h4>
+                        <h4 class="text" id="ref" style="text-align: right;">― Mary Shelley, Frankenstein</h4>
                     </h1>
                 </div>
 
                 <div class="col3" id="cover-right">
                     <img src='./assets/img/y2k/holographicstar.png' width='3em' height='3em' class="star"></img>
-                </div>               
+                </div>
             </div>
         </div>
 
         <div class="container-fluid" id="issues">
 
-            <!--carousel title-->         
+            <!--carousel title-->
 
             <div class="row g-0" id="latestIssues">
                 <div class="col-12 pt-3 text-center">
@@ -121,44 +121,44 @@
                 </div>
             </div>
 
-                <!--cards-->
-                <div class="col-12">
-                    <div class="card-group">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="./assets/img/electric-monsters.jpg" class="card-img-top" alt="...">
-                                <h5 class="card-title"><a href="issue.html">Electric Monster</a></h5>
-                                <p class="card-text">Abstract of the article: this will be an introduction to the
-                                    thematic of the article rn I am just making it long to see how it looks like once
-                                    added with the spaces ecc</p>
-                            </div>
+            <!--cards-->
+            <div class="col-12">
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/img/electric-monsters.jpg" class="card-img-top" alt="...">
+                            <h5 class="card-title"><a href="issue.html">Electric Monster</a></h5>
+                            <p class="card-text">Abstract of the article: this will be an introduction to the
+                                thematic of the article rn I am just making it long to see how it looks like once
+                                added with the spaces ecc</p>
                         </div>
+                    </div>
 
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="./assets/img/Bloodsucking-freaks.jpg" class="card-img-top" alt="...">
-                                <h5 class="card-title"><a href="#"
-                                        onclick="alert('This Issue has not been published yet');">Bloodsucking
-                                        Freaks</a></h5>
-                                <p class="card-text">Abstract of the article: this will be an introduction to the
-                                    thematic of the article rn I am just making it long to see how it looks like once
-                                    added with the spaces ecc</p>
-                            </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/img/Bloodsucking-freaks.jpg" class="card-img-top" alt="...">
+                            <h5 class="card-title"><a href="#"
+                                    onclick="alert('This Issue has not been published yet');">Bloodsucking
+                                    Freaks</a></h5>
+                            <p class="card-text">Abstract of the article: this will be an introduction to the
+                                thematic of the article rn I am just making it long to see how it looks like once
+                                added with the spaces ecc</p>
                         </div>
+                    </div>
 
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="./assets/img/horny-cannibals.jpg" class="card-img-top" alt="...">
-                                <h5 class="card-title"><a href="#"
-                                        onclick="alert('This Issue has not been published yet');">Horny Cannibals</a>
-                                </h5>
-                                <p class="card-text">Abstract of the article: this will be an introduction to the
-                                    thematic of the article rn I am just making it long to see how it looks like once
-                                    added with the spaces ecc</p>
-                            </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/img/horny-cannibals.jpg" class="card-img-top" alt="...">
+                            <h5 class="card-title"><a href="#"
+                                    onclick="alert('This Issue has not been published yet');">Horny Cannibals</a>
+                            </h5>
+                            <p class="card-text">Abstract of the article: this will be an introduction to the
+                                thematic of the article rn I am just making it long to see how it looks like once
+                                added with the spaces ecc</p>
                         </div>
                     </div>
                 </div>
+            </div>
 
             <div class="container-fluid py-3" id="about">
 
@@ -203,37 +203,8 @@
                         thanks to our different historically costumized typography layouts.
                         <br>
                         <hr>
-                   
 
                     </p>
-
-
-
-                    <h3>The team</h3>
-                    <br>
-                    <div class="card-group" id="theteam">
-                        <div class="card">
-                        <img src="#" alt="" style="width:100%">
-                        <h5>Maddalena Ghiotto</h5>
-                        <p class="card_text">blabla</p>
-                        
-                      </div>
-                      <div class="card">
-                        <img src="#" alt="" style="width:100%">
-                        <h5>Rayes Seif Eddine</h5>
-                        <p class="card_text">blabla</p>
-                        
-                      </div>
-                      <div class="card">
-                        <img src="#" alt="" style="width:100%">
-                        <h5>Eleonora Pasquale</h5>
-                        <p class="card_text">blabla</p>
-                       
-                      </div>
-                      </div>
-              </div>
-
-              <hr>
 
                     <h3>Disclaimer</h3>
                     <p>
@@ -258,113 +229,95 @@
                                 Tensions in Frankenstein</a></li>
                     </ul>
                     <br>
-                    All copyrights and related rights on the content remain with their original owners.
-                    All copyright on the typographic and layout choices are 2022 © XY
-                    </p>
+                    <hr>
                 </div>
+            </div>
 
-                <hr>
+            <div class="team">
+                <h3>The team</h3>
+                <br>
+                <div class="card-group" id="theteam">
+                    <div class="card">
+                        <img src="#" alt="" style="width:100%">
+                        <h5>Maddalena Ghiotto</h5>
+                        <p class="card_text">blabla</p>
 
-                
+                    </div>
+                    <div class="card">
+                        <img src="#" alt="" style="width:100%">
+                        <h5>Rayes Seif Eddine</h5>
+                        <p class="card_text">blabla</p>
 
-                <div class="textsection pt-3">
-                    <h3>Guidelines</h3>
-                    <p>
-                    <ol>
-                        <li>Every h2 title is a Main title <b>with capital letter</b>, in the homepage we have
-                            "Latest
-                            Issues" and "About" section</li>
-                        <li>h3 are subsection titles, for Instance, Inside "AboTut section" we have "Women of
-                            horror", "The
-                            project" and "Disclaimer"</li>
-                        <li>Every container has an id <b>without capital letter</b>that corresponds to the
-                            section's h3
-                            title ex. "About" has id="about" </li>
-                        <li>every row and subsection in general inside a container also has an id, in order to
-                            make it
-                            easily stylable and recognizable</li>
-                        <li>containers have all the same <b>padding set in the css local stylesheet to 5%</b>,
-                            in this way
-                            the whole content of the page will be vertically aligned</li>
-                        <li>I will try to write a js that, when screen resizes to md changes the code inside
-                            "carousel-inner"</li>
-                        <li>Notes to the text will go in "Modals" every other pop up message will be an "Alert"
-                        </li>
-                    </ol>
-                    </p>
-                    <h3>To do</h3>
-                    <p>
-                    <ul>
-                        <li>check that each text has: author(s), title, maybe subtitle, publication date</li>
-                        <li>We could add an issue where we implement different js options, such as navigation
-                            and metadata
-                            enriched and modified by the readers for their own purposes</li>
-                        <li>make carousel work for md size screen</li>
-                        <hr>
-                        <li>In issue page fix margins and background + do js popup for metadata list + link to
-                            wikipedia + decide what to put in title section (article's info? or popup section?)
-                            and make it (and columns) sticky</li>
-                    </ul>
+                    </div>
+                    <div class="card">
+                        <img src="#" alt="" style="width:100%">
+                        <h5>Eleonora Pasquale</h5>
+                        <p class="card_text">blabla</p>
 
-                    </p>
+                    </div>
                 </div>
-
             </div>
 
-            <!--styles navigation in lg screen-->
+            <hr>
 
-            <div class="ic-stickey styles-large">
-                <ul id="styles">
-                    <li class="s1500"><a href="#">1500/1800<i class="fa-solid fa-poo"></i></a></li>
-                    <li class="s1800"><a href="#">1800<img class="ico" src="./assets/bat.png" width="30"
-                                height="30"></img></a></li>
-                    <li class="XX-1"><a onclick="swapTheme('./css/css_1930.css')">XX-1<img class="ico"
-                                src="./assets/martini.png" width="30" height="30"></img></a></li>
-                    <li class="XX-2"><a onclick="swapTheme('./css/css_1980.css')">XX-2<img class="ico"
-                                src="./assets/hand.png" width="30" height="30"></img></a></li>
-                    <li class="lateXX-2000"><a onclick="swapTheme('./css/css_y2k.css')">y2k<img class="ico"
-                                src="./assets/processor.png" width="30" height="30"></img></a></li>
-                    <li class="s2030"><a href="#">2030<i class="fa-solid fa-poo"></i></a></li>
-                </ul>
-            </div>
+        </div>
 
-            <!-- style navigation in md and sm screen -->
+        <!--styles navigation in lg screen-->
 
-            <div class="fab-styles btn-fab">
-                <button class="fab-opener btn-fab__action" id="fab">
-                    <a onclick="fabopener()">
-                        <img class="fab-icon">
-                    </a>
-                </button>
-                <nav class="fab-menu">
-                    <button class="fab-menu__item">1500/1800</button>
-                    <button class="fab-menu__item">1800</button>
-                    <button class="fab-menu__item"onclick="swapTheme('./css/css_1930.css')">XX-1</button>
-                    <button class="fab-menu__item"onclick="swapTheme('./css/css_1980.css')">XX-2</button>
-                    <button class="fab-menu__item" onclick="swapTheme('./css/css_y2k.css')">y2k</button>
-                    <button class="fab-menu__item">2030</button>
-                </nav>
-            </div>
+        <div class="ic-stickey styles-large">
+            <ul id="styles">
+                <li class="s1500"><a href="#">1500/1800<i class="fa-solid fa-poo"></i></a></li>
+                <li class="s1800"><a onclick="swapTheme('./css/css_1800.css')">1800<img class="ico"
+                            src="./assets/bat.png" width="30" height="30"></img></a></li>
+                <li class="XX-1"><a onclick="swapTheme('./css/css_1930.css')">XX-1<img class="ico"
+                            src="./assets/martini.png" width="30" height="30"></img></a></li>
+                <li class="XX-2"><a onclick="swapTheme('./css/css_1980.css')">XX-2<img class="ico"
+                            src="./assets/hand.png" width="30" height="30"></img></a></li>
+                <li class="lateXX-2000"><a onclick="swapTheme('./css/css_y2k.css')">y2k<img class="ico"
+                            src="./assets/processor.png" width="30" height="30"></img></a></li>
+                <li class="s2030"><a href="#">2030<i class="fa-solid fa-poo"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- style navigation in md and sm screen -->
+
+        <div class="fab-styles btn-fab">
+            <button class="fab-opener btn-fab__action" id="fab">
+                <a onclick="fabopener()">
+                    <img class="fab-icon">
+                </a>
+            </button>
+            <nav class="fab-menu">
+                <button class="fab-menu__item">1500/1800</button>
+                <button class="fab-menu__item" onclick="swapTheme('./css/css_1800.css')">1800</button>
+                <button class="fab-menu__item" onclick="swapTheme('./css/css_1930.css')">XX-1</button>
+                <button class="fab-menu__item" onclick="swapTheme('./css/css_1980.css')">XX-2</button>
+                <button class="fab-menu__item" onclick="swapTheme('./css/css_y2k.css')">y2k</button>
+                <button class="fab-menu__item">2030</button>
+            </nav>
+        </div>
 
         </div>
     </main>
 
     <footer>
         <div class="parallax" id="footer">
-            
-        </div>
-        <div class="text-center p-3">
-            MA "Digital Humanities and Digital Knowledge", University of Bologna <br>
-            Course "Information Modelling and Web Technologies" <br>
-            <div>
-              <small>Powered by Bootstrap</small>
-              <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/imwtProject/howdowecallitmagazine"
-                role="button" data-mdb-ripple-color="white">
-                <i class="fa fa-github" id="whitecat"></i>
-              </a><br>
+            <div class="text-center p-3">
+                MA "Digital Humanities and Digital Knowledge", University of Bologna <br>
+                Course "Information Modelling and Web Technologies" <br>
+                <div>
+                    <small>Powered by Bootstrap</small>
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                        href="https://github.com/imwtProject/howdowecallitmagazine" role="button"
+                        data-mdb-ripple-color="white">
+                        <i class="fa fa-github" id="whitecat"></i>
+                    </a><br>
+                </div>
+                <p class="text-center">&copy; 2022 Women of Horror<br>
+                    All copyrights and related rights on the content remain with their original owners.
+                    All copyright on the typographic and layout choices are 2022 © XY</p>
             </div>
-            <p class="text-center">&copy; 2022 Women of Horror</p>
-          </div>
+        </div>
 
 
 
