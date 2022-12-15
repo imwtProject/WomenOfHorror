@@ -778,10 +778,6 @@ text-decoration: none;
   margin-right: 0.3em;
   overflow-y:auto;
   height: 100vh;
-  column-count: 2;
-  column-gap: 1em;
-  text-align: justify;
-  column-rule: solid;
 }
 
 #main-article img {
@@ -793,10 +789,6 @@ text-decoration: none;
 #compare-article {
   overflow-y:auto;  
   height: 100vh;
-  column-count: 2;
-  column-gap: 1em;
-  text-align: justify;
-  column-rule: solid;
 }
 
 #compare-article img {
