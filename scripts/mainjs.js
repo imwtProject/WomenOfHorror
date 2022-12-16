@@ -245,10 +245,8 @@ $(document).ready(function () {
 
 		function goto(id) {
 			var t = $(id)[0].offsetTop; /* DOM element, read only property*/
-			$('#main-article').animate(
-				{ /*performs a custom animation of a set of CSS properties. (selector).animate({styles},speed,easing,callback)*/
-        	scrollTop: t -130} , 200);/* jQuery method */
-												 
+			$('html, body').animate({
+				scrollTop: $(id).offset().top - 130}, 200);
 			$(id).addClass('animate');
 
 			/* this removes the class animate after 5 seconds */
