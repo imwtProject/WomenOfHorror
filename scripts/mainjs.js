@@ -90,6 +90,7 @@ $(document).ready(function () {
 					alert('No document to show')
 				}
 			});
+			
 //robe metadati			
 			$('#showperson').click(function() {
 				if (this.checked) 

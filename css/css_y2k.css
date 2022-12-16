@@ -696,6 +696,10 @@ border: 2px solid rgb(5, 88, 255)
   margin-top: 0.5em;
  }
 
+ .list-character a {
+  color: rgb(25, 53, 215) !important;
+ }
+
 /* custom scrollbar */
 
 #sentenceContent::-webkit-scrollbar {
