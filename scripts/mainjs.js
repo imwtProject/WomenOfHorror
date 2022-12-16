@@ -247,8 +247,8 @@ $(document).ready(function () {
 			var t = $(id)[0].offsetTop; /* DOM element, read only property*/
 			$('#main-article').animate(
 				{ /*performs a custom animation of a set of CSS properties. (selector).animate({styles},speed,easing,callback)*/
-        	scrollTop: x.top - 130} /* jQuery method */
-												, 200); 
+        	scrollTop: t } , 200);/* jQuery method */
+												 
 			$(id).addClass('animate');
 
 			/* this removes the class animate after 5 seconds */
