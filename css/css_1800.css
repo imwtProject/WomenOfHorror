@@ -77,6 +77,7 @@ h4 {
 
 hr {
   color: white;
+  break-before: column;
 }
 
 .container-fluid {
@@ -766,6 +767,11 @@ text-decoration: none;
 
 /* article column */
 
+#article-column {
+  margin-left: 0.5em;
+  text-align: justify;
+}
+
 #title, #title1 {
   font-family: cocogooseTitle;
  /*text-transform: uppercase;*/
@@ -782,6 +788,19 @@ text-decoration: none;
   height: 100vh;
 }
 
+#main-article::-webkit-scrollbar {
+  width: 2em;
+}
+
+#main-article::-webkit-scrollbar-thumb {
+  color: rgb(70, 70, 70);
+}
+
+#main-article::-webkit-scrollbar-track {
+  background-image: url("../assets/img/1800/columnRule.png");
+  }
+
+
 #main-article img {
   max-width: 100%;
   filter: grayscale(67%) sepia(50%);
@@ -791,6 +810,10 @@ text-decoration: none;
 #compare-article {
   overflow-y:auto;  
   height: 100vh;
+}
+
+#compare-article::-webkit-scrollbar {
+  display: none;
 }
 
 #compare-article img {
