@@ -287,6 +287,8 @@ q::after {
 
 #issues {
   background-image: url("../assets/img/1800/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   border: 20px solid;
   border-image-source: url("../assets/img/1800/border2.png");
   border-image-slice: 62 59 62 62;

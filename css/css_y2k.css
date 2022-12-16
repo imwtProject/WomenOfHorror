@@ -283,17 +283,14 @@ a.dropdown-item:hover{
 .card-group {
   z-index:1000;
   width: 100%;
-  background-image: url("../assets/img/y2k/abstract-bg1.png");
-  background-clip: content-box;
-  background-repeat: no-repeat;
-  background-size: cover;  
-  border: 20px solid;
+  background-image: url("../assets/img/y2k/card-background.png");
+  background-size: cover;
+  /*border: 20px solid;
   border-image-source: url("../assets/img/y2k/border-blue.png");
   border-image-slice:  270 310 160 250;
   border-image-width:  50px 50px 50px 50px;
   border-image-outset:  23px 23px 23px 23px;
-  border-image-repeat:  stretch stretch;
- 
+  border-image-repeat:  stretch stretch;*/ 
 }
 
 .card-group > .card {
@@ -312,12 +309,12 @@ a.dropdown-item:hover{
 }
 
 .card-body > img {
-  border:0.3em solid rgba(0, 0, 0, 0.764);   
   border-top-left-radius: 50% !important;
   border-top-right-radius: 50% !important;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
   transform: scale(0.7);
+  box-shadow: 0px 0px 0px 0.3em rgb(25, 53, 215);
 }
 
 .card-text {
@@ -329,6 +326,22 @@ a.dropdown-item:hover{
 #about {
   background-color: transparent !important;
 }
+
+#theteam {
+  position: relative;
+  top: -2em;
+  transform: scale(0.95);
+}
+
+.team img {
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  transform: scale(0.7);
+  box-shadow: 0px 0px 0px 0.3em rgb(25, 53, 215);
+}
+
 
 /* styles navigation*/
 
