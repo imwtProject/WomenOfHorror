@@ -245,7 +245,6 @@ $(document).ready(function () {
 
 		function goto(id) {
 			var t = $(id)[0].offsetTop; /* DOM element, read only property*/
-			var x = $(id).offset()
 			$('#main-article').animate(
 				{ /*performs a custom animation of a set of CSS properties. (selector).animate({styles},speed,easing,callback)*/
         	scrollTop: x.top - 130} /* jQuery method */
