@@ -333,7 +333,6 @@ q::after {
 
 .team img {
   transform: scale(0.8);
-  filter: grayscale(67%) sepia(50%);
   }
 
 /* styles navigation*/
@@ -357,7 +356,7 @@ q::after {
   display: block;
   margin: 10px;
   padding-right: 5px;
-  background-image: url("../assets/img/1800/bg1.jpg");
+  background-image: url("../assets/ekher.png");
   width: 290px;
   height: 40px;
   text-align: right;
@@ -377,7 +376,7 @@ q::after {
  }
 
 .ic-stickey ul li a:hover {
-  color: rgb(70, 70, 70)  !important;
+  color: rgb(255, 255, 255)  !important;
   cursor: pointer !important;
 }
 
