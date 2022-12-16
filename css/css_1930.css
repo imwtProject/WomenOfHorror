@@ -802,6 +802,10 @@ hr {
 	#article-content {
 	background-color: #f4f5eb;
 	padding-top: 2%;
+ 
+    position: sticky;
+    top: 4em;
+    height: 100vh;
 }
 	
 	#about a {
