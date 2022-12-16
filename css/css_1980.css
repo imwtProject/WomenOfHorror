@@ -482,7 +482,7 @@ h3 {
   padding: 2rem;
 }
 
-.textsection p:nth-of-type(2n) {
+.textsection p:nth-of-type(3n) {
   clip-path: polygon(2% 0, 97% 11%, 99% 100%, 0 100%);
   background-color: #d69e2e;
 color:black;
