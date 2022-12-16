@@ -247,7 +247,7 @@ $(document).ready(function () {
 			var t = $(id)[0].offsetTop; /* DOM element, read only property*/
 			$('#main-article').animate(
 				{ /*performs a custom animation of a set of CSS properties. (selector).animate({styles},speed,easing,callback)*/
-        	scrollTop: t } , 200);/* jQuery method */
+        	scrollTop: t -130} , 200);/* jQuery method */
 												 
 			$(id).addClass('animate');
 
