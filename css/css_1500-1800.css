@@ -328,11 +328,12 @@ q::after {
 #theteam {
   position: relative;
   top: -2em;
-  transform: scale(0.95);
+  ;
 }
 
 .team img {
   transform: scale(0.8);
+  filter: grayscale(67%) sepia(50%);
   }
 
 /* styles navigation*/
