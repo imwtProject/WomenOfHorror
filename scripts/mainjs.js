@@ -46,22 +46,25 @@ $(document).ready(function () {
 
 // scrolltop
 
-function goTop() {
+/*function goTop() {
 	document.body.scrollTop = 0; // For Safari
 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera  
-  }
+  }*/
 
 
 //prende gli articoli da un js senza ricaricare la pagina
-		String.prototype.tpl = function(o) { 
-			/* this = String {`<li><a href='#' onclick='load("$url")'>$label</a></li>`} made into a string*/
+
+/* this = String {`<li><a href='#' onclick='load("$url")'>$label</a></li>`} made into a string*/
 			/* o ={url: 'articles/FemaleGothic.html', label: 'Female Gothic'}  fore every article in the json AND both for main art and second art*/
+			 /* prima iterazione in cui i= url : 1) $url > g  2) g > 'articles/FemaleGothic.html' */
+			 /* seconda iter i=lable : 1) $lable > g 2) g > 'Female Gothic' */
+			 /* r once replaced = <li><a href='#' onclick='load("articles/FemaleGothic.html")'>Female Gothic</a></li>*/
+		String.prototype.tpl = function(o) { 
+			
 			var r = this ; 			
 			for (var i in o) { 										
-				r = r.replace(new RegExp("\\$"+i, 'g'),o[i])  /* prima iterazione in cui i= url : 1) $url > g  2) g > 'articles/FemaleGothic.html' */
-															/* seconda iter i=lable : 1) $lable > g 2) g > 'Female Gothic' */
+				r = r.replace(new RegExp("\\$"+i, 'g'),o[i])  															
 			} 
-			/* r once replaced = <li><a href='#' onclick='load("articles/FemaleGothic.html")'>Female Gothic</a></li>*/
 			return r 
 		}
 		
@@ -206,8 +209,7 @@ function goTop() {
 				<p class="list author"><b>Author: </b> $author</p>
 				<p class="list author"><b>Publishing date: </b> $date</p>
 				<p class="list author"><b>Issue: </b> $issue</p>
-				
-				
+							
 				` ;
 			$(where).empty(); 
 
