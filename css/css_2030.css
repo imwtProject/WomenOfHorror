@@ -267,11 +267,11 @@ background-size: contain;
 background-position-y: 50px;
 background-repeat: no-repeat;*/
 padding-top: 3em;
-  border-bottom:20px solid rgb(255, 0, 0);
-  border-image: linear-gradient(to right, #000 50%, transparent 50%) 100% 1;
+  border-bottom:20px solid #3F0420;
+ 
   position: relative;
   padding-right:3px;
-  background-image: url(../assets/img/1980//line.svg);
+ 
     background-size: contain;
     background-repeat: repeat-y;
     background-position: top 19vh left 0vh;
@@ -279,7 +279,7 @@ padding-top: 3em;
 
 
 #hero .container {
-  border-top:40px solid black;
+  border-top:40px solid rgb(255, 255, 255);
   border-image: linear-gradient(to left, #000 50%, transparent 50%) 100% 1;
 }
 
@@ -287,8 +287,7 @@ padding-top: 3em;
 .intro{
   padding: 90px 50px;
     text-align: center;
-    border-top: 40px solid black;
-    border-image: linear-gradient(to left, #000 50%, transparent 50%) 100% 1;
+   
 font-family: 'Poppins', sans-serif;
 }
 
@@ -302,12 +301,12 @@ padding-left: 50vh;
 
 
 .container .p-2 {
-color: black
+color: rgb(255, 255, 255)
 
 }
 /*questo background non si sa dove cazzo stia*/
 .background {
-  background-image: url("../assets/img/y2k/skybackground1.png") !important;
+  background-image: url("...") !important;
   position: fixed;
 }
 
@@ -326,12 +325,14 @@ color: black
 
 
 /* jumbotron*/
-#title {color: black;
-  -webkit-clip-path: polygon(0.25rem 0.75rem, 100% 0.5rem, calc(100% - 0.5rem) calc(100% - 0.25rem), 0.8587897rem calc(100% - 1rem));
-  clip-path: polygon(0.25rem 0.75rem, 100% 0.5rem, calc(100% - 0.5rem) calc(100% - 0.25rem), 0.8587897rem calc(100% - 1rem));
-  background-color: #d69e2e;
-  font-family: 'Poppins', sans-serif;
-  font-size: x-large;
+#title {font-family:'Poppins', sans-serif, bold;
+  color:#ffffff;
+  text-shadow: 0px 0px 10px #6200ff,
+  0px 0px 20px #6200ff,
+  0px 0px 40px #6200ff,
+  0px 0px 80px #6200ff,
+  0px 0px 120px #6200ff;
+    text-align: left;
 }
 
 #main-article {
@@ -776,10 +777,13 @@ box-shadow: 0px 14px 30px #b855c597;
 
 
 .panel {
-	background-color: #c53030;
-	margin: 15px;
-	margin-top: 0;
-  clip-path: polygon(0.25rem 0.75rem, 100% 0.5rem, calc(100% - 0.5rem) calc(100% - 0.25rem), 0.8587897rem calc(100% - 1rem));
+  background-color: rgba(255, 255, 255, 0); 
+  border-color:#370f3000;
+  box-shadow: 0px 0px 2px #6200ff,
+0px 0px 4px #6200ff,
+0px 0px 8px #6200ff,
+0px 0px 16px #6200ff,
+0px 0px 32px #6200ff;
 }
 
 
@@ -826,7 +830,7 @@ color:white;
 
 #row2 h5 {
   font-size: 1.25rem;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   color: white;
   padding: 5px;
   font-family: 'Poppins', sans-serif;
@@ -860,7 +864,7 @@ color:white;
     /* == Buttons entities == */
     .nav-pills 
     .nav-pills .show>.nav-link {
-    background-color: white !important;
+    background-color: #3F0420 !important;
     font-weight: bold;
     color: black;
     } 
@@ -869,7 +873,7 @@ color:white;
     .nav-link.active{
       background-color: black !important;
       font-weight: bold;
-      color: white;
+      color: #3F0420
 
     }
 
@@ -879,12 +883,19 @@ color:white;
    }
 
     .nav-pills .nav-link {
-      background-color: white;
+      color: rgb(255, 255, 255);
+      background-color: #3F0420); 
+      border-color:#370f3000;
+      box-shadow: 0px 0px 2px #6200ff,
+    0px 0px 4px #6200ff,
+    0px 0px 8px #6200ff,
+    0px 0px 16px #6200ff,
+    0px 0px 32px #6200ff;
+    }
     }
 
     .myborder {
-    border: solid rgb(220,220,220) 1px;
-    padding: 10px;
+      border-color:#370f3000;
     }
     
     .breath {
