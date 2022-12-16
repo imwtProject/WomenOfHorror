@@ -12,9 +12,6 @@ $(document).ready(function () {
   var start_style = sessionStorage.getItem('href');
   // I check if the start_style has a certain value and I change the href accordingly 
   switch (start_style) {
-    case './css/css_default.css':
-      document.getElementById('currentlocalcss').setAttribute('href', './css/css_default.css');
-      break; 
 
 	case './css/css_1500-1800.css':
 		document.getElementById('currentlocalcss').setAttribute('href', './css/css_1500-1800.css');
@@ -39,7 +36,6 @@ $(document).ready(function () {
 		case './css/css_2030.css':
 		document.getElementById('currentlocalcss').setAttribute('href', './css/css_2030.css');
 		break;
-
   }
 })
 

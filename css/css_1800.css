@@ -16,8 +16,8 @@
 }
 
 @font-face {
-  font-family: cocogooseLight;
-  src: url("../assets/fonts/1800/Cocogoose-Condensed-Light-trial.ttf");
+  font-family: FatFace;
+  src: url("../assets/fonts/1800/AbrilFatface-Regular.otf");
 }
 
 @font-face {
@@ -69,20 +69,22 @@
 /* general titles and containers and links */
 
 h2 {
-  font-family: cocogooseRegular;
+  font-family: Clarendon;
   }
 
 h3 {
-  font-family: cocogooseRegular;
+  font-family: Clarendon;
  }
 
 h4 {
-    font-family: cocogooseLight;
+    font-family: Clarendon;
     color:rgb(0, 0, 0) !important;       
 }
 
 hr {
   color: white;
+  }
+#about hr {
   break-before: column;
 }
 
@@ -265,7 +267,8 @@ a.dropdown-item:focus {
 }
 
 #cover-text {
-  font-family: cocogooseTitle;
+  font-family: FatFace;
+  font-size: 3em;
   text-transform: uppercase;
   text-align: justify;
   margin-top: 20vh;
@@ -283,7 +286,7 @@ q::after {
 }
 
 .text {
-  font-family: cocogooseTitle;
+  font-family: Clarendon;
   text-align:center !important;
 }
 
@@ -882,7 +885,32 @@ footer {
 
 #main-text {
   margin-top: 20vh;
+  column-count: 3;
+  text-align: justify;  
+  column-rule: 2px solid;
+  line-height: 100%;
 }
+
+#main-text .p-4 {
+  padding: 0px !important;
+}
+
+#main-text img {
+  max-width: 100%;
+  filter: grayscale(67%) sepia(50%);
+  clip-path: polygon(50px 0,calc(100% - 50px) 0,100% 50px,100% calc(100% - 50px),calc(100% - 50px) 100%,50px 100%,0 calc(100% - 50px),0 50px);
+  
+}
+
+#main-text button {  
+  background-color: transparent;
+  border: 5px double rgb(70, 70, 70);
+}
+
+#main-text button>h5{
+  font-family: FatFace;
+}
+
 
 
 /* MEDIA QUERY */
@@ -947,6 +975,40 @@ footer {
     display: none ;}
 }
 
+@media screen and (max-width: 590px) {
+  #cover-text {
+    font-size: 1em;
+}
+}
+
+@media screen and (max-width: 1100px) {
+  #cover-text {
+     font-size: 1.5em;
+}
+
+.navbar-brand {
+  font-size: 3em;
+}
+}
+
+@media screen and (max-height: 600px) {
+  #ref {
+    transform:scale(1);
+     }
+
+  #cover-text {
+    font-size:2em;
+  }
+  
+  .navbar-brand {
+    font-size: 3em;
+  }
+
+  #ref::after {
+    transform:scale(0.5);
+    top: -4em;
+  }
+}
 
 
 
