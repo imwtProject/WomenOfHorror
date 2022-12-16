@@ -318,7 +318,8 @@ color: black
 
 /* jumbotron*/
 #title {
-	color: white;
+  color: black;
+  font-family: Hitchcock;
 }
 
 #main-article {
