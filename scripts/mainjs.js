@@ -67,7 +67,7 @@ $(document).ready(function () {
 		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
 		var textComparison = `<div class="radio"><label><input type="radio" onclick='compare("$url")'>$label</label></div>`
 		
-		$("input[name='radio']:checked").val()
+		$("input[type='radio'][name=compare]").prop('checked', false).val();
 		
 		$(document).ready(main);
 
@@ -164,7 +164,7 @@ $(document).ready(function () {
 				$('#second-text').html(d)
 				$('.show').prop("checked", false)
 				addIds()
-				filltabs()
+				fillsecondtabs()
 				$('#title1').html($('#second-text h1'))				
 					},
 				error: function(){
@@ -173,11 +173,14 @@ $(document).ready(function () {
 			});
 		} 
 
-		/* function to deselect compare text 
-		I add id=open
-		then I call a function eventlistener click that changes back the main-art div and the display value AND takes id=open away
-		but maybe already works with the checkbox?*/
+			/*function for second text*/
 
+		function fillsecondtabs() {
+			fillInfo("#second-text", "#secondinfo")
+			filltab("#second-text .person","list-person","#secondperson")
+			filltab("#second-text .character","list-character","#secondcharacter")
+			filltab("#second-text .literaryWork","list-literaryWork","#secondliteraryWork")
+		}
 
 		
 		function addIds() {
