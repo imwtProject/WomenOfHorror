@@ -14,6 +14,8 @@
 
 
 body {
+ 
+  background-color: #3f0420 ;
 	font-family:'Poppins', sans-serif;
   color: white;
 text-shadow: 0px 0px 10px #6200ff,
@@ -140,6 +142,7 @@ text-shadow: 0px 0px 10px #6200ff,
 
 #cover {
     height: 100vh;
+
   
 } 
 
@@ -147,10 +150,27 @@ text-shadow: 0px 0px 10px #6200ff,
 
 
 
-#footer {
+.footer {
+
     height: 25vh;
+  
 
 }
+.parallax {
+  /* The image used 
+  background-image: url("assets/goldenArm.png") !important;*/
+  background: linear-gradient(180deg, #3F0420 0%, #2A2895 100%);
+  backdrop-filter: blur(50px);
+  display: block; 
+  /* for displaying the text*/
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 /* the text in the cover (parallax img)*/
 .self-defined-grid {
@@ -163,7 +183,11 @@ text-shadow: 0px 0px 10px #6200ff,
     
 }
 .text-center{
-  background: linear-gradient(180deg, #3F0420 0%, #2A2895 100%);
+ 
+  color: #ffffff;
+  background-color: #3F0420;
+  
+  
 
 }
 .text-dark {
@@ -482,9 +506,8 @@ text-shadow: 0px 0px 10px #6200ff,
 
   display: block;
   margin: 5px;
-  background-color:  #dfb2fa;
-  box-shadow: 0px 0px 8px #9d00ff,
-  0px 0px 8px #9d00ff;
+  background: linear-gradient(264.46deg, #9A55C5 7.68%, #9A55C5 90.95%);
+box-shadow: 0px 14px 30px #b855c597;
  
 
   width: 300px;
@@ -1054,7 +1077,6 @@ color:white;
   .fab-styles {
     display: none ;}
 }
-
 
 
 
