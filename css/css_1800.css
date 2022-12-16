@@ -33,16 +33,22 @@
 
 /* animations */
 
-@keyframes trottola {
+@keyframes bgcolor {
   from {
-    transform: rotateX(0.1turn);
+  background-color: #ffffff;
   }
-  to {
-    transform: rotateX(1turn);
-  }
-}
 
-/* cose che non si sa cosa sono */
+  to {
+  background-color: #cccc00;
+  }
+  }
+
+.animate {
+  animation-name: bgcolor ;
+  animation-duration: 0.75s ; 
+  animation-iteration-count: 3;
+  animation-fill-mode: backwards;
+  }
 
 .breath {
   margin-top: 15px;

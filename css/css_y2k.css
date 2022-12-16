@@ -32,16 +32,22 @@
 
 /* animations */
 
-@keyframes trottola {
+@keyframes bgcolor {
   from {
-    transform: rotateX(0.1turn);
+  background-color: #ffffff;
   }
-  to {
-    transform: rotateX(1turn);
-  }
-}
 
-/* cose che non si sa cosa sono */
+  to {
+  background-color: #cccc00;
+  }
+  }
+
+.animate {
+  animation-name: bgcolor ;
+  animation-duration: 0.75s ; 
+  animation-iteration-count: 3;
+  animation-fill-mode: backwards;
+  }
 
 .breath {
   margin-top: 15px;
@@ -463,7 +469,7 @@ a.dropdown-item:hover{
   border-radius: 20px;
   border-color:#6766F7;
   width: 100%;
-  background-color:transparent;
+  background-color: #6666f7b6;
   box-shadow: 0 0 5px rgba(92, 88, 88, 0.189);
   color:rgb(25, 53, 215)
 } 
