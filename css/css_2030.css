@@ -884,7 +884,7 @@ color:white;
 
     .nav-pills .nav-link {
       color: rgb(255, 255, 255);
-      background-color: #3F0420); 
+      background-color: #3F0420; 
       border-color:#370f3000;
       box-shadow: 0px 0px 2px #6200ff,
     0px 0px 4px #6200ff,
@@ -892,7 +892,7 @@ color:white;
     0px 0px 16px #6200ff,
     0px 0px 32px #6200ff;
     }
-    }
+    
 
     .myborder {
       border-color:#370f3000;
