@@ -415,7 +415,10 @@ hr {
 
 .card:hover {
   transform: scale(105%); 
-  
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+  background: #853eb813;
+  mix-blend-mode: screen;
   
 }
 
@@ -428,7 +431,13 @@ text-align: left;
 
 }
 
-
+.card-img, .card-img-top
+{
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+  background: #853EB8;
+  mix-blend-mode: screen;
+  }
 
 a {
   font-family:'Poppins', sans-serif, bold;
@@ -688,12 +697,6 @@ box-shadow: 0px 14px 30px #b855c597;
 
 
 
-.d-flex {
-  background-image: url( '../assets/img/1980/line.svg' );
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom 45vh right 0vh;
-}
 
 
 
@@ -763,17 +766,14 @@ box-shadow: 0px 14px 30px #b855c597;
   width:50%;
 } 
 
-}
 
 
 @media(max-width:600px){
   #metadata-column{
    width:100%;
  } 
- 
- }
- 
 
+ }
 
 
 .panel {
@@ -1038,6 +1038,7 @@ color:white;
   .col2 .col1 .col3 {
     width: 100%;	
   }
+  
 }
 
 @media screen and (max-width: 992px) {
