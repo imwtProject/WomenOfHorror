@@ -96,7 +96,7 @@
                 <div class="col-md-3 col-sm-1 d-none d-md-block" id="menu-card">
                     <nav id="navbar-documentation" class="navbar  flex-column align-items-stretch p-3">
                         <h2 class="navbar-brand mb-3" href="#item-1">Documentation</h2>
-                        <nav class="nav nav-pills flex-column">
+                        <nav class="nav nav-pills flex-column" id="nav-index">
                             <a class="nav-link" href="#item-1" id="it1">Women of Horror</a>
                             <nav class="nav nav-pills flex-column">
                             <a class="nav-link ms-3 my-1" href="#item-1-1" id="it1-1">The content</a>
@@ -294,16 +294,19 @@
 
             <div class="ic-stickey styles-large">
                 <ul id="styles">
-                    <li class="s1500"><a href="#">1500/1800<i class="fa-solid fa-poo"></i></a></li>
-                    <li class="s1800"><a href="#">1800<img class="ico" src="./assets/bat.png" width="30"
-                                height="30"></img></a></li>
+                    <li class="s1500"><a onclick="swapTheme('./css/css_1500-1800.css')">1500/1800<img class="ico"
+                        src="./assets/flower.png" width="30" height="30"></img></a></li>
+                    <li class="s1800"><a onclick="swapTheme('./css/css_1800.css')">1800<img class="ico"
+                                src="./assets/knifes.png" width="30" height="30"></img></a></li>
                     <li class="XX-1"><a onclick="swapTheme('./css/css_1930.css')">XX-1<img class="ico"
                                 src="./assets/martini.png" width="30" height="30"></img></a></li>
                     <li class="XX-2"><a onclick="swapTheme('./css/css_1980.css')">XX-2<img class="ico"
                                 src="./assets/hand.png" width="30" height="30"></img></a></li>
                     <li class="lateXX-2000"><a onclick="swapTheme('./css/css_y2k.css')">y2k<img class="ico"
                                 src="./assets/processor.png" width="30" height="30"></img></a></li>
-                    <li class="s2030"><a href="#">2030<i class="fa-solid fa-poo"></i></a></li>
+                    <li class="s2030"><a onclick="swapTheme('./css/css_2030.css')">2030<img class="ico"
+                        src="./assets/ufo.png" width="30" height="30"></img></a></li>
+                </ul>
                 </ul>
             </div>
 
@@ -316,40 +319,37 @@
                     </a>
                 </button>
                 <nav class="fab-menu">
-                    <button class="fab-menu__item">1500/1800</button>
-                    <button class="fab-menu__item">1800</button>
-                    <button class="fab-menu__item"onclick="swapTheme('./css/css_1930.css')">XX-1</button>
-                    <button class="fab-menu__item"onclick="swapTheme('./css/css_1980.css')">XX-2</button>
+                    <button class="fab-menu__item" onclick="swapTheme('./css/css_1500-1800.css')">1500/1800</button>
+                    <button class="fab-menu__item" onclick="swapTheme('./css/css_1800.css')">1800</button>
+                    <button class="fab-menu__item" onclick="swapTheme('./css/css_1930.css')">XX-1</button>
+                    <button class="fab-menu__item" onclick="swapTheme('./css/css_1980.css')">XX-2</button>
                     <button class="fab-menu__item" onclick="swapTheme('./css/css_y2k.css')">y2k</button>
-                    <button class="fab-menu__item">2030</button>
+                    <button class="fab-menu__item" onclick="swapTheme('./css/css_2030.css')">2030</button>
                 </nav>
             </div>
 
         
     </main>
 
-    <footer class="py-3 my-4">
+    <footer>
         <div class="parallax" id="footer">
-            
-        </div>
-        <div class="text-center p-3">
-            MA "Digital Humanities and Digital Knowledge", University of Bologna <br>
-            Course "Information Modelling and Web Technologies" <br>
-            <div>
-              <small>Powered by Bootstrap</small>
-              <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/imwtProject/howdowecallitmagazine"
-                role="button" data-mdb-ripple-color="white">
-                <i class="fa fa-github" id="whitecat"></i>
-              </a><br>
+            <div class="text-center p-3">
+                MA "Digital Humanities and Digital Knowledge", University of Bologna <br>
+                Course "Information Modelling and Web Technologies" <br>
+                <div>
+                    <small>Powered by Bootstrap</small>
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                        href="https://github.com/imwtProject/howdowecallitmagazine" role="button"
+                        data-mdb-ripple-color="white">
+                        <i class="fa fa-github" id="whitecat"></i>
+                    </a><br>
+                </div>
+                <p class="text-center">&copy; 2022 Women of Horror<br>
+                    All copyrights and related rights on the content remain with their original owners.
+                    All copyright on the typographic and layout choices are 2022 © XY</p>
             </div>
-            <p class="text-center">&copy; 2022 Women of Horror</p>
-          </div>
-
-
-
-    </footer>
-
-    
+        </div>
+    </footer>    
 </body>
 
 </html>

@@ -800,6 +800,20 @@ footer {
   background-image: url("../assets/img/y2k/lava.gif");
 }
 
+/*DOCUMENTATION*/
+
+#documentation {
+  background-image: linear-gradient(to bottom, rgb(131, 150, 194), rgb(219, 244, 251),rgb(131, 150, 194)) !important;
+}
+
+#nav-index{
+  width:20vw;
+}
+
+#nav-index .nav-link {
+  background-color: rgb(165, 192, 247);
+}
+
 /* MEDIA QUERY */
 
 /*nav*/
