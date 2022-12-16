@@ -662,7 +662,8 @@ footer {
 .nav-pills .show>.nav-link {
 background-color: transparent !important;
 font-weight: bold;
-border: 5px double rgb(70, 70, 70);
+border:  rgb(106, 0, 0);
+width: 150PX;
 text-decoration: none;
 } 
 
