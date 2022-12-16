@@ -127,6 +127,10 @@ body {
   color:black; 
 }
 
+p {
+  text-indent: 2em;
+}
+
 /* navbar */
 
 #firstNav {
@@ -879,6 +883,7 @@ footer {
 #main-text {
   margin-top: 20vh;
 }
+
 
 /* MEDIA QUERY */
 
