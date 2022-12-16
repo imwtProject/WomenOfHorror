@@ -806,12 +806,30 @@ footer {
   background-image: linear-gradient(to bottom, rgb(131, 150, 194), rgb(219, 244, 251),rgb(131, 150, 194)) !important;
 }
 
+#hero-documentation {
+  display: none;
+}
+
+#navbar-documentation {
+   position: sticky;
+  top: 4em;
+}
+
+#navbar-documentation .navbar-brand {
+  font-size: 2em;
+  position: relative;
+  }
+
 #nav-index{
   width:20vw;
 }
 
 #nav-index .nav-link {
   background-color: rgb(165, 192, 247);
+}
+
+#main-text {
+  margin-top: 4em;
 }
 
 /* MEDIA QUERY */
