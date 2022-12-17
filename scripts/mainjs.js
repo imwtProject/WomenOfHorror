@@ -65,9 +65,17 @@ $(document).ready(function () {
 		}
 		
 		var listItemTpl = `<li><a href='#' onclick='load("$url")'>$label</a></li>`
-		var textComparison = `<div class="radio"><label><input type="radio" onclick='compare("$url")'>$label</label></div>`
+		//var textComparison = `<div class="radio"><label><input type="radio" onclick='compare("$url")'>$label</label></div>`
+        //$("input[name='radio']:checked").val()
 		
-		$("input[type='radio'][name=compare]").prop('checked', false).val();
+		//mia prov 
+		//		$("input[type='radio'][name=compare]").prop('checked', false).val();
+		//var textComparison = `<div class="radio"><label><input type="radio" name"compare" onclick='compare("$url")'>$label</label></div>`
+
+		
+		var textComparison = `<div class="radio"><label><input type="radio" name="compare" onclick='compare("$url")'>$label</label></div>`
+		
+		$("input[type=radio][name=compare]").prop('checked', false).val();
 		
 		$(document).ready(main);
 
