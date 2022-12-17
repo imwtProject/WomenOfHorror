@@ -73,9 +73,9 @@ $(document).ready(function () {
 		//var textComparison = `<div class="radio"><label><input type="radio" name"compare" onclick='compare("$url")'>$label</label></div>`
 
 		
-		var textComparison = `<div class="radio"><label><input type="radio" name="compare" onclick='compare("$url")'>$label</label></div>`
+		var textComparison = `<div class="radio"><label><input type="radio" name="comp" onclick='compare("$url")'>$label</label></div>`
 		
-		$("input[type=radio][name=compare]").prop('checked', false).val();
+		$("input[type=radio][name=comp]").prop('checked', false).val();
 		
 		$(document).ready(main);
 
