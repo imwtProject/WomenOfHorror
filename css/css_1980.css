@@ -1052,13 +1052,13 @@ color: black;
 #main-article {
   margin-right: 0.3em;
   overflow-y:auto;
-  height: 100vh;
+  height: 150vh;
 }
 
 
 #compare-article {
   overflow-y:auto;  
-  height: 100vh;
+  height: 150vh;
 }
 
 

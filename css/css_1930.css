@@ -121,15 +121,23 @@ body {
 
 
 #footer {
-    height: 25vh;
+   
     background-color: #fec000;
     position: relative;
 }
 
+footer .text-center{
+   
+  background-color: #fec000;
+}
+
+
+
 footer {
   background-color: #fec000;
-  position: relative;
+  position: inherit;
   z-index: 9999;
+   height: 25vh;
 }
 
 
@@ -1048,13 +1056,13 @@ background-color: #db0102;}
 #main-article {
   margin-right: 0.3em;
   overflow-y:auto;
-  height: 100vh;
+  height: 150vh;
 }
 
 
 #compare-article {
   overflow-y:auto;  
-  height: 100vh;
+  height: 150vh;
 }
 
 
