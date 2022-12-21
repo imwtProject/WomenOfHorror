@@ -84,7 +84,7 @@ $(document).ready(function () {
 		function main() {
 			$.ajax({
 				method: 'GET',
-				url: 'https://imwtproject.github.io/howdowecallitmagazine/frank.json',
+				url: 'https://imwtproject.github.io/WomenOfHorror/frank.json',
 				success: function(d) {
 					for (var i=0; i<d.length; i++) {
 						$('#list').append(listItemTpl.tpl({url:d[i].url, label: d[i].label}))
