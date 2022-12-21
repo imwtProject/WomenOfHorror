@@ -303,9 +303,6 @@ $(document).ready(function () {
 			}
 		}
 
-
-
-
 		function goto(id) { 		
 			var t = $(id)[0].offsetTop;/* DOM element, read only property*/
 			console.log(id)
