@@ -141,7 +141,7 @@ $(document).ready(function () {
 				else
 					$('q.refFrankenstein').removeClass('text-refFrankenstein')
 			})
-		}
+		
 
 
 //metadati2
@@ -149,12 +149,13 @@ $(document).ready(function () {
 	$('#showperson1').click(function() {
 		console.log($('#showperson1'))
 		console.log(this)
-		console.log($('.person')
+		console.log($('.person'))
 		if (this.checked) 
 			$('.person').addClass('text-person') //text-person is in css
 		else
 			$('.person').removeClass('text-person')
 	})
+		}
 
 
 		
