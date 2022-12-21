@@ -288,11 +288,8 @@ $(document).ready(function () {
 		}
 		
 		function filltab(what,style,where) {
-			var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
+			var list = `<li class="list $style"><a href=" $place ">$content</a></li>`
 			var elements = $(what); 
-			console.log($(what))
-			console.log($(where))
-			console.log($(style))
 			$(where +' ul').empty(); 
 			for (var i=0; i < elements.length; i++) {
 				$(where+' ul').append(list.tpl({
