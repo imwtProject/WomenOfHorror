@@ -288,7 +288,7 @@ $(document).ready(function () {
 		}
 		
 		function filltab(what,style,where) {
-			var list = `<li class="list $style"><a href=" $place ">$content</a></li>`
+			var list = `<li class="list $style"><a href="#" onclick="goto1()">$content</a></li>`
 			var elements = $(what); 
 			$(where +' ul').empty(); 
 			for (var i=0; i < elements.length; i++) {
@@ -300,6 +300,14 @@ $(document).ready(function () {
 			}
 		}
 
+
+		function goto1(){
+			var dest = $(place);
+			dest.scrollIntoView();
+			$(id).addClass('animate');
+		}
+
+		
 		function goto(id) { 		
 			var t = $(id)[0].offsetTop;/* DOM element, read only property*/
 			console.log($(id)[0].offsetTop)
