@@ -98,8 +98,8 @@ $(document).ready(function () {
 //robe metadati			
 			$('#showperson').click(function() {
 				console.log(this)
-				console.log($('#showperson')
-				console.log($('.person')
+				console.log($('#showperson'))
+				console.log($('.person'))
 				if (this.checked) 
 					$('.person').addClass('text-person')
 				else
