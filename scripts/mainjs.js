@@ -97,6 +97,9 @@ $(document).ready(function () {
 			
 //robe metadati			
 			$('#showperson').click(function() {
+				console.log(this)
+				console.log($('#showperson')
+				console.log($('.person')
 				if (this.checked) 
 					$('.person').addClass('text-person')
 				else
@@ -139,6 +142,21 @@ $(document).ready(function () {
 					$('q.refFrankenstein').removeClass('text-refFrankenstein')
 			})
 		}
+
+
+//metadati2
+
+	$('#showperson1').click(function() {
+		console.log($('#showperson1'))
+		console.log(this)
+		console.log($('.person')
+		if (this.checked) 
+			$('.person').addClass('text-person') //text-person is in css
+		else
+			$('.person').removeClass('text-person')
+	})
+
+
 		
 		function load(file) {
 			$.ajax({
