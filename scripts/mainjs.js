@@ -79,6 +79,7 @@ $(document).ready(function () {
 		
 		$(document).ready(main);
 
+//function for dynamic load of documents list
 
 		function main() {
 			$.ajax({
@@ -95,11 +96,8 @@ $(document).ready(function () {
 				}
 			});
 			
-//robe metadati			
+//highlights in the text		
 			$('#showperson').click(function() {
-				console.log(this)
-				console.log($('#showperson'))
-				console.log($('.person'))
 				if (this.checked) 
 					$('#file .person').addClass('text-person')
 				else
@@ -108,38 +106,38 @@ $(document).ready(function () {
 			
 			$('#showcharacter').click(function() {
 				if (this.checked) 
-					$('.character').addClass('text-character')
+					$('#file .character').addClass('text-character')
 				else
-					$('.character').removeClass('text-character')
+					$('#file .character').removeClass('text-character')
 			})
 			
 			$('#showliteraryWork').click(function() {
 				if (this.checked) 
-					$('.literaryWork').addClass('text-literaryWork')
+					$('#file .literaryWork').addClass('text-literaryWork')
 				else
-					$('.literaryWork').removeClass('text-literaryWork')
+					$('#file .literaryWork').removeClass('text-literaryWork')
 			})
 			
 			$('#showconcept').click(function() {
 				if (this.checked) 
-					$('.concept').addClass('text-concept')
+					$('#file .concept').addClass('text-concept')
 				else
-					$('.concept').removeClass('text-concept')
+					$('#file .concept').removeClass('text-concept')
 			})
 			
 			$('#showrefOther').click(function() {
 				if (this.checked) 
-					$('q.refOther').addClass('text-refOther')
+					$('#file q.refOther').addClass('text-refOther')
 				else
-					$('q.refOther').removeClass('text-refOther')
+					$('#file q.refOther').removeClass('text-refOther')
 			})
 			
 			
 			$('#showrefFrankenstein').click(function() {
 				if (this.checked) 
-					$('q.refFrankenstein').addClass('text-refFrankenstein')
+					$('#file q.refFrankenstein').addClass('text-refFrankenstein')
 				else
-					$('q.refFrankenstein').removeClass('text-refFrankenstein')
+					$('#file q.refFrankenstein').removeClass('text-refFrankenstein')
 			})
 		
 
@@ -147,15 +145,49 @@ $(document).ready(function () {
 //metadati2
 
 	$('#showperson1').click(function() {
-		console.log($('#showperson1'))
-		console.log(this)
-		console.log($('.person'))
 		if (this.checked) 
 			$('#second-text .person').addClass('text-person') //text-person is in css
 		else
 			$('#second-text .person').removeClass('text-person')
 	})
-		}
+		
+	$('#showcharacter1').click(function() {
+		if (this.checked) 
+			$('#second-text .character').addClass('text-character')
+		else
+			$('#second-text .character').removeClass('text-character')
+	})
+	
+	$('#showliteraryWork1').click(function() {
+		if (this.checked) 
+			$('#second-text .literaryWork').addClass('text-literaryWork')
+		else
+			$('#second-text .literaryWork').removeClass('text-literaryWork')
+	})
+	
+	$('#showconcept1').click(function() {
+		if (this.checked) 
+			$('#second-text .concept').addClass('text-concept')
+		else
+			$('#second-text .concept').removeClass('text-concept')
+	})
+	
+	$('#showrefOther1').click(function() {
+		if (this.checked) 
+			$('#second-text q.refOther').addClass('text-refOther')
+		else
+			$('#file q.refOther').removeClass('text-refOther')
+	})
+	
+	
+	$('#showrefFrankenstein1').click(function() {
+		if (this.checked) 
+			$('#second-text q.refFrankenstein').addClass('text-refFrankenstein')
+		else
+			$('#second-text q.refFrankenstein').removeClass('text-refFrankenstein')
+	})
+
+}
 
 
 		
@@ -176,7 +208,7 @@ $(document).ready(function () {
 			});
 		}
 
-		/* SIDE BY SUDE TEXT COMPARISON */
+		/* SIDE BY SIDE TEXT COMPARISON */
 		function compare(file) {
 			var compArt = document.getElementById("main-article");
 			var compDisplay = document.getElementById("compare-article");
