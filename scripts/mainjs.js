@@ -305,9 +305,7 @@ $(document).ready(function () {
 
 		function goto(id) { 		
 			var t = $(id)[0].offsetTop;/* DOM element, read only property*/
-			console.log(id)
-			console.log($(id))
-			console.log($(id)[0])
+			console.log($(id)[0].offsetTop)
 			$('#main-article, #compare-article' ).animate({
 				scrollTop: $(id).offset().top - 130}, 200);
 			$(id).addClass('animate');
