@@ -197,6 +197,7 @@ $(document).ready(function () {
 				url: file,
 				success: function(d) {
 					$('#file').html(d)
+					console.log(d)
 					$('.show').prop("checked", false)
 					addIds()
 					filltabs()
@@ -255,6 +256,7 @@ $(document).ready(function () {
 				elements[i].id = prefix + "-" + id++
 			}
 		}
+
 		function filltabs(){
 			fillInfo("#file", "#info")
 			filltab("#file .person","list-person","#person")
@@ -288,12 +290,15 @@ $(document).ready(function () {
 		function filltab(what,style,where) {
 			var list = `<li class="list $style"><a href="#" onclick="goto('$place')">$content</a></li>`
 			var elements = $(what); 
-			$(where+' ul').empty(); 
-			for (var i=0; i<elements.length; i++) {
+			console.log($(what))
+			console.log($(where))
+			console.log($(style))
+			$(where +' ul').empty(); 
+			for (var i=0; i < elements.length; i++) {
 				$(where+' ul').append(list.tpl({
-					style:style, 
-					place: '#'+elements[i].id,
-					content: elements[i].innerHTML
+					style: style, 
+					place: '#'+ elements[i].id, //created in addIds
+					content: elements[i].innerHTML //il nome che appende alla lista
 				}) )
 			}
 		}
@@ -301,9 +306,12 @@ $(document).ready(function () {
 
 
 
-		function goto(id) {
-			var t = $(id)[0].offsetTop; /* DOM element, read only property*/
-			$('html, body').animate({
+		function goto(id) { 		
+			var t = $(id)[0].offsetTop;/* DOM element, read only property*/
+			console.log(id)
+			console.log($(id))
+			console.log($(id)[0])
+			$('#main-article, #compare-article' ).animate({
 				scrollTop: $(id).offset().top - 130}, 200);
 			$(id).addClass('animate');
 
@@ -313,7 +321,6 @@ $(document).ready(function () {
 			},5000);
 			}
 
-	
 /* fab styles */ 
 function fabopener()	{
 	var fab = document.getElementsByClassName('fab-opener');
