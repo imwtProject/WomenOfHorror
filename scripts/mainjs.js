@@ -101,9 +101,9 @@ $(document).ready(function () {
 				console.log($('#showperson'))
 				console.log($('.person'))
 				if (this.checked) 
-					$('.person').addClass('text-person')
+					$('#file .person').addClass('text-person')
 				else
-					$('.person').removeClass('text-person')
+					$('#file .person').removeClass('text-person')
 			})
 			
 			$('#showcharacter').click(function() {
@@ -151,9 +151,9 @@ $(document).ready(function () {
 		console.log(this)
 		console.log($('.person'))
 		if (this.checked) 
-			$('.person').addClass('text-person') //text-person is in css
+			$('#second-text .person').addClass('text-person') //text-person is in css
 		else
-			$('.person').removeClass('text-person')
+			$('#second-text .person').removeClass('text-person')
 	})
 		}
 
