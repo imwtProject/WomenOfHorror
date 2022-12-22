@@ -251,11 +251,9 @@ $(document).ready(function () {
 		function addId(what, prefix) {
 			var id = '0'
 			var elements = $(what); 
-			console.log($(what))
-			for (var i=0; i<elements.length; i++) {
-				console.log(elements[i])
+			for (var i=0; i<elements.length; i++) {			
+				elements[i].id = prefix + "-" + id++ 
 				console.log(elements[i].id)
-				elements[i].id = prefix + "-" + id++
 			}
 		}
 
@@ -290,7 +288,7 @@ $(document).ready(function () {
 		}
 		
 		function filltab(what,style,where) {
-			var list = `<li class="list $style"><a href="#" onclick="goto1()">$content</a></li>`
+			var list = `<li class="list $style"><a href="#" onclick="goto1($place)">$content</a></li>`
 			var elements = $(what); 
 			$(where +' ul').empty(); 
 			for (var i=0; i < elements.length; i++) {
@@ -302,17 +300,17 @@ $(document).ready(function () {
 			}
 		}
 
-
-		function goto1(){
-			var dest = $(place);
-			dest.scrollIntoView();
-			$(id).addClass('animate');
+		function goto1(place){			
+			console.log(place)
+			console.log(place[0])
+			place.scrollIntoView();
+			$(place).addClass('animate');
 		}
 
 		
 		function goto(id) { 		
 			var t = $(id)[0].offsetTop;/* DOM element, read only property*/
-			console.log($(id)[0].offsetTop)
+			console.log($(id)[0])
 			$('#main-article, #compare-article' ).animate({
 				scrollTop: $(id).offset().top - 130}, 200);
 			$(id).addClass('animate');
