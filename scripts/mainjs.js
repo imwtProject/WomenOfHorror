@@ -300,9 +300,7 @@ $(document).ready(function () {
 		}
 
 		function goto1(place){						
-			var tabid = document.getElementById(place);
-			console.log(tabid)
-			tabid.scrollIntoView({behavior: 'smooth'});
+			$(place).scrollIntoView({behavior: 'smooth'});
 			$(place).addClass('animate');
 		}
 
