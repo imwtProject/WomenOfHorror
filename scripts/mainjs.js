@@ -301,9 +301,8 @@ $(document).ready(function () {
 		}
 
 		function goto1(place){			
-			console.log(place)
-			console.log(place[0])
-			place.scrollIntoView();
+			console.log(place)		
+			document.getElementById(place).scrollIntoView({behavior: 'smooth'});
 			$(place).addClass('animate');
 		}
 
