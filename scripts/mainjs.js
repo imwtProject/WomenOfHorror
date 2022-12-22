@@ -197,7 +197,6 @@ $(document).ready(function () {
 				url: file,
 				success: function(d) {
 					$('#file').html(d)
-					console.log(d)
 					$('.show').prop("checked", false)
 					addIds()
 					filltabs()
@@ -252,7 +251,10 @@ $(document).ready(function () {
 		function addId(what, prefix) {
 			var id = '0'
 			var elements = $(what); 
+			console.log($(what))
 			for (var i=0; i<elements.length; i++) {
+				console.log(elements[i])
+				console.log(elements[i].id)
 				elements[i].id = prefix + "-" + id++
 			}
 		}
