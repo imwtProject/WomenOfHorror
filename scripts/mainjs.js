@@ -253,7 +253,6 @@ $(document).ready(function () {
 			var elements = $(what); 
 			for (var i=0; i<elements.length; i++) {			
 				elements[i].id = prefix + "-" + id++ 
-				console.log(elements[i].id)
 			}
 		}
 
@@ -300,16 +299,16 @@ $(document).ready(function () {
 			}
 		}
 
-		function goto1(place){			
-			console.log(place)		
-			document.getElementById(place).scrollIntoView({behavior: 'smooth'});
+		function goto1(place){						
+			var tabid = document.getElementById(place);
+			console.log(tabid)
+			tabid.scrollIntoView({behavior: 'smooth'});
 			$(place).addClass('animate');
 		}
 
 		
 		function goto(id) { 		
 			var t = $(id)[0].offsetTop;/* DOM element, read only property*/
-			console.log($(id)[0])
 			$('#main-article, #compare-article' ).animate({
 				scrollTop: $(id).offset().top - 130}, 200);
 			$(id).addClass('animate');
