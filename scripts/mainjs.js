@@ -288,7 +288,7 @@ $(document).ready(function () {
 		}
 		
 		function filltab(what,style,where) {
-			var list = `<li class="list $style"><a href="#" onclick="goto1($place)">$content</a></li>`
+			var list = `<li class="list $style"><a href="#" onclick="goto1("$place")">$content</a></li>`
 			var elements = $(what); 
 			$(where +' ul').empty(); 
 			for (var i=0; i < elements.length; i++) {
