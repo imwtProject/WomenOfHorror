@@ -587,7 +587,6 @@ footer {
   position: sticky;
   top: 4em;
   overflow-y: auto;
-  overscroll-behavior: contain;
   height: 100vh;
   /* margin-top: 4em;  stops at navbar */
   }
