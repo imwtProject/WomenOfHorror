@@ -299,15 +299,10 @@ $(document).ready(function () {
 			}
 		}
 
-		function goto1(place){						
-			$(place).scrollIntoView({behavior: 'smooth'});
-			$(place).addClass('animate');
-		}
-
 		
 		function goto(id) { 		
-			var t = $(id)[0].offsetTop;/* DOM element, read only property*/
-			$('#main-article, #compare-article' ).animate({
+			var t = $(id)[0].offsetTop; /* DOM element, read only property*/
+			$('#main-article').animate({
 				scrollTop: $(id).offset().top - 130}, 200);
 			$(id).addClass('animate');
 
