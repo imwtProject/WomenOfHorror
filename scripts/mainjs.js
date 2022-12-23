@@ -302,7 +302,6 @@ $(document).ready(function () {
 		
 		function goto(id) { 		
 			var t = $(id)[0].offsetTop; /* DOM element, read only property*/
-			console.log(scrollTop())
 			console.log($(id).offset().top);
 			$('#main-article').animate({
 				scrollTop: $(id).offset().top}, 200);
