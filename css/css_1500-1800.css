@@ -11,7 +11,7 @@
 }
 
 body{
-  background: linear-gradient(90deg, #35082F 1.22%, #020C1B 100%);
+  color: white;
 }
 
 
@@ -95,108 +95,83 @@ body {
 }
 
 /* navbar */
+.nav-link {
+  font-family:'SFBaroquesque';
+    color: #CE9D16;
+    font-weight: bold;
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    font-size: 2rem
+}
 
-#firstNav {
-  padding-left: 5%;
-  padding-right: 5%;
-  margin-left: 0% !important;
-  margin-right: 0% !important;
-  width: auto !important;
-  justify-content: center;
-  background-color: transparent;
-  display:block;
-  text-align: center;
- }
+.navbar-toggler-icon {
+  background-image: url('../assets/img/2030/HamMenu.png')
+}
+.navbar.scrolled {
+  background-image: url('../assets/img/Baroque/header.png');
+  height: 15vh;
+}
 
-#firstNav img {
+.dropdown-item{
+color: #CE9D16;
+font-family: 'PlayfairDisplay';
+font-size: 1rem;
+}
+
+.dropdown-item:hover{
+  color: #CE9D16;
+}
+a{
+  color: white;
+  font-family: 'PlayfairDisplay';
+  font-size: 18px;
+}
+
+a:hover {
+  color: #CE9D16;
+  text-shadow: -5px; color: #CE9D16;
+}
+
+.navbar a:hover {
+  color: white;
+ 
+}
+
+#mainmenu{
+  margin-right: 50px;
+}
+
+.navbar-brand{
+  font-family: 'SFBaroquesque';
+  margin-left: 50px;
+  color: #CE9D16;
+  font-family:'SFBaroquesque';
+  font-size: 5rem;
+}
+
+#firstNav img{
   transform: scale(0);
 }
 
-.navbar-brand {
-  color: #ce9d16;
-  font-family: 'SFBaroquesque';
-  font-size: 5em;
-  padding-right: 15px;
-  padding-top:0.3em;
-  
-}
 
-/*issues about documentation*/
+
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: end;
-  justify-content: center;
-  position: relative;
-  top: -1em;
+  justify-content: flex-end;
 }
 
-.navbar-nav {
-  font-family: 'SFBaroquesque';
-  font-size: 2rem;
-  text-transform:uppercase
- }
-
- .navbar-toggler {
-  border-color:#ce9d16 !important;
-  position: relative;
-  top: -1em;
+.dropdown-item:focus, .dropdown-item:hover {
+ background-color: #CE9D16;
 }
 
 
-.navbar-toggler-icon {
- background-image: url("../assets/Baroque\ BG.png") !important; 
-}
-
-.navbar-toggler:focus {
-  box-shadow: 0 0 0 !important;
-}
-
-.navbar.scrolled {
-  background-image: url("../assets/img/Baroque/Frame\ 2\ \(3\).jpg") !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: background-image 500ms linear;
-  font-size: smaller;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  
-}
-
-.nav-link {
-  display: block;
-  padding: .5rem 1rem;
-  color: #ce9d16 !important;
-  text-decoration: underline;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-}
-
-.dropdown-menu.show {
-background-image: url("../assets/img/1800/bg1.jpg");
-border-color: rgb(0, 0, 0);
-}
-
-.dropdown-menu.scrolled {
-  background-image: url("../assets/img/1800/bg1.jpg")  !important;
-  top: 4em;
-}
-
-a.dropdown-item {
-  color:#ce9d16 !important;
-  text-decoration: underline;
-}
-
-a.dropdown-item:hover{
-  color: #ce9d16 !important;
-}
-
-a.dropdown-item:focus {
-  color: #ce9d16 !important;
-}
 
 .parallax {
   /* The image used */
-  background-image: url("../assets/img/Baroque/Frame\ 2\ \(3\).jpg");
+  background-image: url('../assets/img/Baroque/header.png');
   display: block; /* for displaying the text*/
   background-attachment:fixed;
   background-position: center;
@@ -259,29 +234,24 @@ q::after {
     }
 
 #issues {
-  background-image: url("../assets/issuebg18001500.jpeg");
+  background-image: url("../assets/img/Baroque/body.png");
   background-size: cover;
   background-repeat: no-repeat;
-  border: 20px solid;
-  border-image-source: url("../assets/Baroque\ BG.png");
-  border-image-slice: 62 59 62 62;
-  border-image-width: 20px 20px 20px 20px;
-  border-image-outset: 0px 0px 0px 0px;
-  border-image-repeat: round repeat;
+  
 }
 
 .card-group {
   z-index:1000;
   width: 100%;
   background-color: transparent;
-  border: 5px double #ce9d16;
+  border:#ce9d16;
   transform: scale(0.95);
 } 
 
 .card {
   /*this is the background color from default bootstrap */
   border-radius: 0%;
-  background-color: transparent;
+  background-image: url('../assets/img/Baroque/header.png');
   border: 3px solid #ce9d16;
   } 
 
@@ -294,6 +264,11 @@ q::after {
 
 .card-text {
   text-align: justify;
+}
+p{
+  color: white;
+  width: 100%;
+  font-family: 'PlayFairDisplay';
 }
 
 #about {
@@ -397,7 +372,7 @@ q::after {
   }
 
 .fab-icon {
-  content: url("../assets/img/1800/fab-styles.png");
+  content: url("../");
   height: 57px;
   width: 57px;
   position: relative;
