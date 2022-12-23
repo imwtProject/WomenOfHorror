@@ -287,7 +287,7 @@ $(document).ready(function () {
 		}
 		
 		function filltab(what,style,where) {
-			var list = `<li class="list $style"><a href="$place">$content</a></li>` // onclick="goto('$place')"
+			var list = `<li class="list $style"><a href="#"  onclick="goto('$place')">$content</a></li>` 
 			var elements = $(what); 
 			$(where +' ul').empty(); 
 			for (var i=0; i < elements.length; i++) {
@@ -299,8 +299,17 @@ $(document).ready(function () {
 			}
 		}
 
-		
 		function goto(id) {
+			var t = $(id)[0].offsetTop;
+			$('#main-article').animate({
+				scrollTop: t}, 200);
+			$(id).addClass('animate');
+			setTimeout(function () {
+				$(id).removeClass('animate');
+			}, 5000);
+		}
+
+		/*function goto(id) {
 			$('#main-article').animate({
 				scrollTop: $(id).offset().top - 150
 			}, 200);
@@ -308,7 +317,7 @@ $(document).ready(function () {
 			setTimeout(function () {
 				$(id).removeClass('animate');
 			}, 5000);
-		}
+		} */
 
 		/* function goto(id) { 		
 			var t = $(id)[0].offsetTop; DOM element, read only property
