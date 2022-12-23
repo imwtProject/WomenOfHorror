@@ -327,9 +327,7 @@ $(document).ready(function () {
 			$(id).addClass('animate');
 
 			/* this removes the class animate after 5 seconds */
-			setTimeout(function(){
-				$(id).removeClass('animate');
-			},5000);
+			
 			
 
 /* fab styles */ 
