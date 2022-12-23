@@ -276,14 +276,6 @@ p{
   font-family: 'PlayFairDisplay';
 }
 
-#about {
-  column: 6;
-  column-gap: 4em;
-  column-rule: solid rgba(60, 41, 24, 0.8) !important;
-  column-rule: solid;
-  text-align: justify;
-  background-color: transparent !important;
-  }
 
 #about ul {
   text-align: center !important;
@@ -452,7 +444,6 @@ p{
 
 footer {
   margin-top: -20px;
-  background-image: url("../assets/img/1800/bg1.jpg");
   height: 25vh;
   z-index: 1000;
   position: relative;
@@ -757,9 +748,7 @@ font-family:'PlayFairDisplay';
   color: rgb(70, 70, 70);
 }
 
-#main-article::-webkit-scrollbar-track {
-  
-  }
+
 
 
 #main-article img {
