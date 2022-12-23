@@ -300,28 +300,19 @@ $(document).ready(function () {
 		}
 
 		
-		function goto(id) {
-			$('#main-article').animate({
-				scrollTop: $(id).offset().top - 150
-			}, 200);
-			$(id).addClass('animate');
-			setTimeout(function () {
-				$(id).removeClass('animate');
-			}, 5000);
-		}
-
-		/* function goto(id) { 		
-			var t = $(id)[0].offsetTop; DOM element, read only property
+		
+		function goto(id) { 		
+			var t = $(id)[0].offsetTop; /*DOM element, read only property*/
 			console.log($(id).offset().top);
 			$('#main-article').animate({
 				scrollTop: $(id).offset().top}, 200);
-			$(id).addClass('animate');*/
+			$(id).addClass('animate');
 
-			/* this removes the class animate after 5 seconds 
+			/* this removes the class animate after 5 seconds */
 			setTimeout(function(){
 				$(id).removeClass('animate');
 			},5000);
-			}*/
+			}
 
 /* fab styles */ 
 function fabopener()	{
