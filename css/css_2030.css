@@ -188,6 +188,7 @@ a:hover {
   color: #fff;
   font-family:'Poppins-Regular';
   text-align: center;
+  width: 350px;
   font-size: 14px;
   line-height: 150%;
   letter-spacing: 1.5px;
@@ -405,7 +406,7 @@ hr{
 }
 
 footer .text-center{
-  background-image: url('/assets/img/2030/Frame\ 2\ \(2\).jpg');
+  
   background-size: cover;
   text-align: center;
 
