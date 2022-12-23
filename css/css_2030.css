@@ -188,12 +188,18 @@ a:hover {
   color: #fff;
   font-family:'Poppins-Regular';
   text-align: center;
-  width: 350px;
-  font-size: 14px;
   line-height: 150%;
   letter-spacing: 1.5px;
   text-align: left;
   text-transform:lowercase;
+}
+.card-text p{
+  color: #fff;
+  font-family:'Poppins-Regular';
+  text-align: center;
+  width: 350px;
+  font-size: 14px;
+
 }
 
 /* Team Card */
