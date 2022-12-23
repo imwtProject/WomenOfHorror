@@ -330,7 +330,7 @@ $(document).ready(function () {
 			setTimeout(function(){
 				$(id).removeClass('animate');
 			},5000);
-			}
+			
 
 /* fab styles */ 
 function fabopener()	{
