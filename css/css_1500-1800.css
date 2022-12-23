@@ -36,15 +36,17 @@ body{
 /* general titles and containers and links */
 
 h2 {
-  font-family: 'SFBaroquesque';
+  font-family: 'PlayfairDisplay';
+  color: white;
   }
 
 h3 {
-  font-family: 'SFBaroquesque';
+  font-family: 'PlayfairDisplay';
+  color: white;
  }
 
 h4 {
-  font-family: 'SFBaroquesque';
+  font-family: 'PlayfairDisplay';
     color:rgb(255, 255, 255) !important;       
 }
 
@@ -309,7 +311,7 @@ p{
   margin-top: 1em;
 }
 .ic-stickey ul {
-  padding: 0px;
+  padding: 10px;
   position:fixed;	
 /* -webkit-transform: translate(-270px, 0);
   -moz-transform: translate(-270px, 0);
@@ -319,20 +321,25 @@ p{
 }
 .ic-stickey ul li {
   display: block;
-  margin: 10px;
-  padding-right: 5px;
-  background-image: url("../assets/ekher.png");
-  width: 290px;
-  height: 40px;
+  margin: 5px;    
+  color: #ffffff;
+  background: #CE9D16;
+  width: 300px;
   text-align: right;
+  padding: 10px;
+  -webkit-border-radius: 0 30px 30px 0;
+  -moz-border-radius: 0 30px 30px 0;
+  border-radius: 0px;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -ms-transition: all 1s;
   -o-transition: all 1s;
   transition: all 0.5s;
-  border: 5px double rgba(44, 30, 18, 0.8);
+  cursor: pointer;
 }
 .ic-stickey ul li:hover {
+  background-color: white;
+  color: #CE9D16;
   -webkit-transform: translate(110px, 0);
   -moz-transform: translate(110px, 0);
   -ms-transform: translate(110px, 0);
@@ -341,7 +348,7 @@ p{
  }
 
 .ic-stickey ul li a:hover {
-  color: rgb(255, 255, 255)  !important;
+  color: CE9D16  !important;
   cursor: pointer !important;
 }
 
@@ -362,19 +369,21 @@ p{
   background-color: transparent;
   background-size: contain;
   background-clip: padding-box;
-  border: 4px dotted rgb(70, 70, 70);
-  height: 65px;
-  width: 65px;
+  border: 4px  #CE9D16;
+  height: 55px;
+  width: 55px;
+  border-radius: 1000px;
   text-align: center;
-  box-shadow: 0 0 12px rgba(180, 179, 179, 0.834);
+  box-shadow: 0 0 12px #CE9D16;
   transition: all 0.1s ease-out;
   margin-bottom: 5px;
   }
 
 .fab-icon {
-  content: url("../");
+  content: url("../assets/img/Baroque/fabopener.png");
   height: 57px;
   width: 57px;
+  border-radius: 1000px;
   position: relative;
   left: -6px;
   top: -1px;
@@ -401,16 +410,17 @@ p{
   margin-bottom: 5px;
   margin-right: 0;
   padding: 8px 16px;
-  border:4px dotted rgb(70, 70, 70);
+  border:4px #CE9D16;
   width: 100%;
-  background-image: url("../assets/img/1800/bg1.jpg");
-  box-shadow: 0 0 5px rgba(92, 88, 88, 0.189);
-  color: rgb(0, 0, 0);
+  background-image: url("../assets/img/Baroque/header.png");
+  background-color: white;
+  box-shadow: 0 0 5px #CE9D16;
+  color: rgb(255, 255, 255);
   text-decoration: underline;
 } 
 
 .fab-menu__item:hover {
-  color: rgb(70, 70, 70); 
+  color: white; 
 }
 
 .btn-fab.open .fab-menu {
@@ -438,10 +448,15 @@ p{
 /* footer */
 
 footer {
+  margin-top: -20px;
   background-image: url("../assets/img/1800/bg1.jpg");
   height: 25vh;
   z-index: 1000;
   position: relative;
+}
+.text-center{
+  color: white;
+  font-family: 'PlayFairDisplay';
 }
 
 /* ISSUE PAGE */
