@@ -301,14 +301,14 @@ $(document).ready(function () {
 
 		
 		function goto(id) {
-			var t = $(id)[0].offsetTop;
-			$('body').animate({ scrollTop: t }, 200);
+			$('html, body, #main-article').animate({
+				scrollTop: $(id).offset().top - 200
+			}, 200);
 			$(id).addClass('animate');
-			setTimeout(function(){
+			setTimeout(function () {
 				$(id).removeClass('animate');
-			},5000);
+			}, 5000);
 		}
-
 
 		/* function goto(id) { 		
 			var t = $(id)[0].offsetTop; DOM element, read only property*/
