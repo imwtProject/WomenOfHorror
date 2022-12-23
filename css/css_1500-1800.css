@@ -41,9 +41,11 @@ h2 {
   }
 
 h3 {
+
   font-family: 'PlayfairDisplay';
   color: white;
  }
+ 
 
 h4 {
   font-family: 'PlayfairDisplay';
@@ -268,6 +270,7 @@ q::after {
   text-align: justify;
 }
 p{
+  margin-top: 50px;
   color: white;
   width: 100%;
   font-family: 'PlayFairDisplay';
@@ -462,7 +465,7 @@ footer {
 /* ISSUE PAGE */
 
 #hero {
-  font-family: 'Poppins', sans-serif;
+  font-family:'PlayFairDisplay';
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 20vh;
@@ -472,14 +475,15 @@ footer {
   flex-wrap: wrap !important;
   width: auto !important;
   height: auto;
-  background-image: url("../assets/img/1800/bg1.jpg");
+  background-image: url("../assets/img/Baroque/header.png");
   text-align: center;  
 }
 
 #hero h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family:'PlayFairDisplay';
   text-transform: uppercase;
   transform: scale(1.5);
+  color: white;
 }
 
 .intro {
@@ -487,26 +491,21 @@ footer {
 }
 
 #hero::after {
-  content: url("../assets/img/1800/hangings.jpg");
+
   position: relative;
   display: block;
   top: -1em;
   transform: scale(0.8);
-  border: 5px double rgb(70, 70, 70);
+  border: 5px double #CE9D16;
   overflow: hidden;
 }
 
 
 #main-content {
-  background-image: url("../assets/img/1800/bg1.jpg");
+  background-image: url("../assets/img/Baroque/body.png");
   background-repeat: no-repeat;
   background-size: cover;
-  border: 20px solid;
-  border-image-source: url("../assets/img/1800/border2.png");
-  border-image-slice: 62 59 62 62;
-  border-image-width: 20px 20px 20px 20px;
-  border-image-outset: 0px 0px 0px 0px;
-  border-image-repeat: round repeat;
+  border: 0px solid;
   line-height: normal;
 }
 
@@ -538,7 +537,7 @@ footer {
   }
 
   #metadata-column::-webkit-scrollbar-thumb {
-    color: rgb(70, 70, 70);
+    color: #CE9D16;
   }
 
   .wrapper{
@@ -546,7 +545,7 @@ footer {
     overflow-y: auto;
     background-color: transparent;
     border: 20px solid;
-    border-image-source: url("../assets/img/1800/border-metadata.png");
+    border-image-source: url("../assets/img/Baroque/body.png");
     border-image-slice:74 74 74 74;
     border-image-width:30px 30px 30px 30px;
     border-image-outset:0px 0px 0px 0px;
@@ -560,12 +559,12 @@ footer {
   
   .panel-heading {
     padding: 0;
-    border: 5px double rgb(70, 70, 70);
+    border: 5px solid #CE9D16;
 
   }
   
   .panel-title{
-    border-bottom: 3px solid rgb(70, 70, 70);
+    border-bottom: 3px solid #CE9D16;
   }
   
   .panel-title>a, .panel-title>a:active{
@@ -734,7 +733,8 @@ text-decoration: none;
 }
 
 #title, #title1 {
-  font-family: 'Poppins', sans-serif;
+font-family:'PlayFairDisplay';
+
  /*text-transform: uppercase;*/
 
   background-repeat: repeat-y;
@@ -758,7 +758,7 @@ text-decoration: none;
 }
 
 #main-article::-webkit-scrollbar-track {
-  background-image: url("../assets/img/1800/columnRule.png");
+  
   }
 
 
@@ -784,8 +784,13 @@ text-decoration: none;
   }
 
 footer {
-  background-image: url("../assets/img/1800/bg1.jpg");
+  background-image: url("../assets/img/Baroque/header.png");
+  
+  height: 35vh;
+  z-index: 1000;
+  position: relative;
 }
+
 
 /* MEDIA QUERY */
 
@@ -848,6 +853,155 @@ footer {
   .fab-styles {
     display: none ;}
 }
+
+/*DOCUMENTATION*/
+
+#documentation {
+  background-image: url('../assets/img/Baroque/body.png');
+}
+
+.mb-3{
+  padding-top: 150px;
+  color: white;
+}
+#item-2-3{
+  background-color: transparent;
+}
+
+h5{
+  color: white;
+}
+#hero-documentation {
+  display: none;
+}
+
+#navbar-documentation {
+   position: sticky;
+   top: 4em;
+}
+
+#navbar-documentation .navbar-brand {
+  margin-top: 1px;
+  font-size: 2em;
+  font-family:'PlayFairDisplay';
+  position: relative;
+  }
+  
+
+  .nav-pills .nav-link{
+    background-color: transparent;
+    font-family:'PlayFairDisplay';
+    font-size: 16px;
+    border: 1px outset rgba(255, 255, 255, 0.124);
+    border-radius: 1000px;
+  }
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: transparent !important;
+    font-family:'PlayFairDisplay';
+    font-size: 16px;
+    border: 1px outset rgba(255, 255, 255, 0.124);
+  }
+
+  
+#nav-index{
+  width:20vw;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-image: url('../assets/img/Baroque/bodybg.png');
+  background-size: contain;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0);  
+  padding: 16px;  
+  filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+  }
+  
+
+#nav-index .nav-link {
+  border-color: transparent;
+  border: none;
+}
+
+#main-text {
+  margin-top: 4em;
+}
+
+/* MEDIA QUERY */
+
+/*nav*/
+
+@media screen and (max-width: 1060px) {
+  .navbar-brand {
+    transform: scale(0.8)
+   }
+}
+
+/*cover text*/
+@media screen and (max-width: 600px) {
+  .col2 .col1 .col3 {
+    width: 100%;	
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .col2 .col1 .col3 {
+    width: 50%;	
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .self-defined-grid {
+    width: 100%;
+    height: inherit;
+    display: grid;
+    grid-template-areas: "cover-left cover-center cover-right";
+    grid-template-columns: 0.5fr 2fr 0.5fr;      
+  }
+  .star {
+    transform: scale(0);
+  }
+  
+}
+
+@media screen and (max-height: 600px) {
+  #cover-center{
+    transform: scale(0.8)  }
+}
+
+
+@media screen and (max-height: 540px) {
+  .self-defined-grid {
+    width: 100%;
+    height: inherit;
+    display: grid;
+    grid-template-areas: "cover-left cover-center cover-right";
+    grid-template-columns: 0fr 3fr 0fr;      
+  }
+
+}
+
+/* responsive style nav */
+
+@media screen and (max-width: 992px)
+{
+  .styles-large  {
+    display: none !important;
+
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .fab-styles {
+    display: none ;}
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-collapse {
+  position: relative;
+  top: 5em;
+  right: 3em;
+}
+  }
+
 
 
 
