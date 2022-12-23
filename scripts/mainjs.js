@@ -301,8 +301,8 @@ $(document).ready(function () {
 
 		
 		function goto(id) {
-			$('html, body, #main-article').animate({
-				scrollTop: $(id).offset().top - 200
+			$('#main-article').animate({
+				scrollTop: $(id).offset().top - 150
 			}, 200);
 			$(id).addClass('animate');
 			setTimeout(function () {
