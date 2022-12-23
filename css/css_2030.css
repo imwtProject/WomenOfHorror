@@ -151,14 +151,13 @@ a:hover {
 .card{
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-image: url('../assets/img/2030/body\ bg.jpg');
+  background-image: url('../assets/img/2030/body.jpg');
   background-size: contain;
   border-radius: 4px;
   border: 0px solid rgba(255, 255, 255, 0);  
   padding: 16px;  
   filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
 }
-
 
 .card-body{
   background: rgba(255, 255, 255, 0.01);
@@ -406,7 +405,7 @@ hr{
 }
 
 footer .text-center{
-  background-image: url('../assets/img/2030/Frame.jpg');
+  background-image: url('/assets/img/2030/Frame\ 2\ \(2\).jpg');
   background-size: cover;
   text-align: center;
 
@@ -556,7 +555,7 @@ footer {
   .wrapper{
     backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-image: url('../assets/img/2030/body.jpg');
+  background-image: url('/assets/img/2030/body\ bg.jpg');
   background-size: contain;
   border-radius: 4px;
   border: 0px solid rgba(255, 255, 255, 0);  
@@ -862,7 +861,7 @@ border-color: rgb(255, 255, 255);
   width:20vw;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-image: url('../assets/img/2030/body\ bg.jpg');
+  background-image: url('/assets/img/2030/body\ bg.jpg');
   background-size: contain;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0);  
