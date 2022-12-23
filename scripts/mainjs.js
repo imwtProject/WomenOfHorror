@@ -324,13 +324,13 @@ $(document).ready(function () {
 			console.log($(id).offset().top);
 			$('#main-article').animate({
 				scrollTop: $(id).offset().top}, 200);
-			$(id).addClass('animate');*/
+			$(id).addClass('animate');
 
-			/* this removes the class animate after 5 seconds 
+			/* this removes the class animate after 5 seconds */
 			setTimeout(function(){
 				$(id).removeClass('animate');
 			},5000);
-			}*/
+			}
 
 /* fab styles */ 
 function fabopener()	{
