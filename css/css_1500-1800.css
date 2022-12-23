@@ -1,26 +1,19 @@
 @charset "UTF-8";
+@charset "UTF-8";
 
 @font-face {
-  font-family: 'Poppins', sans-serif;
-  src: url("../assets/fonts/y2k/good-timing-bd.ttf");
+  font-family: 'SFBaroquesque';
+  src: url('../assets/fonts/Baroque/SFBaroquesque.ttf');
+}
+@font-face{
+  font-family: 'PlayfairDisplay';
+  src: url('../assets/fonts/Baroque/PlayFairDisplay/PlayfairDisplay-VariableFont_wght.ttf');
 }
 
-@font-face {
-  font-family: 'Poppins', sans-serif;
-  src: url("../assets/fonts/y2k/PLANK___.TTF");
+body{
+  background: linear-gradient(90deg, #35082F 1.22%, #020C1B 100%);
 }
 
-
-/* animations */
-
-@keyframes trottola {
-  from {
-    transform: rotateX(0.1turn);
-  }
-  to {
-    transform: rotateX(1turn);
-  }
-}
 
 /* cose che non si sa cosa sono */
 
@@ -43,15 +36,15 @@
 /* general titles and containers and links */
 
 h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'SFBaroquesque';
   }
 
 h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'SFBaroquesque';
  }
 
 h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'SFBaroquesque';
     color:rgb(255, 255, 255) !important;       
 }
 
@@ -97,7 +90,7 @@ a:hover {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'PlayfairDisplay';
   color:rgba(20, 10, 0, 0.8); 
 }
 
@@ -120,8 +113,8 @@ body {
 }
 
 .navbar-brand {
-  color: rgb(170, 124, 0);
-  font-family: 'Poppins', sans-serif;
+  color: #ce9d16;
+  font-family: 'SFBaroquesque';
   font-size: 5em;
   padding-right: 15px;
   padding-top:0.3em;
@@ -139,12 +132,13 @@ body {
 }
 
 .navbar-nav {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'SFBaroquesque';
+  font-size: 2rem;
   text-transform:uppercase
  }
 
  .navbar-toggler {
-  border-color:rgb(170, 124, 0) !important;
+  border-color:#ce9d16 !important;
   position: relative;
   top: -1em;
 }
@@ -159,28 +153,20 @@ body {
 }
 
 .navbar.scrolled {
-  background-image: url("../assets/Baroque\ BG.png") !important;
+  background-image: url("../assets/img/Baroque/Frame\ 2\ \(3\).jpg") !important;
   background-repeat: no-repeat;
   background-size: cover;
   transition: background-image 500ms linear;
   font-size: smaller;
   padding-top: 0px;
   padding-bottom: 0px;
-  border: 20px solid;
-  border-image-source: url("../assets/Baroque\ BG.png");
-  border-image-slice: 62 59 62 62;
-  border-image-width: 20px 20px 20px 20px;
-  border-image-outset: 0px 0px 0px 0px;
-  border-image-repeat: round repeat;
-  top: -20px;
-  right: -20px;
-  left: -20px;
+  
 }
 
 .nav-link {
   display: block;
   padding: .5rem 1rem;
-  color: rgb(170, 124, 0) !important;
+  color: #ce9d16 !important;
   text-decoration: underline;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
@@ -196,21 +182,21 @@ border-color: rgb(0, 0, 0);
 }
 
 a.dropdown-item {
-  color:rgb(170, 124, 0) !important;
+  color:#ce9d16 !important;
   text-decoration: underline;
 }
 
 a.dropdown-item:hover{
-  color: rgb(170, 124, 0) !important;
+  color: #ce9d16 !important;
 }
 
 a.dropdown-item:focus {
-  color: rgb(170, 124, 0) !important;
+  color: #ce9d16 !important;
 }
 
 .parallax {
   /* The image used */
-  background-image: url("../assets/Baroque\ BG.png");
+  background-image: url("../assets/img/Baroque/Frame\ 2\ \(3\).jpg");
   display: block; /* for displaying the text*/
   background-attachment:fixed;
   background-position: center;
@@ -237,7 +223,8 @@ a.dropdown-item:focus {
 
 #cover-text {
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'SFBaroquesque';
+  font-size: 5rem;
   text-transform: uppercase;
   margin-top: 35vh;
   margin-left: 20%;
@@ -245,6 +232,7 @@ a.dropdown-item:focus {
   width: 700px;
   text-align: center;
 }
+
 
 q::before {
   content: '';
@@ -255,8 +243,9 @@ q::after {
 }
 
 .text {
-  color: rgb(0, 0, 0);
-  font-family: 'Poppins', sans-serif;
+  color: rgb(255, 255, 255);
+  font-family: 'SFBaroquesque';
+  font-size: 2rem;
   text-align:center !important;
 }
 
@@ -285,7 +274,7 @@ q::after {
   z-index:1000;
   width: 100%;
   background-color: transparent;
-  border: 5px double rgb(170, 124, 0);
+  border: 5px double #ce9d16;
   transform: scale(0.95);
 } 
 
@@ -293,7 +282,7 @@ q::after {
   /*this is the background color from default bootstrap */
   border-radius: 0%;
   background-color: transparent;
-  border: 3px solid rgb(170, 124, 0);
+  border: 3px solid #ce9d16;
   } 
 
 .card-body > img {
