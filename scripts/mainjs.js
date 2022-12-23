@@ -302,7 +302,7 @@ $(document).ready(function () {
 		function goto(id) {
 			var t = $(id)[0].offsetTop;
 			$('#main-article').animate({
-				scrollTop: t}, 200);
+				scrollTop: t - 100}, 200);
 			$(id).addClass('animate');
 			setTimeout(function () {
 				$(id).removeClass('animate');
